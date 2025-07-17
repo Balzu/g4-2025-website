@@ -8,6 +8,31 @@ header_title: "Cyber Threat Intelligence"
 subtitle: "An Example Page for group 4 progettone"
 ---
 
+<style>
+  /* Full‑page hero background */
+  .site-hero {
+    height: 100vh;
+    background-image: url('{{ page.header_img | absolute_url }}');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .site-hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+</style>
+
+<header class="site-hero">
+  <div class="hero-content text-center">
+    <h1>{{ page.header_title }}</h1>
+    <p>{{ page.subtitle }}</p>
+  </div>
+</header>
 
 # Italia sotto attacco: dati, emozioni e investimenti nella guerra cibernetica
 
