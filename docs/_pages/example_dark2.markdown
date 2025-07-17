@@ -1,11 +1,6 @@
 ---
 layout: dark_layout
 title: "Home"
-show_sidetoc: true
-header_type: hero
-header_img: assets/images/folium_map.webp
-header_title: "Cyber Threat Intelligence"
-subtitle: "An Example Page for group 4 progettone"
 ---
 
 
