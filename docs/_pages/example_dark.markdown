@@ -27,12 +27,6 @@ subtitle: "An Example Page for group 4 progettone"
   }
 </style>
 
-<header class="site-hero">
-  <div class="hero-content text-center">
-    <h1>{{ page.header_title }}</h1>
-    <p>{{ page.subtitle }}</p>
-  </div>
-</header>
 
 # Italia sotto attacco: dati, emozioni e investimenti nella guerra cibernetica
 
