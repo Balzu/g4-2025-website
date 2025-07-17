@@ -3,9 +3,8 @@ layout: dark_layout
 title: "Home"
 show_sidetoc: true
 header_type: hero
-header_img: assets/images/cyber_attacks_world.gif
-header_title: "Cyber Threat Intelligence"
-subtitle: "An Example Page for group 4 progettone"
+header_img: assets/images/cyber_attacks_world_hd.gif
+header_title: "Italy Under Attack: Data, Emotions, and Investments in the Cyber War"
 ---
 
 <style>
