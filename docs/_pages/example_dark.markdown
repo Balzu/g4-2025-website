@@ -57,6 +57,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </vegachart>
 </div>
 
+<div style="height: 400px">
+  <vegachart
+    schema-url="{{ "/assets/charts/italia.json" | relative_url }}"
+    style="width: 100%; height: 100%">
+  </vegachart>
+</div>
 
 # Cyber Q&A
 
