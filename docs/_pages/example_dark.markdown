@@ -45,42 +45,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div style="height: 400px">
   <vegachart
-    schema-url="{{ "/assets/charts/articles_by_source_type.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/italia.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true">
   </vegachart>
 </div>
-
-<div style="height: 400px">
-  <vegachart
-    schema-url="{{ "/assets/charts/normalized_coverage_per_attack.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true">
-  </vegachart>
-</div>
-
-<div style="height: 400px">
-  <vegachart schema-url="/g4-2025-website/assets/charts/chart.json" style="width: 100%; height: 100%"></vegachart>
-</div>
-
-
-<div id="vis" style="height:400px;"></div>
-
-<script>
-  vegaEmbed(
-    '#vis',
-    '{{ "/assets/charts/italia.json" | relative_url }}',
-    {
-      renderer:  'canvas',   // o 'svg'
-      tooltip:   true,       // abilita vega-tooltip
-      actions: {
-        export: true,        // bottone “Download as PNG/SVG”
-        source: false        // nasconde il pulsante “View Source”
-      }
-    }
-  ).catch(console.error);
-</script>
-
 
 
 # Cyber Q&A
