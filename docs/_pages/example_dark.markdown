@@ -121,13 +121,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <script>
-document.querySelectorAll('.hm-btn').forEach(btn=>{
-  btn.addEventListener('click', ()=>{
+document.querySelectorAll('.hm-btn').forEach(_btn=>{
+  _btn.addEventListener('click', ()=>{
     const target = btn.dataset.target;
 
     // aggiorna bottoni
     document.querySelectorAll('.hm-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
+    _btn.classList.add('active');
 
     // mostra/nascondi
     document.querySelectorAll('.heatmap').forEach(div=>div.classList.remove('visible'));
