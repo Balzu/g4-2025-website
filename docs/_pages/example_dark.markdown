@@ -32,6 +32,17 @@ vega: true
   .vg-tooltip .key {
     color: #000 !important;
   }
+
+
+  vgachart,
+  .site-content > div[style*="vegachart"] {
+    display: block !important;
+    position: relative !important;
+    z-index: 1 !important;
+    clear: both !important;
+    margin: 2em 0 !important;
+  }
+
 </style>
 
 
