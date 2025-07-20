@@ -33,9 +33,47 @@ vega: true
     color: #000 !important;
   }
 
+.hm-buttons {
+  display:flex;
+  gap:.5rem;
+  margin-bottom:1rem;
+  flex-wrap:wrap;
+}
+.hm-btn {
+  cursor:pointer;
+  padding:.5rem .9rem;
+  border:1px solid #ccc;
+  background:#f5f5f5;
+  border-radius:4px;
+  font-size:.9rem;
+}
+.hm-btn.active {
+  background:#d33;
+  color:#fff;
+  border-color:#d33;
+}
+.heatmap { display:none; }
+.heatmap.visible { display:block; }
 
 </style>
 
+
+
+<script>
+document.querySelectorAll('.hm-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const target = btn.dataset.target;
+
+    // aggiorna bottoni
+    document.querySelectorAll('.hm-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // mostra/nascondi
+    document.querySelectorAll('.heatmap').forEach(div=>div.classList.remove('visible'));
+    document.getElementById(target).classList.add('visible');
+  });
+});
+</script>
 
 # Introduction
 
@@ -48,10 +86,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
 
-<div>
+<div class="hm-buttons">
+  <button type="button" class="hm-btn active" data-target="heatmap1">Heatmap 1</button>
+  <button type="button" class="hm-btn" data-target="heatmap2">Heatmap 2</button>
+</div>
+
+<div id="heatmap1" class="heatmap visible">
   <vegachart
-    schema-url="{{ "/assets/charts/italia.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/heatmap1.json.json" | relative_url }}"
     style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div id="heatmap2" class="heatmap">
+  <vegachart
+    schema-url="{{ "/assets/charts/heatmap2.json.json" | relative_url }}"
+    style="width: 100%; height: 100%; show: hidden" 
     tooltip="true" >
   </vegachart>
 </div>
