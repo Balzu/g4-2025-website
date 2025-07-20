@@ -45,10 +45,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
-# Breaking the Net
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
-
 
 <div style="height: 400px">
   <vegachart
@@ -57,6 +53,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     tooltip="true" >
   </vegachart>
 </div>
+
+
+# Breaking the Net
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+
+<div style="height: 400px">
+  <vegachart
+    schema-url="{{ "/assets/charts/articles_by_source_type.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
 
 
 # Cyber Q&A
