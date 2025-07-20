@@ -46,14 +46,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div style="height: 400px">
   <vegachart
     schema-url="{{ "/assets/charts/articles_by_source_type.json" | relative_url }}"
-    style="width: 100%; height: 100%">
+    style="width: 100%; height: 100%" 
+    tooltip="true">
   </vegachart>
 </div>
 
 <div style="height: 400px">
   <vegachart
     schema-url="{{ "/assets/charts/normalized_coverage_per_attack.json" | relative_url }}"
-    style="width: 100%; height: 100%">
+    style="width: 100%; height: 100%"
+    tooltip="true">
   </vegachart>
 </div>
 
