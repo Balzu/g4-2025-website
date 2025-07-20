@@ -27,17 +27,11 @@ vega: true
     text-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
 
-.vg-tooltip, .vega-tooltip {
-  /* testo nero */
-  color: #000 !important;
-  /* sfondo bianco (se vuoi renderlo più leggibile) */
-  background-color: #fff !important;
-  /* bordo magari grigio chiaro */
-  border: 1px solid #ccc !important;
-  /* un po’ di padding */
-  padding: 4px 6px !important;
-}
-
+  .vg-tooltip,
+  .vg-tooltip .value,
+  .vg-tooltip .key {
+    color: #000 !important;
+  }
 </style>
 
 
