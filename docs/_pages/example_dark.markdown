@@ -59,7 +59,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   <vegachart
     schema-url="{{ "/assets/charts/articles_by_source_type.json" | relative_url }}"
     style="width: 100%; height: 100%" 
-    tooltip="true >
+    tooltip="true" >
   </vegachart>
 </div>
 
@@ -67,7 +67,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   <vegachart
     schema-url="{{ "/assets/charts/italia.json" | relative_url }}"
     style="width: 100%; height: 100%" 
-    tooltip="true >
+    tooltip="true" >
   </vegachart>
 </div>
 
