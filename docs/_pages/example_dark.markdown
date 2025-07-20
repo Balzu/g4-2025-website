@@ -59,6 +59,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </vegachart>
 </div>
 
+<div style="height: 400px">
+  <vegachart schema-url="/g4-2025-website/assets/charts/chart.json" style="width: 100%; height: 100%"></vegachart>
+</div>
 
 
 <div id="vis" style="height:400px;"></div>
