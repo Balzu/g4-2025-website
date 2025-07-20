@@ -6,6 +6,7 @@ header_type: hero
 header_img: assets/images/cyber_attacks_world_hd.gif
 header_title: "The Italian Job… of Cybercrime"
 subtitle: "Italy Under Attack: Data, Emotions, and Investments in the Cyber War"
+vega: true  
 ---
 
 <style>
@@ -41,6 +42,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 # Breaking the Net
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+<div style="height: 400px">
+  <vegachart
+    schema-url="{{ "/g4-2025-website/assets/charts/articles_by_source_type.json" | relative_url }}"
+    style="width: 100%; height: 100%">
+  </vegachart>
+</div>
+
+<div style="height: 400px">
+  <vegachart
+    schema-url="{{ "/g4-2025-website/assets/charts/normalized_coverage_per_attack.json" | relative_url }}"
+    style="width: 100%; height: 100%">
+  </vegachart>
+</div>
+
 
 # Cyber Q&A
 
