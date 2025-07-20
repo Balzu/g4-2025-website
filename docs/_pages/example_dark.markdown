@@ -55,13 +55,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
-<div style="height: 400px">
-  <vegachart
-    schema-url="{{ "/assets/charts/articles_by_source_type.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
-</div>
 
 <div style="height: 400px">
   <vegachart
