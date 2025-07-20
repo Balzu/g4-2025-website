@@ -34,15 +34,6 @@ vega: true
   }
 
 
-  vgachart,
-  .site-content > div[style*="vegachart"] {
-    display: block !important;
-    position: relative !important;
-    z-index: 1 !important;
-    clear: both !important;
-    margin: 2em 0 !important;
-  }
-
 </style>
 
 
@@ -57,7 +48,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
 
-<div style="height: 400px">
+<div>
   <vegachart
     schema-url="{{ "/assets/charts/italia.json" | relative_url }}"
     style="width: 100%; height: 100%" 
@@ -71,7 +62,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
 
-<div style="height: 400px">
+<div>
   <vegachart
     schema-url="{{ "/assets/charts/articles_by_source_type.json" | relative_url }}"
     style="width: 100%; height: 100%" 
