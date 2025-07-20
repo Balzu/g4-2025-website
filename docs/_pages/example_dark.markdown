@@ -70,8 +70,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <div class="hm-buttons">
-  <button type="button" class="hm-btn active" data-target="heatmap1">Heatmap 1</button>
-  <button type="button" class="hm-btn" data-target="heatmap2">Heatmap 2</button>
+  <button type="button" class="hm-btn active" data-target="heatmap1">Attacks per Region</button>
+  <button type="button" class="hm-btn" data-target="heatmap2">Attacks / Revenue</button>
+  <button type="button" class="hm-btn" data-target="heatmap3">Attacks / Companies</button>
 </div>
 
 <div id="heatmap1" class="heatmap visible">
@@ -85,6 +86,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div id="heatmap2" class="heatmap">
   <vegachart
     schema-url="{{ "/assets/charts/heatmap2.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div id="heatmap3" class="heatmap">
+  <vegachart
+    schema-url="{{ "/assets/charts/heatmap3.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
