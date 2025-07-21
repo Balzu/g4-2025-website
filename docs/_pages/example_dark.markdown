@@ -117,9 +117,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
 
-<div style="width: 100%; height: 100%">
+<div>
   <vegachart
-    schema-url="{{ "/assets/charts/article_clusters_dashboard.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/article_clusters_dashboard_2.json" | relative_url }}"
+    style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
 </div>
