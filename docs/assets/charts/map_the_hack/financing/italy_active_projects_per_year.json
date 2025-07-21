@@ -1,0 +1,254 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "autosize": {
+    "contains": "padding",
+    "type": "fit-x"
+  },
+  "axes": [
+    {
+      "aria": false,
+      "domain": false,
+      "grid": true,
+      "gridScale": "x",
+      "labels": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "orient": "left",
+      "scale": "y",
+      "tickCount": {
+        "signal": "ceil(height/40)"
+      },
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "grid": false,
+      "labelAlign": "right",
+      "labelAngle": 270,
+      "labelBaseline": "middle",
+      "orient": "bottom",
+      "scale": "x",
+      "title": "Year",
+      "zindex": 0
+    },
+    {
+      "grid": false,
+      "labelOverlap": true,
+      "orient": "left",
+      "scale": "y",
+      "tickCount": {
+        "signal": "ceil(height/40)"
+      },
+      "title": "Active Projects",
+      "zindex": 0
+    }
+  ],
+  "background": "white",
+  "data": [
+    {
+      "name": "data-78fdea25158b60854d2f0fb7cbcef877",
+      "values": [
+        {
+          "active_projects_count": 11,
+          "total_net_contrib": 3036873.75,
+          "year": 2015
+        },
+        {
+          "active_projects_count": 22,
+          "total_net_contrib": 6930161.869999999,
+          "year": 2016
+        },
+        {
+          "active_projects_count": 40,
+          "total_net_contrib": 10545891.34,
+          "year": 2017
+        },
+        {
+          "active_projects_count": 60,
+          "total_net_contrib": 19135703.09,
+          "year": 2018
+        },
+        {
+          "active_projects_count": 90,
+          "total_net_contrib": 29444408.5,
+          "year": 2019
+        },
+        {
+          "active_projects_count": 107,
+          "total_net_contrib": 37024441.510000005,
+          "year": 2020
+        },
+        {
+          "active_projects_count": 115,
+          "total_net_contrib": 40607705.5,
+          "year": 2021
+        },
+        {
+          "active_projects_count": 88,
+          "total_net_contrib": 27113348.64,
+          "year": 2022
+        },
+        {
+          "active_projects_count": 59,
+          "total_net_contrib": 19623472.21,
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-78fdea25158b60854d2f0fb7cbcef877",
+      "transform": [
+        {
+          "expr": "isValid(datum[\"active_projects_count\"]) && isFinite(+datum[\"active_projects_count\"])",
+          "type": "filter"
+        }
+      ]
+    }
+  ],
+  "height": 400,
+  "marks": [
+    {
+      "encode": {
+        "update": {
+          "defined": {
+            "signal": "isValid(datum[\"active_projects_count\"]) && isFinite(+datum[\"active_projects_count\"])"
+          },
+          "description": {
+            "signal": "\"Year: \" + (isValid(datum[\"year\"]) ? datum[\"year\"] : \"\"+datum[\"year\"]) + \"; Active Projects: \" + (format(datum[\"active_projects_count\"], \"\")) + \"; Total EU Contribution (\u20ac): \" + (format(datum[\"total_net_contrib\"], \",.0f\"))"
+          },
+          "stroke": {
+            "value": "#005f73"
+          },
+          "tooltip": {
+            "signal": "{\"Year\": isValid(datum[\"year\"]) ? datum[\"year\"] : \"\"+datum[\"year\"], \"Active Projects\": format(datum[\"active_projects_count\"], \"\"), \"Total EU Contribution (\u20ac)\": format(datum[\"total_net_contrib\"], \",.0f\")}"
+          },
+          "x": {
+            "field": "year",
+            "scale": "x"
+          },
+          "y": {
+            "field": "active_projects_count",
+            "scale": "y"
+          }
+        }
+      },
+      "from": {
+        "data": "data-78fdea25158b60854d2f0fb7cbcef877"
+      },
+      "name": "layer_0_marks",
+      "sort": {
+        "field": "x"
+      },
+      "style": [
+        "line"
+      ],
+      "type": "line"
+    },
+    {
+      "encode": {
+        "update": {
+          "ariaRoleDescription": {
+            "value": "point"
+          },
+          "description": {
+            "signal": "\"Year: \" + (isValid(datum[\"year\"]) ? datum[\"year\"] : \"\"+datum[\"year\"]) + \"; Active Projects: \" + (format(datum[\"active_projects_count\"], \"\")) + \"; Total EU Contribution (\u20ac): \" + (format(datum[\"total_net_contrib\"], \",.0f\"))"
+          },
+          "fill": {
+            "value": "#4c78a8"
+          },
+          "opacity": {
+            "value": 1
+          },
+          "tooltip": {
+            "signal": "{\"Year\": isValid(datum[\"year\"]) ? datum[\"year\"] : \"\"+datum[\"year\"], \"Active Projects\": format(datum[\"active_projects_count\"], \"\"), \"Total EU Contribution (\u20ac)\": format(datum[\"total_net_contrib\"], \",.0f\")}"
+          },
+          "x": {
+            "field": "year",
+            "scale": "x"
+          },
+          "y": {
+            "field": "active_projects_count",
+            "scale": "y"
+          }
+        }
+      },
+      "from": {
+        "data": "data_0"
+      },
+      "name": "layer_1_marks",
+      "style": [
+        "point"
+      ],
+      "type": "symbol"
+    }
+  ],
+  "padding": 5,
+  "scales": [
+    {
+      "domain": {
+        "fields": [
+          {
+            "data": "data-78fdea25158b60854d2f0fb7cbcef877",
+            "field": "year"
+          },
+          {
+            "data": "data_0",
+            "field": "year"
+          }
+        ],
+        "sort": true
+      },
+      "name": "x",
+      "padding": 0.5,
+      "range": [
+        0,
+        {
+          "signal": "width"
+        }
+      ],
+      "type": "point"
+    },
+    {
+      "domain": {
+        "fields": [
+          {
+            "data": "data-78fdea25158b60854d2f0fb7cbcef877",
+            "field": "active_projects_count"
+          },
+          {
+            "data": "data_0",
+            "field": "active_projects_count"
+          }
+        ]
+      },
+      "name": "y",
+      "nice": true,
+      "range": [
+        {
+          "signal": "height"
+        },
+        0
+      ],
+      "type": "linear",
+      "zero": true
+    }
+  ],
+  "signals": [
+    {
+      "init": "isFinite(containerSize()[0]) ? containerSize()[0] : 300",
+      "name": "width",
+      "on": [
+        {
+          "events": "window:resize",
+          "update": "isFinite(containerSize()[0]) ? containerSize()[0] : 300"
+        }
+      ]
+    }
+  ],
+  "style": "cell",
+  "title": {
+    "frame": "group",
+    "text": "Italy: Number of Active Projects per Year (HORIZON Programme)"
+  }
+}

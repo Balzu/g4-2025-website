@@ -1,0 +1,204 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-47f4e130dc76da8b7fd38e462c34f6cc"
+  },
+  "datasets": {
+    "data-47f4e130dc76da8b7fd38e462c34f6cc": [
+      {
+        "Origine": "Giornali",
+        "count": 94,
+        "entities_clean": "Agenzia",
+        "mean_sentiment": -0.19148936170212766
+      },
+      {
+        "Origine": "Giornali",
+        "count": 348,
+        "entities_clean": "Apple",
+        "mean_sentiment": -0.22126436781609196
+      },
+      {
+        "Origine": "Giornali",
+        "count": 61,
+        "entities_clean": "Difesa",
+        "mean_sentiment": -0.11475409836065574
+      },
+      {
+        "Origine": "Giornali",
+        "count": 155,
+        "entities_clean": "Facebook",
+        "mean_sentiment": -0.41935483870967744
+      },
+      {
+        "Origine": "Giornali",
+        "count": 51,
+        "entities_clean": "Fbi",
+        "mean_sentiment": -0.3333333333333333
+      },
+      {
+        "Origine": "Giornali",
+        "count": 175,
+        "entities_clean": "IA",
+        "mean_sentiment": -0.16
+      },
+      {
+        "Origine": "Giornali",
+        "count": 180,
+        "entities_clean": "Microsoft",
+        "mean_sentiment": 0.09444444444444444
+      },
+      {
+        "Origine": "Giornali",
+        "count": 67,
+        "entities_clean": "Rete",
+        "mean_sentiment": -0.14925373134328357
+      },
+      {
+        "Origine": "Giornali",
+        "count": 56,
+        "entities_clean": "Senato",
+        "mean_sentiment": -0.48214285714285715
+      },
+      {
+        "Origine": "Giornali",
+        "count": 195,
+        "entities_clean": "Twitter",
+        "mean_sentiment": -0.4358974358974359
+      },
+      {
+        "Origine": "Settore",
+        "count": 623,
+        "entities_clean": "Agenzia",
+        "mean_sentiment": 0.09149277688603531
+      },
+      {
+        "Origine": "Settore",
+        "count": 778,
+        "entities_clean": "Apple",
+        "mean_sentiment": -0.002570694087403599
+      },
+      {
+        "Origine": "Settore",
+        "count": 597,
+        "entities_clean": "Commissione",
+        "mean_sentiment": 0.22278056951423786
+      },
+      {
+        "Origine": "Settore",
+        "count": 886,
+        "entities_clean": "DPO",
+        "mean_sentiment": -0.0744920993227991
+      },
+      {
+        "Origine": "Settore",
+        "count": 794,
+        "entities_clean": "IA",
+        "mean_sentiment": 0.1297229219143577
+      },
+      {
+        "Origine": "Settore",
+        "count": 1485,
+        "entities_clean": "Microsoft",
+        "mean_sentiment": 0.05185185185185185
+      },
+      {
+        "Origine": "Settore",
+        "count": 463,
+        "entities_clean": "NIS",
+        "mean_sentiment": 0.22462203023758098
+      },
+      {
+        "Origine": "Settore",
+        "count": 476,
+        "entities_clean": "PMI",
+        "mean_sentiment": 0.031512605042016806
+      },
+      {
+        "Origine": "Settore",
+        "count": 2098,
+        "entities_clean": "UE",
+        "mean_sentiment": 0.1463298379408961
+      },
+      {
+        "Origine": "Settore",
+        "count": 532,
+        "entities_clean": "Unione Europea",
+        "mean_sentiment": 0.12406015037593984
+      }
+    ]
+  },
+  "facet": {
+    "column": {
+      "field": "Origine",
+      "title": "Source",
+      "type": "nominal"
+    }
+  },
+  "spec": {
+    "encoding": {
+      "color": {
+        "field": "Origine",
+        "scale": {
+          "range": [
+            "#005f73",
+            "#ae2012"
+          ]
+        },
+        "title": "Source",
+        "type": "nominal"
+      },
+      "tooltip": [
+        {
+          "field": "entities_clean",
+          "title": "Entity",
+          "type": "nominal"
+        },
+        {
+          "field": "Origine",
+          "title": "Source",
+          "type": "nominal"
+        },
+        {
+          "field": "mean_sentiment",
+          "format": ".2f",
+          "title": "Average Sentiment",
+          "type": "quantitative"
+        },
+        {
+          "field": "count",
+          "title": "Mentions",
+          "type": "quantitative"
+        }
+      ],
+      "x": {
+        "field": "mean_sentiment",
+        "scale": {
+          "domain": [
+            -1,
+            1
+          ]
+        },
+        "title": "Average Sentiment",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "entities_clean",
+        "sort": "-x",
+        "title": "Entity",
+        "type": "nominal"
+      }
+    },
+    "height": 300,
+    "mark": {
+      "type": "bar"
+    },
+    "width": 250
+  },
+  "title": "Average Sentiment for the Top 10 Most Mentioned Entities"
+}

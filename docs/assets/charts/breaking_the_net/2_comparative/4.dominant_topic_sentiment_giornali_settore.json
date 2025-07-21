@@ -1,0 +1,122 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-35a346d06a7ddf6d351843fd14e5a244"
+  },
+  "datasets": {
+    "data-35a346d06a7ddf6d351843fd14e5a244": [
+      {
+        "Dominant_Topic": "Cyberattacchi e criminalit\u00e0 digitale",
+        "Origine": "Giornali",
+        "count": 420,
+        "mean_sentiment": -0.24047619047619048
+      },
+      {
+        "Dominant_Topic": "Esperienza utente e tracciamento online",
+        "Origine": "Settore",
+        "count": 983,
+        "mean_sentiment": -0.37945066124109866
+      },
+      {
+        "Dominant_Topic": "Minacce informatiche e criminalit\u00e0 digitale",
+        "Origine": "Settore",
+        "count": 865,
+        "mean_sentiment": -0.24855491329479767
+      },
+      {
+        "Dominant_Topic": "Protezione dei dati personali e GDPR",
+        "Origine": "Settore",
+        "count": 827,
+        "mean_sentiment": 0.009673518742442563
+      },
+      {
+        "Dominant_Topic": "Sicurezza informatica aziendale",
+        "Origine": "Settore",
+        "count": 2057,
+        "mean_sentiment": 0.13806514341273698
+      },
+      {
+        "Dominant_Topic": "Sicurezza nazionale e cybersicurezza in Italia",
+        "Origine": "Giornali",
+        "count": 325,
+        "mean_sentiment": 0.003076923076923077
+      },
+      {
+        "Dominant_Topic": "Tecnologie e vulnerabilit\u00e0 dei dispositivi",
+        "Origine": "Settore",
+        "count": 1308,
+        "mean_sentiment": -0.12232415902140673
+      },
+      {
+        "Dominant_Topic": "Utenti, dispositivi e privacy personale",
+        "Origine": "Giornali",
+        "count": 551,
+        "mean_sentiment": -0.43920145190562615
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Origine",
+      "scale": {
+        "range": [
+          "#005f73",
+          "#ae2012"
+        ]
+      },
+      "title": "Source",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Dominant_Topic",
+        "title": "Dominant Topic",
+        "type": "nominal"
+      },
+      {
+        "field": "Origine",
+        "title": "Source",
+        "type": "nominal"
+      },
+      {
+        "field": "mean_sentiment",
+        "title": "Average Sentiment",
+        "type": "quantitative"
+      },
+      {
+        "field": "count",
+        "title": "Document Count",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "mean_sentiment",
+      "scale": {
+        "domain": [
+          -1,
+          1
+        ]
+      },
+      "title": "Average Sentiment",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Dominant_Topic",
+      "sort": "-x",
+      "title": "Dominant Topic",
+      "type": "nominal"
+    }
+  },
+  "height": 400,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Average Sentiment by Dominant Topic",
+  "width": 800
+}

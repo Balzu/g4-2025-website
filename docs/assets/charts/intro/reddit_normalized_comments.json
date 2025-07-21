@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-56d4b2fe7a3feb78198386f9ec555c10"
+  },
+  "datasets": {
+    "data-56d4b2fe7a3feb78198386f9ec555c10": [
+      {
+        "YearMonth": "2022-05-01T00:00:00",
+        "count": 9,
+        "count_norm": 0.0,
+        "mean_sentiment": -0.5555555555555556
+      },
+      {
+        "YearMonth": "2024-01-01T00:00:00",
+        "count": 42,
+        "count_norm": 0.062381852551984876,
+        "mean_sentiment": -0.35714285714285715
+      },
+      {
+        "YearMonth": "2024-07-01T00:00:00",
+        "count": 57,
+        "count_norm": 0.09073724007561437,
+        "mean_sentiment": -0.7192982456140351
+      },
+      {
+        "YearMonth": "2025-03-01T00:00:00",
+        "count": 47,
+        "count_norm": 0.07183364839319471,
+        "mean_sentiment": -0.0425531914893617
+      },
+      {
+        "YearMonth": "2025-04-01T00:00:00",
+        "count": 15,
+        "count_norm": 0.011342155009451797,
+        "mean_sentiment": 0.13333333333333333
+      },
+      {
+        "YearMonth": "2025-05-01T00:00:00",
+        "count": 429,
+        "count_norm": 0.7939508506616257,
+        "mean_sentiment": -0.40326340326340326
+      },
+      {
+        "YearMonth": "2025-06-01T00:00:00",
+        "count": 538,
+        "count_norm": 1.0,
+        "mean_sentiment": -0.32899628252788105
+      }
+    ]
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "YearMonth",
+        "title": "Month",
+        "type": "temporal"
+      },
+      {
+        "field": "count",
+        "title": "Comment Count",
+        "type": "quantitative"
+      },
+      {
+        "field": "count_norm",
+        "title": "Normalized Count",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelFontWeight": "bold",
+        "titleFontWeight": "bold"
+      },
+      "field": "YearMonth",
+      "title": "Month",
+      "type": "temporal"
+    },
+    "y": {
+      "axis": {
+        "labelFontWeight": "bold",
+        "titleFontWeight": "bold"
+      },
+      "field": "count_norm",
+      "title": "Normalized Comment Count",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "mark": {
+    "color": "#ee9b00",
+    "interpolate": "monotone",
+    "point": true,
+    "type": "line"
+  },
+  "title": "Normalized Number of Reddit Comments Over Time",
+  "width": 700
+}
