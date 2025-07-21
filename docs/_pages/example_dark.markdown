@@ -70,11 +70,11 @@ canvas {
 </style>
 
 
-# Introduction
+# Introduction {#introduction}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
-# Map the Hack
+# Map the Hack {#map-the-hack}
 
 ![Infografica]({{ "/assets/images/infografica.png" | relative_url }})
 
@@ -112,7 +112,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 
-# Breaking the Net
+# Breaking the Net {#breaking-the-net}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
@@ -128,7 +128,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-# Cyber Q&A
+# Cyber Q&A {#cyber-q-and-a}
 
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/RI0W7NRl4SU?si=exRRIXoy2hr_qgFb&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -141,11 +141,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-# Conclusions
+# Conclusions {#conclusions}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
-# About Us
+# About Us  {#about-us}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
