@@ -115,7 +115,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/articles_by_source_type.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/article_clusters_dashboard.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
