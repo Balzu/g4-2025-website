@@ -117,12 +117,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
 
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/article_clusters_dashboard.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+
 <div>
   <vegachart
     schema-url="{{ "/assets/charts/article_clusters_dashboard_2.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
+</div>
+
+
+<div style="height: 100%"> 
+  <iframe src="{{ site.baseurl }}/assets/graph/dashboard_clusters.html" width="100%" height="400px" frameborder="0"></iframe> 
 </div>
 
 
@@ -137,6 +153,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div style="height: 100%"> 
   <iframe src="{{ site.baseurl }}/assets/graph/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
 </div>
+
 
 
 
