@@ -60,7 +60,11 @@ div aside {
 }
 
 .container-lg {
-    background-color: #000000; !important;
+    background-color: #000000 !important;
+}
+
+canvas {
+    max-width: 100% !important;
 }
 
 </style>
