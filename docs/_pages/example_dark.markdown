@@ -118,7 +118,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Cyber Q&A
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RI0W7NRl4SU?si=exRRIXoy2hr_qgFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<div style="height: 400px"> 
+  <iframe src="{{ site.baseurl }}/assets/graphs/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
+</div>
+
+
 
 # Conclusions
 
