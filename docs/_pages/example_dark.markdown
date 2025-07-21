@@ -128,22 +128,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/article_clusters_dashboard_2.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
-
-
-<div style="height: 100%"> 
-  <iframe src="{{ site.baseurl }}/assets/graph/dashboard_clusters.html" width="100%" height="400px" frameborder="0"></iframe> 
-</div>
-
-
-
-
 # Cyber Q&A
 
 
