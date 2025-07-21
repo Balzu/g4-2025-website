@@ -465,20 +465,18 @@ navbar:
     img: "./assets/images/Logo_masthead.png" # don't change this
     url: /
   nav:
-    - title: Guide
-      url: /guide.html
-    - title: Example page
-      url: /example.html
-    - title: in-depth
-      child:
-        - title: Local development
-          url: /local-development.html
-        - title: Markdown
-          url: /markdown.html
-        - title: Charts
-          url: /charts.html
-        - title: Folium
-          url: /folium.html
+  - title: Introduction
+    url: "#introduction"
+  - title: Map the Hack
+    url: "#map-the-hack"
+  - title: Breaking the Net
+    url: "#breaking-the-net"
+  - title: Cyber Q&A
+    url: "#cyber-q-and-a"
+  - title: Conclusions
+    url: "#conclusions"
+  - title: About us
+    url: "#about-us"
       
 ```
 
