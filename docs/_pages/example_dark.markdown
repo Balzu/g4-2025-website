@@ -123,7 +123,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <div style="height: 400px"> 
-  <iframe src="{{ site.baseurl }}/assets/graphs/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
+  <iframe src="{{ site.baseurl }}/assets/graph/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
 </div>
 
 
