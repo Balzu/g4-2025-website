@@ -1,0 +1,1422 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-2269e76abe0d451ef380684e2a7714d4"
+  },
+  "datasets": {
+    "data-2269e76abe0d451ef380684e2a7714d4": [
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-01-01T00:00:00",
+        "count": 2,
+        "mean_sentiment": -1.0
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-02-01T00:00:00",
+        "count": 1,
+        "mean_sentiment": -1.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-02-01T00:00:00",
+        "count": 3,
+        "mean_sentiment": 0.3333333333333333
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-03-01T00:00:00",
+        "count": 2,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-03-01T00:00:00",
+        "count": 21,
+        "mean_sentiment": -0.14285714285714285
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-04-01T00:00:00",
+        "count": 20,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-05-01T00:00:00",
+        "count": 3,
+        "mean_sentiment": -0.3333333333333333
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-05-01T00:00:00",
+        "count": 22,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-06-01T00:00:00",
+        "count": 14,
+        "mean_sentiment": -0.35714285714285715
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-06-01T00:00:00",
+        "count": 26,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-07-01T00:00:00",
+        "count": 9,
+        "mean_sentiment": -0.4444444444444444
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-07-01T00:00:00",
+        "count": 34,
+        "mean_sentiment": 0.058823529411764705
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-08-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.4
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-08-01T00:00:00",
+        "count": 14,
+        "mean_sentiment": -0.21428571428571427
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-09-01T00:00:00",
+        "count": 11,
+        "mean_sentiment": -0.2727272727272727
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-09-01T00:00:00",
+        "count": 37,
+        "mean_sentiment": 0.05405405405405406
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-10-01T00:00:00",
+        "count": 22,
+        "mean_sentiment": -0.45454545454545453
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-10-01T00:00:00",
+        "count": 29,
+        "mean_sentiment": -0.27586206896551724
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-11-01T00:00:00",
+        "count": 13,
+        "mean_sentiment": -0.07692307692307693
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-11-01T00:00:00",
+        "count": 31,
+        "mean_sentiment": -0.0967741935483871
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2017,
+        "YearMonth": "2017-12-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.6
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2017,
+        "YearMonth": "2017-12-01T00:00:00",
+        "count": 23,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-01-01T00:00:00",
+        "count": 11,
+        "mean_sentiment": -0.18181818181818182
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-01-01T00:00:00",
+        "count": 22,
+        "mean_sentiment": 0.09090909090909091
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-02-01T00:00:00",
+        "count": 13,
+        "mean_sentiment": 0.07692307692307693
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-02-01T00:00:00",
+        "count": 34,
+        "mean_sentiment": -0.17647058823529413
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-03-01T00:00:00",
+        "count": 6,
+        "mean_sentiment": -0.3333333333333333
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-03-01T00:00:00",
+        "count": 27,
+        "mean_sentiment": -0.037037037037037035
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-04-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.6
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-04-01T00:00:00",
+        "count": 32,
+        "mean_sentiment": -0.1875
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-05-01T00:00:00",
+        "count": 9,
+        "mean_sentiment": -0.1111111111111111
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-05-01T00:00:00",
+        "count": 59,
+        "mean_sentiment": -0.03389830508474576
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-06-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": -0.125
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-06-01T00:00:00",
+        "count": 51,
+        "mean_sentiment": -0.2549019607843137
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-07-01T00:00:00",
+        "count": 6,
+        "mean_sentiment": -0.5
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-07-01T00:00:00",
+        "count": 37,
+        "mean_sentiment": 0.05405405405405406
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-08-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": -0.625
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-08-01T00:00:00",
+        "count": 2,
+        "mean_sentiment": -0.5
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-09-01T00:00:00",
+        "count": 17,
+        "mean_sentiment": -0.5882352941176471
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-09-01T00:00:00",
+        "count": 48,
+        "mean_sentiment": -0.10416666666666667
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-10-01T00:00:00",
+        "count": 21,
+        "mean_sentiment": -0.42857142857142855
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-10-01T00:00:00",
+        "count": 38,
+        "mean_sentiment": -0.18421052631578946
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-11-01T00:00:00",
+        "count": 12,
+        "mean_sentiment": -0.5
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-11-01T00:00:00",
+        "count": 32,
+        "mean_sentiment": -0.34375
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2018,
+        "YearMonth": "2018-12-01T00:00:00",
+        "count": 9,
+        "mean_sentiment": -0.4444444444444444
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2018,
+        "YearMonth": "2018-12-01T00:00:00",
+        "count": 22,
+        "mean_sentiment": 0.18181818181818182
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-01-01T00:00:00",
+        "count": 13,
+        "mean_sentiment": -0.38461538461538464
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-01-01T00:00:00",
+        "count": 41,
+        "mean_sentiment": -0.17073170731707318
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-02-01T00:00:00",
+        "count": 5,
+        "mean_sentiment": 0.2
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-02-01T00:00:00",
+        "count": 54,
+        "mean_sentiment": -0.1111111111111111
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-03-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": -0.875
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-03-01T00:00:00",
+        "count": 57,
+        "mean_sentiment": -0.03508771929824561
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-04-01T00:00:00",
+        "count": 11,
+        "mean_sentiment": -0.7272727272727273
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-04-01T00:00:00",
+        "count": 49,
+        "mean_sentiment": 0.02040816326530612
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-05-01T00:00:00",
+        "count": 14,
+        "mean_sentiment": -0.7142857142857143
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-05-01T00:00:00",
+        "count": 51,
+        "mean_sentiment": -0.1568627450980392
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-06-01T00:00:00",
+        "count": 7,
+        "mean_sentiment": -0.42857142857142855
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-06-01T00:00:00",
+        "count": 43,
+        "mean_sentiment": -0.06976744186046512
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-07-01T00:00:00",
+        "count": 23,
+        "mean_sentiment": -0.34782608695652173
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-07-01T00:00:00",
+        "count": 60,
+        "mean_sentiment": -0.08333333333333333
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-08-01T00:00:00",
+        "count": 19,
+        "mean_sentiment": -0.3157894736842105
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-08-01T00:00:00",
+        "count": 19,
+        "mean_sentiment": 0.21052631578947367
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-09-01T00:00:00",
+        "count": 18,
+        "mean_sentiment": -0.1111111111111111
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-09-01T00:00:00",
+        "count": 43,
+        "mean_sentiment": -0.13953488372093023
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-10-01T00:00:00",
+        "count": 16,
+        "mean_sentiment": -0.3125
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-10-01T00:00:00",
+        "count": 52,
+        "mean_sentiment": -0.2692307692307692
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-11-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.3
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-11-01T00:00:00",
+        "count": 40,
+        "mean_sentiment": -0.05
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2019,
+        "YearMonth": "2019-12-01T00:00:00",
+        "count": 12,
+        "mean_sentiment": 0.16666666666666666
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2019,
+        "YearMonth": "2019-12-01T00:00:00",
+        "count": 39,
+        "mean_sentiment": -0.05128205128205128
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-01-01T00:00:00",
+        "count": 18,
+        "mean_sentiment": -0.5
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-01-01T00:00:00",
+        "count": 46,
+        "mean_sentiment": 0.08695652173913043
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-02-01T00:00:00",
+        "count": 19,
+        "mean_sentiment": -0.5263157894736842
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-02-01T00:00:00",
+        "count": 47,
+        "mean_sentiment": 0.0425531914893617
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-03-01T00:00:00",
+        "count": 15,
+        "mean_sentiment": -0.26666666666666666
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-03-01T00:00:00",
+        "count": 48,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-04-01T00:00:00",
+        "count": 30,
+        "mean_sentiment": -0.43333333333333335
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-04-01T00:00:00",
+        "count": 52,
+        "mean_sentiment": -0.25
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-05-01T00:00:00",
+        "count": 21,
+        "mean_sentiment": -0.38095238095238093
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-05-01T00:00:00",
+        "count": 52,
+        "mean_sentiment": -0.09615384615384616
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-06-01T00:00:00",
+        "count": 18,
+        "mean_sentiment": -0.5
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-06-01T00:00:00",
+        "count": 47,
+        "mean_sentiment": -0.0425531914893617
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-07-01T00:00:00",
+        "count": 11,
+        "mean_sentiment": -0.6363636363636364
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-07-01T00:00:00",
+        "count": 51,
+        "mean_sentiment": -0.0392156862745098
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-08-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.4
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-08-01T00:00:00",
+        "count": 14,
+        "mean_sentiment": 0.35714285714285715
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-09-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": -0.375
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-09-01T00:00:00",
+        "count": 61,
+        "mean_sentiment": -0.09836065573770492
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-10-01T00:00:00",
+        "count": 4,
+        "mean_sentiment": 0.5
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-10-01T00:00:00",
+        "count": 57,
+        "mean_sentiment": -0.08771929824561403
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-11-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.5
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-11-01T00:00:00",
+        "count": 50,
+        "mean_sentiment": -0.02
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2020,
+        "YearMonth": "2020-12-01T00:00:00",
+        "count": 5,
+        "mean_sentiment": -0.6
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2020,
+        "YearMonth": "2020-12-01T00:00:00",
+        "count": 52,
+        "mean_sentiment": -0.019230769230769232
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-01-01T00:00:00",
+        "count": 6,
+        "mean_sentiment": -0.3333333333333333
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-01-01T00:00:00",
+        "count": 56,
+        "mean_sentiment": -0.05357142857142857
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-02-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": -0.25
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-02-01T00:00:00",
+        "count": 55,
+        "mean_sentiment": -0.09090909090909091
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-03-01T00:00:00",
+        "count": 13,
+        "mean_sentiment": -0.5384615384615384
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-03-01T00:00:00",
+        "count": 66,
+        "mean_sentiment": -0.15151515151515152
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-04-01T00:00:00",
+        "count": 11,
+        "mean_sentiment": -0.45454545454545453
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-04-01T00:00:00",
+        "count": 78,
+        "mean_sentiment": -0.1282051282051282
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-05-01T00:00:00",
+        "count": 27,
+        "mean_sentiment": -0.48148148148148145
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-05-01T00:00:00",
+        "count": 77,
+        "mean_sentiment": -0.1038961038961039
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-06-01T00:00:00",
+        "count": 17,
+        "mean_sentiment": -0.29411764705882354
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-06-01T00:00:00",
+        "count": 65,
+        "mean_sentiment": 0.06153846153846154
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-07-01T00:00:00",
+        "count": 14,
+        "mean_sentiment": 0.07142857142857142
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-07-01T00:00:00",
+        "count": 82,
+        "mean_sentiment": -0.21951219512195122
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-08-01T00:00:00",
+        "count": 24,
+        "mean_sentiment": -0.25
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-08-01T00:00:00",
+        "count": 54,
+        "mean_sentiment": -0.1111111111111111
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-09-01T00:00:00",
+        "count": 9,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-09-01T00:00:00",
+        "count": 71,
+        "mean_sentiment": -0.15492957746478872
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-10-01T00:00:00",
+        "count": 12,
+        "mean_sentiment": -0.4166666666666667
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-10-01T00:00:00",
+        "count": 87,
+        "mean_sentiment": -0.06896551724137931
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-11-01T00:00:00",
+        "count": 7,
+        "mean_sentiment": -0.2857142857142857
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-11-01T00:00:00",
+        "count": 101,
+        "mean_sentiment": -0.18811881188118812
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2021,
+        "YearMonth": "2021-12-01T00:00:00",
+        "count": 9,
+        "mean_sentiment": -0.2222222222222222
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2021,
+        "YearMonth": "2021-12-01T00:00:00",
+        "count": 83,
+        "mean_sentiment": -0.1566265060240964
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-01-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.4
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-01-01T00:00:00",
+        "count": 92,
+        "mean_sentiment": -0.06521739130434782
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-02-01T00:00:00",
+        "count": 17,
+        "mean_sentiment": 0.058823529411764705
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-02-01T00:00:00",
+        "count": 87,
+        "mean_sentiment": -0.21839080459770116
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-03-01T00:00:00",
+        "count": 35,
+        "mean_sentiment": -0.2571428571428571
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-03-01T00:00:00",
+        "count": 153,
+        "mean_sentiment": -0.13071895424836602
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-04-01T00:00:00",
+        "count": 20,
+        "mean_sentiment": -0.35
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-04-01T00:00:00",
+        "count": 83,
+        "mean_sentiment": -0.14457831325301204
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-05-01T00:00:00",
+        "count": 35,
+        "mean_sentiment": -0.08571428571428572
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-05-01T00:00:00",
+        "count": 103,
+        "mean_sentiment": 0.009708737864077669
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-06-01T00:00:00",
+        "count": 17,
+        "mean_sentiment": 0.11764705882352941
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-06-01T00:00:00",
+        "count": 84,
+        "mean_sentiment": -0.10714285714285714
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-07-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.1
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-07-01T00:00:00",
+        "count": 74,
+        "mean_sentiment": -0.0945945945945946
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-08-01T00:00:00",
+        "count": 5,
+        "mean_sentiment": 0.2
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-08-01T00:00:00",
+        "count": 56,
+        "mean_sentiment": 0.07142857142857142
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-09-01T00:00:00",
+        "count": 5,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-09-01T00:00:00",
+        "count": 87,
+        "mean_sentiment": -0.10344827586206896
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-10-01T00:00:00",
+        "count": 13,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-10-01T00:00:00",
+        "count": 86,
+        "mean_sentiment": -0.023255813953488372
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-11-01T00:00:00",
+        "count": 13,
+        "mean_sentiment": -0.07692307692307693
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-11-01T00:00:00",
+        "count": 92,
+        "mean_sentiment": -0.08695652173913043
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2022,
+        "YearMonth": "2022-12-01T00:00:00",
+        "count": 14,
+        "mean_sentiment": 0.07142857142857142
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2022,
+        "YearMonth": "2022-12-01T00:00:00",
+        "count": 64,
+        "mean_sentiment": -0.046875
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-01-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": -0.25
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-01-01T00:00:00",
+        "count": 91,
+        "mean_sentiment": -0.17582417582417584
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-02-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": -0.5
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-02-01T00:00:00",
+        "count": 71,
+        "mean_sentiment": -0.09859154929577464
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-03-01T00:00:00",
+        "count": 17,
+        "mean_sentiment": -0.058823529411764705
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-03-01T00:00:00",
+        "count": 106,
+        "mean_sentiment": -0.19811320754716982
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-04-01T00:00:00",
+        "count": 6,
+        "mean_sentiment": -0.6666666666666666
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-04-01T00:00:00",
+        "count": 80,
+        "mean_sentiment": -0.125
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-05-01T00:00:00",
+        "count": 10,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-05-01T00:00:00",
+        "count": 85,
+        "mean_sentiment": -0.21176470588235294
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-06-01T00:00:00",
+        "count": 14,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-06-01T00:00:00",
+        "count": 74,
+        "mean_sentiment": -0.02702702702702703
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-07-01T00:00:00",
+        "count": 9,
+        "mean_sentiment": 0.3333333333333333
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-07-01T00:00:00",
+        "count": 88,
+        "mean_sentiment": 0.022727272727272728
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-08-01T00:00:00",
+        "count": 11,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-08-01T00:00:00",
+        "count": 44,
+        "mean_sentiment": -0.045454545454545456
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-09-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": 0.125
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-09-01T00:00:00",
+        "count": 78,
+        "mean_sentiment": 0.0641025641025641
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-10-01T00:00:00",
+        "count": 11,
+        "mean_sentiment": -0.45454545454545453
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-10-01T00:00:00",
+        "count": 93,
+        "mean_sentiment": -0.03225806451612903
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-11-01T00:00:00",
+        "count": 13,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-11-01T00:00:00",
+        "count": 69,
+        "mean_sentiment": 0.07246376811594203
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2023,
+        "YearMonth": "2023-12-01T00:00:00",
+        "count": 12,
+        "mean_sentiment": -0.3333333333333333
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2023,
+        "YearMonth": "2023-12-01T00:00:00",
+        "count": 67,
+        "mean_sentiment": 0.04477611940298507
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-01-01T00:00:00",
+        "count": 6,
+        "mean_sentiment": 0.16666666666666666
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-01-01T00:00:00",
+        "count": 73,
+        "mean_sentiment": 0.0410958904109589
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-02-01T00:00:00",
+        "count": 11,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-02-01T00:00:00",
+        "count": 73,
+        "mean_sentiment": -0.0273972602739726
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-03-01T00:00:00",
+        "count": 16,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-03-01T00:00:00",
+        "count": 91,
+        "mean_sentiment": -0.02197802197802198
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-04-01T00:00:00",
+        "count": 7,
+        "mean_sentiment": -0.7142857142857143
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-04-01T00:00:00",
+        "count": 75,
+        "mean_sentiment": -0.08
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-05-01T00:00:00",
+        "count": 14,
+        "mean_sentiment": -0.42857142857142855
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-05-01T00:00:00",
+        "count": 84,
+        "mean_sentiment": -0.07142857142857142
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-06-01T00:00:00",
+        "count": 7,
+        "mean_sentiment": 0.42857142857142855
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-06-01T00:00:00",
+        "count": 75,
+        "mean_sentiment": -0.02666666666666667
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-07-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": 0.25
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-07-01T00:00:00",
+        "count": 89,
+        "mean_sentiment": -0.033707865168539325
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-08-01T00:00:00",
+        "count": 8,
+        "mean_sentiment": -0.625
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-08-01T00:00:00",
+        "count": 23,
+        "mean_sentiment": -0.2608695652173913
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-09-01T00:00:00",
+        "count": 5,
+        "mean_sentiment": 0.0
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-09-01T00:00:00",
+        "count": 73,
+        "mean_sentiment": 0.0136986301369863
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-10-01T00:00:00",
+        "count": 25,
+        "mean_sentiment": -0.24
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-10-01T00:00:00",
+        "count": 106,
+        "mean_sentiment": 0.018867924528301886
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-11-01T00:00:00",
+        "count": 17,
+        "mean_sentiment": -0.11764705882352941
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-11-01T00:00:00",
+        "count": 79,
+        "mean_sentiment": 0.0379746835443038
+      },
+      {
+        "Origine": "Giornali",
+        "Year": 2024,
+        "YearMonth": "2024-12-01T00:00:00",
+        "count": 17,
+        "mean_sentiment": 0.11764705882352941
+      },
+      {
+        "Origine": "Settore",
+        "Year": 2024,
+        "YearMonth": "2024-12-01T00:00:00",
+        "count": 79,
+        "mean_sentiment": 0.012658227848101266
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Origine",
+      "scale": {
+        "range": [
+          "#005f73",
+          "#ae2012"
+        ]
+      },
+      "title": "Source",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "YearMonth",
+        "title": "Date",
+        "type": "temporal"
+      },
+      {
+        "field": "Origine",
+        "title": "Source",
+        "type": "nominal"
+      },
+      {
+        "field": "mean_sentiment",
+        "title": "Average Sentiment",
+        "type": "quantitative"
+      },
+      {
+        "field": "count",
+        "title": "Article Count",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "YearMonth",
+      "title": "Date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "mean_sentiment",
+      "scale": {
+        "domain": [
+          -1,
+          1
+        ]
+      },
+      "title": "Average Sentiment",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "mark": {
+    "point": true,
+    "type": "line"
+  },
+  "params": [
+    {
+      "bind": {
+        "input": "range",
+        "max": 2024,
+        "min": 2017,
+        "name": "Select Year:",
+        "step": 1
+      },
+      "name": "year_param",
+      "value": 2017
+    }
+  ],
+  "title": "Sentiment Over Time",
+  "transform": [
+    {
+      "filter": "datum.Year == year_param"
+    }
+  ],
+  "width": 800
+}

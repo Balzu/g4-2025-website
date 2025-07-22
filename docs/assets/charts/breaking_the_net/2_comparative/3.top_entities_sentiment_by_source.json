@@ -200,5 +200,8 @@
     },
     "width": 250
   },
-  "title": "Average Sentiment for the Top 10 Most Mentioned Entities"
+  "title": {
+    "anchor": "middle",
+    "text": "Average Sentiment for the Top 10 Most Mentioned Entities"
+  }
 }

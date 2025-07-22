@@ -108,10 +108,10 @@
         "range": [
           "#ae2012",
           "#ae2012",
-          "#0a9396",
           "#ae2012",
-          "#e9d8a6",
           "#0a9396",
+          "#e9d8a6",
+          "#ae2012",
           "#0a9396"
         ]
       },
@@ -167,7 +167,7 @@
           "Reddit_Post"
         ]
       },
-      "name": "param_3",
+      "name": "param_2",
       "select": {
         "fields": [
           "Origine"
@@ -181,7 +181,7 @@
   "transform": [
     {
       "filter": {
-        "param": "param_3"
+        "param": "param_2"
       }
     }
   ],

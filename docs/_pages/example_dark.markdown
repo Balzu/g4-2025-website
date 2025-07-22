@@ -74,7 +74,16 @@ canvas {
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
-# Map the Hack {#map-the-hack}
+<div id="heatmap1" class="heatmap visible">
+  <vegachart
+    schema-url="{{ "/assets/charts/heatmap1.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+# Map the Attack {#map-the-attack}
 
 ![Infografica]({{ "/assets/images/infografica.png" | relative_url }})
 
@@ -116,16 +125,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
-
-
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/article_clusters_dashboard.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/breaking_the_net/articles_by_source_type.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
 </div>
 
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/normalized_coverage_per_attack.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/sentiment_by_industry.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
 
 
 # Cyber Q&A {#cyber-q-and-a}

@@ -1,0 +1,317 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-4682475b993fd59f834a1c59fd3fce3e"
+  },
+  "datasets": {
+    "data-4682475b993fd59f834a1c59fd3fce3e": [
+      {
+        "Origine": "Settore",
+        "frequenza": 56717,
+        "opacity": 1.0,
+        "token": "dato"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 37876,
+        "opacity": 0.5777170136943317,
+        "token": "sicurezza"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 28760,
+        "opacity": 0.3734002734383755,
+        "token": "potere"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 26846,
+        "opacity": 0.3305018266580003,
+        "token": "sistema"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 26592,
+        "opacity": 0.324808929331869,
+        "token": "attacco"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 20833,
+        "opacity": 0.19573256830356142,
+        "token": "informatico"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 18106,
+        "opacity": 0.1346123674832463,
+        "token": "cyber"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 17964,
+        "opacity": 0.13142972409619652,
+        "token": "servizio"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 17946,
+        "opacity": 0.13102629042741556,
+        "token": "dovere"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 17935,
+        "opacity": 0.1307797476298272,
+        "token": "personale"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 17868,
+        "opacity": 0.12927807786269807,
+        "token": "trattamento"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 17110,
+        "opacity": 0.11228903781069996,
+        "token": "rischio"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 16381,
+        "opacity": 0.09594997422507116,
+        "token": "informazione"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 16281,
+        "opacity": 0.09370867606517695,
+        "token": "azienda"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 15572,
+        "opacity": 0.07781787211152699,
+        "token": "venire"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 15340,
+        "opacity": 0.07261806038057243,
+        "token": "utente"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 14952,
+        "opacity": 0.06392182352018289,
+        "token": "utilizzare"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 12543,
+        "opacity": 0.009928950848331354,
+        "token": "protezione"
+      },
+      {
+        "Origine": "Settore",
+        "frequenza": 12100,
+        "opacity": 0.0,
+        "token": "security"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 2871,
+        "opacity": 1.0,
+        "token": "dato"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 2547,
+        "opacity": 0.8336755646817249,
+        "token": "attacco"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 2522,
+        "opacity": 0.8208418891170431,
+        "token": "sicurezza"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 2202,
+        "opacity": 0.6565708418891171,
+        "token": "informatico"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1944,
+        "opacity": 0.5241273100616016,
+        "token": "potere"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1835,
+        "opacity": 0.4681724845995893,
+        "token": "sistema"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1517,
+        "opacity": 0.3049281314168378,
+        "token": "utente"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1499,
+        "opacity": 0.29568788501026694,
+        "token": "azienda"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1215,
+        "opacity": 0.14989733059548255,
+        "token": "informazione"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1179,
+        "opacity": 0.13141683778234087,
+        "token": "venire"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1176,
+        "opacity": 0.12987679671457905,
+        "token": "servizio"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1169,
+        "opacity": 0.12628336755646818,
+        "token": "sito"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 1016,
+        "opacity": 0.047741273100616016,
+        "token": "usare"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 995,
+        "opacity": 0.03696098562628337,
+        "token": "dovere"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 985,
+        "opacity": 0.03182751540041068,
+        "token": "digitale"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 984,
+        "opacity": 0.03131416837782341,
+        "token": "italiano"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 956,
+        "opacity": 0.016940451745379878,
+        "token": "utilizzare"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 944,
+        "opacity": 0.010780287474332649,
+        "token": "Italia"
+      },
+      {
+        "Origine": "Giornali",
+        "frequenza": 923,
+        "opacity": 0.0,
+        "token": "rete"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "token",
+      "legend": null,
+      "scale": {
+        "range": [
+          "#0a9396"
+        ]
+      },
+      "type": "nominal"
+    },
+    "opacity": {
+      "field": "opacity",
+      "legend": null,
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "token",
+        "title": "Token",
+        "type": "nominal"
+      },
+      {
+        "field": "frequenza",
+        "title": "Frequency",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "frequenza",
+      "title": "Frequency",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "token",
+      "sort": "-x",
+      "title": "Token",
+      "type": "nominal"
+    }
+  },
+  "height": 500,
+  "mark": {
+    "type": "bar"
+  },
+  "params": [
+    {
+      "bind": {
+        "input": "select",
+        "name": "Source: ",
+        "options": [
+          "Giornali",
+          "Settore"
+        ]
+      },
+      "name": "param_1",
+      "select": {
+        "fields": [
+          "Origine"
+        ],
+        "type": "point"
+      },
+      "value": "Giornali"
+    }
+  ],
+  "title": " Most Frequent Tokens by Source",
+  "transform": [
+    {
+      "filter": {
+        "param": "param_1"
+      }
+    }
+  ],
+  "width": 600
+}
