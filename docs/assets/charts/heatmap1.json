@@ -1,1 +1,160 @@
-{"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"url": "https://raw.githubusercontent.com/openpolis/geojson-italy/master/topojson/limits_IT_all.topo.json", "format": {"feature": "regions", "type": "topojson"}}, "mark": {"type": "geoshape"}, "encoding": {"color": {"field": "attacks", "legend": {"title": "Number of attacks"}, "scale": {"scheme": "oranges"}, "type": "quantitative"}, "tooltip": [{"field": "properties.reg_name", "title": "Regione", "type": "nominal"}, {"field": "attacks", "title": "Attacchi", "type": "quantitative"}]}, "height": 700, "title": "Cyber attacks by region", "transform": [{"lookup": "properties.reg_name", "from": {"data": {"name": "data-9c4d82c128892ecc1b08a04ba128ef68"}, "key": "region", "fields": ["attacks"]}}], "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-9c4d82c128892ecc1b08a04ba128ef68": [{"region": "Lombardia", "attacks": 226}, {"region": "Lazio", "attacks": 158}, {"region": "Emilia-Romagna", "attacks": 94}, {"region": "Veneto", "attacks": 75}, {"region": "Piemonte", "attacks": 71}, {"region": "Toscana", "attacks": 48}, {"region": "Campania", "attacks": 42}, {"region": "Liguria", "attacks": 19}, {"region": "Trentino-Alto Adige/S\u00fcdtirol", "attacks": 19}, {"region": "Sicilia", "attacks": 15}, {"region": "Umbria", "attacks": 13}, {"region": "Puglia", "attacks": 13}, {"region": "Friuli-Venezia Giulia", "attacks": 13}, {"region": "Marche", "attacks": 10}, {"region": "Sardegna", "attacks": 7}, {"region": "Basilicata", "attacks": 5}, {"region": "Abruzzo", "attacks": 4}, {"region": "Molise", "attacks": 2}, {"region": "Calabria", "attacks": 2}, {"region": "Valle d'Aosta/Vall\u00e9e d'Aoste", "attacks": 1}]}}
+{
+  "config": {
+    "background": "black",
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "color": "white"
+    },
+    "axis": {
+      "labelColor": "white",
+      "titleColor": "white"
+    },
+    "legend": {
+      "labelColor": "white",
+      "titleColor": "white"
+    },
+    "header": {
+      "labelColor": "white",
+      "titleColor": "white"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/openpolis/geojson-italy/master/topojson/limits_IT_all.topo.json",
+    "format": {
+      "feature": "regions",
+      "type": "topojson"
+    }
+  },
+  "mark": {
+    "type": "geoshape"
+  },
+  "encoding": {
+    "color": {
+      "field": "attacks",
+      "legend": {
+        "title": "Number of attacks"
+      },
+      "scale": {
+        "scheme": "oranges"
+      },
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "properties.reg_name",
+        "title": "Regione",
+        "type": "nominal"
+      },
+      {
+        "field": "attacks",
+        "title": "Attacchi",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "height": 700,
+  "title": "Cyber attacks by region",
+  "transform": [
+    {
+      "lookup": "properties.reg_name",
+      "from": {
+        "data": {
+          "name": "data-9c4d82c128892ecc1b08a04ba128ef68"
+        },
+        "key": "region",
+        "fields": [
+          "attacks"
+        ]
+      }
+    }
+  ],
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-9c4d82c128892ecc1b08a04ba128ef68": [
+      {
+        "region": "Lombardia",
+        "attacks": 226
+      },
+      {
+        "region": "Lazio",
+        "attacks": 158
+      },
+      {
+        "region": "Emilia-Romagna",
+        "attacks": 94
+      },
+      {
+        "region": "Veneto",
+        "attacks": 75
+      },
+      {
+        "region": "Piemonte",
+        "attacks": 71
+      },
+      {
+        "region": "Toscana",
+        "attacks": 48
+      },
+      {
+        "region": "Campania",
+        "attacks": 42
+      },
+      {
+        "region": "Liguria",
+        "attacks": 19
+      },
+      {
+        "region": "Trentino-Alto Adige/Südtirol",
+        "attacks": 19
+      },
+      {
+        "region": "Sicilia",
+        "attacks": 15
+      },
+      {
+        "region": "Umbria",
+        "attacks": 13
+      },
+      {
+        "region": "Puglia",
+        "attacks": 13
+      },
+      {
+        "region": "Friuli-Venezia Giulia",
+        "attacks": 13
+      },
+      {
+        "region": "Marche",
+        "attacks": 10
+      },
+      {
+        "region": "Sardegna",
+        "attacks": 7
+      },
+      {
+        "region": "Basilicata",
+        "attacks": 5
+      },
+      {
+        "region": "Abruzzo",
+        "attacks": 4
+      },
+      {
+        "region": "Molise",
+        "attacks": 2
+      },
+      {
+        "region": "Calabria",
+        "attacks": 2
+      },
+      {
+        "region": "Valle d'Aosta/Vallée d'Aoste",
+        "attacks": 1
+      }
+    ]
+  }
+}
