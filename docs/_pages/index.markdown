@@ -228,6 +228,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </vegachart>
 </div>
 
+
+1.media_coverage_cyberattacks.json
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/1.media_coverage_cyberattacks.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
 <div>
   <vegachart
     schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_coverage_per_attack.json" | relative_url }}"
