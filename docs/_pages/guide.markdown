@@ -477,6 +477,8 @@ navbar:
     url: "{{ site.baseurl }}#conclusions"
   - title: About us
     url: "{{ site.baseurl }}#about-us"
+  - title: SBD
+    url: https://masterbigdata.it
       
 ```
 

@@ -5,7 +5,7 @@ show_sidetoc: true
 header_type: hero
 header_img: assets/images/cyber_attacks_world_hd.gif
 header_title: "The Italian Job… of Cybercrime"
-subtitle: "Italy Under Attack: Data, Emotions, and Investments in the Cyber War"
+subtitle: "Data, Emotions, and Investments in the Cyber War"
 vega: true  
 ---
 
@@ -143,10 +143,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </vegachart>
 </div>
 
-duration_gangs_italy_OK_PROVA1_BLACK.json
+
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_OK_PROVA1_BLACK.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/attori_europa_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -155,7 +155,7 @@ duration_gangs_italy_OK_PROVA1_BLACK.json
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/financing/ita_eu_average_fino_23_arancio.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -164,7 +164,7 @@ duration_gangs_italy_OK_PROVA1_BLACK.json
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/financing/italy_active_projects_per_year.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/cloropleth_blu_verde_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -173,7 +173,7 @@ duration_gangs_italy_OK_PROVA1_BLACK.json
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/2025_cloroplet_blues.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok_prova1_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -182,16 +182,7 @@ duration_gangs_italy_OK_PROVA1_BLACK.json
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/actor_industry_finale.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
-</div>
-
-actor_presence_ita_eu_arancio.json:
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/actor_presence_ita_eu_arancio.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -200,7 +191,7 @@ actor_presence_ita_eu_arancio.json:
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok_prova1.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/rank_italy_attack_count_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -209,7 +200,7 @@ actor_presence_ita_eu_arancio.json:
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/ita_eu_average_fino_23_arancio.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/settori_colpiti_italy_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -218,39 +209,7 @@ actor_presence_ita_eu_arancio.json:
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/ita_eu_world_fino_al_2025_arancio.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
-</div>
-
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/ita_eu_world_fino_al_2025_arancio.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
-</div>
-
-
-<div> 
-  <iframe src="{{ site.baseurl }}/assets/charts/map_the_attack/mappa_italia_aziende_hq_description.html" width="100%" height="400px" frameborder="0"></iframe> 
-</div>
-
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/settori_aziende_colpite_italia1.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
-</div>
-
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/trend_2023_no_undetermined.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/trend_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>

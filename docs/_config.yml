@@ -46,22 +46,24 @@ url: "https://balzu.github.io"
 navbar:
   style :  dual #don't change this, it is used to set the navbar style.
   brand: # this is the brand of the navbar, it will be displayed on the left side.
-    title :  "SoBigData Master's projects Template"
+    title :  "The Italian Job… of Cybercrime"
     img: "./assets/images/Logo_masthead.png" # don't change this
     url: /
   nav:
   - title: Introduction
-    url: "#introduction"
+    url: "{{ site.baseurl }}#introduction"
   - title: MAP THE ATTACK
-    url: "#map-the-attack"
+    url: "{{ site.baseurl }}#map-the-attack"
   - title: Breaking the Net
-    url: "#breaking-the-net"
+    url: "{{ site.baseurl }}#breaking-the-net"
   - title: Cyber Q&A
-    url: "#cyber-q-and-a"
+    url: "{{ site.baseurl }}#cyber-q-and-a"
   - title: Conclusions
-    url: "#conclusions"
+    url: "{{ site.baseurl }}#conclusions"
   - title: About us
-    url: "#about-us"
+    url: "{{ site.baseurl }}#about-us"
+  - title: SBD
+    url: https://masterbigdata.it
 
 ###########################
 #    General appearance   #
