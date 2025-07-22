@@ -5,26 +5,7 @@
     "type": "fit-x"
   },
   "config": {
-    "background": "black",
-    "view": {
-      "continuousWidth": 300,
-      "continuousHeight": 300
-    },
-    "title": {
-      "color": "white"
-    },
-    "axis": {
-      "labelColor": "white",
-      "titleColor": "white"
-    },
-    "legend": {
-      "labelColor": "white",
-      "titleColor": "white"
-    },
-    "header": {
-      "labelColor": "white",
-      "titleColor": "white"
-    }
+    "background": "black"
   },
   "axes": [
     {
@@ -65,7 +46,7 @@
       "zindex": 0
     }
   ],
-  "background": "white",
+  "background": "black",
   "data": [
     {
       "name": "data-78fdea25158b60854d2f0fb7cbcef877",
