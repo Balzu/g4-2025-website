@@ -179,7 +179,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </vegachart>
 </div>
 
-
+actor_presence_ita_eu_arancio.json:
 <div>
   <vegachart
     schema-url="{{ "/assets/charts/map_the_attack/actor_presence_ita_eu_arancio.json" | relative_url }}"
@@ -191,7 +191,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok_prova1.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -276,9 +276,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </vegachart>
 </div>
 
-
-<div> 
-  <iframe src="{{ site.baseurl }}/assets/charts/breaking_the_net/2_comparative/1.average_sentiment_by_category.html" width="100%" height="400px" frameborder="0"></iframe> 
+1.average_sentiment_giornali_settore.json:
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/1.average_sentiment_giornali_settore.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
 </div>
 
 <div>
