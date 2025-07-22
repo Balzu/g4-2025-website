@@ -4,6 +4,28 @@
     "contains": "padding",
     "type": "fit-x"
   },
+  "config": {
+    "background": "black",
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    },
+    "title": {
+      "color": "white"
+    },
+    "axis": {
+      "labelColor": "white",
+      "titleColor": "white"
+    },
+    "legend": {
+      "labelColor": "white",
+      "titleColor": "white"
+    },
+    "header": {
+      "labelColor": "white",
+      "titleColor": "white"
+    }
+  },
   "axes": [
     {
       "aria": false,
