@@ -127,7 +127,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/articles_by_source_type.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/articles_by_source_type.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
@@ -135,7 +135,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/normalized_coverage_per_attack.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_coverage_per_attack.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
@@ -143,7 +143,43 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/sentiment_by_industry.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div style="height: 100%"> 
+  <iframe src="{{ site.baseurl }}/assets/charts/breaking_the_net/2_comparative/1.average_sentiment_by_category.html" width="100%" height="400px" frameborder="0"></iframe> 
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/2.sentiment_giornali_settore_2017_2024.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/3.top_entities_sentiment_by_source.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.most_frequent_tokens_by_source.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/5.dominant_topic_sentiment_giornali_settore.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
