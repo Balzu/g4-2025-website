@@ -146,7 +146,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/attori_europa_black.json | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/attori_europa_black.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -155,7 +155,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -164,7 +164,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/cloropleth_blu_verde_black.json | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/cloropleth_blu_verde_black.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -173,7 +173,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok_prova1_black.json | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok_prova1_black.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -182,7 +182,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -191,7 +191,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/rank_italy_attack_count_black.json | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/rank_italy_attack_count_black.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -200,7 +200,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/settori_colpiti_italy_black.json | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/settori_colpiti_italy_black.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -209,7 +209,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/trend_black.json | relative_url }}"
+    schema-url="{{ "/assets/charts/map_the_attack/trend_black.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
