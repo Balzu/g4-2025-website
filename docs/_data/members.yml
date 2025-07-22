@@ -23,21 +23,18 @@
   role: tutor
   home: true
 
-- name: First Name Last Name
+- name: Emanuele Amati
   github: https://kdd.isti.cnr.it/people/student-1
   role: student
-- name: First Name Last Name
-  github: https://kdd.isti.cnr.it/people/student-2
+- name: Francesco Balzano
+  github: https://thebytemachine.com/about_me
   role: student
-- name: First Name Last Name
+- name: Davide Conte
   github: https://kdd.isti.cnr.it/people/student-3
   role: student
-- name: First Name Last Name
+- name: Francesca Lorusso
   github: https://kdd.isti.cnr.it/people/student-4
   role: student
-- name: First Name Last Name
+- name: Lidia Scudiero
   github: https://kdd.isti.cnr.it/people/student-5
-  role: student
-- name: First Name Last Name
-  github: https://kdd.isti.cnr.it/people/student-6
   role: student

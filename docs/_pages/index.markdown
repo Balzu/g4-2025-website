@@ -1,44 +1,332 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: default
+layout: dark_layout
 title: "Home"
-vega: true
+show_sidetoc: true
+header_type: hero
+header_img: assets/images/cyber_attacks_world_hd.gif
+header_title: "The Italian Job… of Cybercrime"
+subtitle: "Data, Emotions, and Investments in the Cyber War"
+vega: true  
 ---
 
-<div class="full-width-wrapper">
-    <img src="{{ site.baseurl }}/assets/images/header.svg" alt="sbd-pattern" class="full-width-image">
+<style>
+  /* Full‑page hero background */
+  .site-hero {
+    height: 100vh;
+    background-image: url('{{ page.header_img | absolute_url }}');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .site-hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+
+  .vg-tooltip,
+  .vg-tooltip .value,
+  .vg-tooltip .key {
+    color: #000 !important;
+  }
+
+.hm-buttons {
+  display:flex;
+  gap:.5rem;
+  margin-bottom:1rem;
+  flex-wrap:wrap;
+}
+.hm-btn {
+  cursor:pointer;
+  padding:.5rem .9rem;
+  border:1px solid #ccc;
+  background:#f5f5f5;
+  border-radius:4px;
+  font-size:.9rem;
+}
+.hm-btn.active {
+  background:#d33;
+  color:#fff;
+  border-color:#d33;
+}
+.heatmap { display:none; }
+.heatmap.visible { display:block; }
+
+div aside {
+    background-color: #000000;
+}
+
+.container-lg {
+    background-color: #000000 !important;
+}
+
+canvas {
+    max-width: 100% !important;
+}
+
+</style>
+
+
+# Introduction {#introduction}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/intro/1.bottone_reddit_sentiment_trend.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
 </div>
 
-To develop the *Progettone* website  we will use a **Static Site Generator** (SSG), which allows you to create fast-loading websites without the need for complex backend systems or databases.
-In particular, we will use one of the most popular SSGs: Jekyll and GitHub Pages.
-{: .lead }
 
-**Jekyll** is a simple, blog-aware, static site generator that takes your content, renders it into a static website, and serves it. Combined with GitHub Pages, it allows you to host your website for free, making it an ideal choice for personal projects, portfolios, and documentation sites.
-{: .lead }
 
-**GitHub Pages** is a service provided by GitHub that allows you to host static websites directly from a GitHub repository. It supports Jekyll out of the box, making it easy to deploy your Jekyll site with just a few clicks.
-{: .lead }
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/intro/2.bottone_reddit_normalized_comments.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
 
-<br>
 
-# What you need to start
 
-- [ ] 🐙 **A GitHub account** - If you don't have one, you can [create it for free](https://github.com/)
-- [ ] 📝 **A well-structured draft of your project** - This can be a Word document or any other format you prefer. It should include the main ideas, structure, and content you want to present on your website.
-- [ ] 📊 **A folder with your saved Charts** - You can use the charts you created saving them as .json files in the `assets/charts` folder.
-- [ ] 📂 **A folder with all the images** you want to use on your website: you can save them in the `assets/images` folder.
-{: .bg-color-full  .px-3 .lead}
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/intro/3.emotion_distribution_reddit_dropdown.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
 
-<br>
 
-# How to start
 
-The development of the website can be done in two ways:
-1. **Completely online, using GitHub and GitHub Pages.**
-2. Locally, using Jekyll and then pushing the changes to GitHub.
 
-In the guide, we will focus on the first option, which is the easiest way to create a website. 
-However, if you want to develop the website locally, you need to install Jekyll on your computer. 
-You can find the instructions on how to do it [in the official guide](https://jekyllrb.com/docs/installation/) or in the [local development section]({{ site.baseurl }}/local-development/).
+# Map the Attack {#map-the-attack}
+
+![Infografica]({{ "/assets/images/infografica.png" | relative_url }})
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+
+<div class="hm-buttons">
+  <button type="button" class="hm-btn active" data-target="heatmap1">Attacks per Region</button>
+  <button type="button" class="hm-btn" data-target="heatmap2">Attacks / Revenue</button>
+  <button type="button" class="hm-btn" data-target="heatmap3">Attacks / Companies</button>
+</div>
+
+<div id="heatmap1" class="heatmap visible">
+  <vegachart
+    schema-url="{{ "/assets/charts/heatmap1.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div id="heatmap2" class="heatmap">
+  <vegachart
+    schema-url="{{ "/assets/charts/heatmap2.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div id="heatmap3" class="heatmap">
+  <vegachart
+    schema-url="{{ "/assets/charts/heatmap3.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/attori_europa_black.json | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/cloropleth_blu_verde_black.json | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok_prova1_black.json | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/rank_italy_attack_count_black.json | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/settori_colpiti_italy_black.json | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/trend_black.json | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+# Breaking the Net {#breaking-the-net}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/articles_by_source_type.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_coverage_per_attack.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+1.average_sentiment_giornali_settore.json:
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/1.average_sentiment_giornali_settore.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/2.sentiment_giornali_settore_2017_2024.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/3.top_entities_sentiment_by_source.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.most_frequent_tokens_by_source.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/5.dominant_topic_sentiment_giornali_settore.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+# Cyber Q&A {#cyber-q-and-a}
+
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/RI0W7NRl4SU?si=exRRIXoy2hr_qgFb&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<div> 
+  <iframe src="{{ site.baseurl }}/assets/graph/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
+</div>
+
+
+
+
+# Conclusions {#conclusions}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/conclusions/ita_eu_average_fino_23_arancio.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+# About Us  {#about-us}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+
+<script>
+document.querySelectorAll('.hm-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const target = btn.dataset.target;
+
+    document.querySelectorAll('.hm-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.querySelectorAll('.heatmap').forEach(div=>div.classList.remove('visible'));
+    document.getElementById(target).classList.add('visible');
+  });
+});
+</script>

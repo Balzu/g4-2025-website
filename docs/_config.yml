@@ -51,17 +51,17 @@ navbar:
     url: /
   nav:
   - title: Introduction
-    url: "{{ site.baseurl }}#introduction"
+    url: "#introduction"
   - title: MAP THE ATTACK
-    url: "{{ site.baseurl }}#map-the-attack"
+    url: "#map-the-attack"
   - title: Breaking the Net
-    url: "{{ site.baseurl }}#breaking-the-net"
+    url: "#breaking-the-net"
   - title: Cyber Q&A
-    url: "{{ site.baseurl }}#cyber-q-and-a"
+    url: "#cyber-q-and-a"
   - title: Conclusions
-    url: "{{ site.baseurl }}#conclusions"
+    url: "#conclusions"
   - title: About us
-    url: "{{ site.baseurl }}#about-us"
+    url: "#about-us"
   - title: SBD
     url: https://masterbigdata.it
 
