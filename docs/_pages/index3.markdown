@@ -76,7 +76,7 @@ canvas {
 # Map the Attack {#map-the-attack}
 
 
-<div>
+<div style="width: 800px; height: 500px;">
   <vegachart
     schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json | relative_url }}"
     style="width: 100%; height: 100%" 
