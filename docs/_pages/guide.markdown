@@ -466,17 +466,17 @@ navbar:
     url: /
   nav:
   - title: Introduction
-    url: "#introduction"
-  - title: Map the Hack
-    url: "#map-the-attack"
+    url: "{{ site.baseurl }}#introduction"
+  - title: MAP THE ATTACK
+    url: "{{ site.baseurl }}#map-the-attack"
   - title: Breaking the Net
-    url: "#breaking-the-net"
+    url: "{{ site.baseurl }}#breaking-the-net"
   - title: Cyber Q&A
-    url: "#cyber-q-and-a"
+    url: "{{ site.baseurl }}#cyber-q-and-a"
   - title: Conclusions
-    url: "#conclusions"
+    url: "{{ site.baseurl }}#conclusions"
   - title: About us
-    url: "#about-us"
+    url: "{{ site.baseurl }}#about-us"
       
 ```
 

@@ -74,13 +74,36 @@ canvas {
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
 
-<div id="heatmap1" class="heatmap visible">
+
+<div>
   <vegachart
-    schema-url="{{ "/assets/charts/heatmap1.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
+    schema-url="{{ "/assets/charts/intro/1.bottone_reddit_sentiment_trend.json" | relative_url }}"
+    style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
 </div>
+
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/intro/2.bottone_reddit_normalized_comments.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/intro/3.emotion_distribution_reddit_dropdown.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
 
 
 # Map the Attack {#map-the-attack}
@@ -115,6 +138,110 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div id="heatmap3" class="heatmap">
   <vegachart
     schema-url="{{ "/assets/charts/heatmap3.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/financing/ita_eu_average_fino_23_arancio.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/financing/italy_active_projects_per_year.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/2025_cloroplet_blues.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/actor_industry_finale.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/actor_presence_ita_eu_arancio.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/ita_eu_average_fino_23_arancio.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/ita_eu_world_fino_al_2025_arancio.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/ita_eu_world_fino_al_2025_arancio.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div style="height: 100%"> 
+  <iframe src="{{ site.baseurl }}/assets/charts/map_the_attack/mappa_italia_aziende_hq_description.html" width="100%" height="400px" frameborder="0"></iframe> 
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/settori_aziende_colpite_italia1.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/trend_2023_no_undetermined.json" | relative_url }}"
     style="width: 100%; height: 100%" 
     tooltip="true" >
   </vegachart>
@@ -177,6 +304,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     tooltip="true" >
   </vegachart>
 </div>
+
 <div>
   <vegachart
     schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/5.dominant_topic_sentiment_giornali_settore.json" | relative_url }}"
@@ -202,6 +330,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 # Conclusions {#conclusions}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/conclusions/ita_eu_average_fino_23_arancio.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
 
 # About Us  {#about-us}
 
