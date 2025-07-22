@@ -311,7 +311,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Conclusions {#conclusions}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+## Research vs. Reality: Italy’s Cybersecurity Investments Under the Microscope  
+
+Over the last decade, Italy has steadily climbed the European cybersecurity ladder — at least on paper. According to data from Horizon 2020 and Horizon Europe, the country ranks third in terms of net cybersecurity funding received, behind only Spain and Germany. From 2015 onward, Italy’s involvement in EU-backed research projects has grown consistently, peaking in 2021 with **115 active initiatives.**  
+
+This trajectory suggests a country that, even before the surge in cyberattacks, was aware of the need to strengthen its digital defenses — a sign of strategic foresight in the face of accelerating digitalization.  
+
+But while the research ecosystem expanded, so did the threats. **In 2023, Italy recorded its highest-ever number of cyberattacks against companies,** continuing a trend that began around 2021 — the same period during which funding reached its peak.  
+
+This overlap raises a critical and still unresolved question:  
+
+### Are these investments paying off in the real world?  
+
+At present, the answer is unclear. It’s possible the benefits of funding are simply delayed — that training, infrastructure, and innovation need time to convert into effective defense mechanisms. But another possibility looms: that **the translation of research into operational security is too slow, too fragmented, or even misaligned** with the actual needs of Italian businesses.  
+
+This isn’t just a budgeting issue — it’s a structural one. The numbers tell one story, but they also invite a deeper investigation:  
+
+### Does Italy’s cybersecurity model need a rethink? And if so, where should we start?  
+
+To explore this further, we asked a **senior academic figure**  for their honest view on the situation. Here's what they shared:  
+
+>As far as I know, the increase in projects hasn’t brought any significant or visible benefits. It mainly reflects better organizational capacity in the Italian ecosystem to apply for and manage funds. I haven’t seen more strategic selection of projects, nor clear impact in terms of cybersecurity outcomes or the emergence of new actors in the field.  
+>For example, Spain has focused its funding on building infrastructure and labs. In contrast, in Italy, a large portion of funds has gone toward increasing precarious or part-time roles in public and private organizations. In the short term, this boosts fund usage rates, but in the long term, it brings little benefit — and even creates social costs, as we’re seeing in the academic sector.
+
+His words offer an honest reflection — and leave us with a crucial, open-ended question:  
+
+Will these investments eventually strengthen Italy’s cybersecurity landscape, or do we need to rethink how research is connected to real-world needs and resilience?” 
 
 <div>
   <vegachart
