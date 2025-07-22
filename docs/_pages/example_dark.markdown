@@ -143,6 +143,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   </vegachart>
 </div>
 
+duration_gangs_italy_OK_PROVA1_BLACK.json
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_OK_PROVA1_BLACK.json" | relative_url }}"
+    style="width: 100%; height: 100%" 
+    tooltip="true" >
+  </vegachart>
+</div>
+
 
 <div>
   <vegachart
