@@ -605,6 +605,11 @@ To conclude our exploration of cyber actor dynamics, we conducted a **clustering
 
           Thanks to this process, we were able to identify a distinct behavioral pattern in Cluster 3, which appears to focus on the Veneto region. Further details about its composition are provided in the figures below.  </p>
 
+          <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+            <img src="{{ '/assets/images/img1.jpeg' | relative_url }}" alt="Immagine 1" class="img-fluid" style="max-width: 32%;">
+            <img src="{{ '/assets/images/img2.jpeg' | relative_url }}" alt="Immagine 2" class="img-fluid" style="max-width: 32%;">
+            <img src="{{ '/assets/images/img3.jpeg' | relative_url }}" alt="Immagine 3" class="img-fluid" style="max-width: 32%;">
+          </div>
 
         </section>
 
