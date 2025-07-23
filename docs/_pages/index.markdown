@@ -75,7 +75,7 @@ strong {
     font-weight: 900 !important;
 }
 
-a {
+p a {
     color: #ca6701 !important;
 }
 
@@ -87,7 +87,7 @@ a {
 ### Why Cybersecurity Matters — And Not Just for the Tech Industry 
 _A breach might start with a keystroke — but its echo depends on who’s listening._ 
 
-In today’s digital society, cybersecurity can no longer be dismissed as a purely technical issue or a concern reserved for IT departments. One breach is enough to expose the personal data of millions, shake financial markets, and erode the trust between a company and its customers. But beyond the corporate boardrooms and security operation centers, there is a deeper, more human layer to every cyberattack — and it’s unfolding online, in real time. 
+In today’s digital society, cybersecurity can no longer be dismissed as a purely technical issue or a concern reserved for IT departments. One breach is enough to expose the personal data of millions, shake financial markets, and erode the trust between a company and its customers. But beyond the corporate boardrooms and security operation centers, there is a deeper, more human layer to every cyberattack  and it’s unfolding online, in real time. 
 
 
 ### A Look Inside the Noise: Reddit as a Mirror of Cyber Perception 
