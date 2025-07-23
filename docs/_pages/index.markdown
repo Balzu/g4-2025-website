@@ -111,6 +111,9 @@ p a {
     border-color: #0a9396 !important;
 }
 
+a:hover {
+  text-decoration: none !important; 
+}
 
 </style>
 
