@@ -160,7 +160,6 @@
     "y": {
       "field": "gordon_ai_emotion_label",
       "sort": "-x",
-      "title": "Emotion",
       "type": "nominal"
     }
   },
