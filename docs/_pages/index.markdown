@@ -280,7 +280,7 @@ When comparing Italy’s cyber-attack trend to the European average, a clear div
 This brings us to the core of our investigation: **who is being targeted the most in Italy and why**? To better understand this phenomenon, it's essential to first clarify the structure of the Italian corporate landscape. The characteristics of the national business ecosystem play a key role in shaping both the exposure and vulnerability of different actors. The overview below provides a snapshot of this landscape, setting the stage for a deeper analysis of attack patterns and motivations.
 
 
-![Infografica]({{ "/assets/images/infografica.png" | relative_url }})
+<img src="{{ '/assets/images/infografica.png' | relative_url }}" alt="Infografica" style="height: 600px;">
 
 The infographic is based on data from **ISTAT (2022)**, not the most recent, but still a reliable reference for outlining the structure of Italian enterprises. According to this data, Italy hosts a large number of businesses, the vast majority of which are **micro** and **small enterprises**, making up **78.9%** and **18.5%** of the total, respectively. This small-scale composition has important implications for cybersecurity readiness and resilience. In terms of geographic distribution, there is a clear regional divide: the North of Italy dominates; specifically, the **North-West** accounts for **28.7%** of these businesses, while the **North-East** follows with **22.7%**. 
 
