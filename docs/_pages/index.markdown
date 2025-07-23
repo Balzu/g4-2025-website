@@ -367,8 +367,7 @@ The following section explores this dynamic in greater detail, examining how **k
      data-bs-toggle="modal"
      data-bs-target="#exampleModal5"
      class="modal-link">
-    <img src="{{ '/assets/images/ingegneria.png' | relative_url }}" alt="Actors Overview" style="height: 1.2em; vertical-align: middle; margin-right: 5px;">
-    <span class="modal_link">Technical Insight</span>
+    👾 <span class="modal_link">Actors Overview</span>
   </a>
 </div>
 
@@ -376,7 +375,7 @@ The following section explores this dynamic in greater detail, examining how **k
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Emotion Analysis</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Actors Overview</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
@@ -734,7 +733,7 @@ The good news? The data shows change is possible. Positive narratives do emerge 
      data-bs-toggle="modal"
      data-bs-target="#exampleModal2"
      class="modal-link">
-    📖 <span class="modal_link">Technical Insight</span>
+    🛠 <span class="modal_link">Technical Insight</span>
   </a>
 </div>
 
