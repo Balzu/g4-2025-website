@@ -216,7 +216,7 @@ Understanding this business structure is crucial, not only for assessing organiz
   <button type="button" class="hm-btn" data-target="heatmap3">Attacks / Companies</button>
 </div>
 
-<div id="heatmap1" class="heatmap visible" style="display: flex; justify-content: center;">
+<div id="heatmap1" class="heatmap visible">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/heatmap1.json" | relative_url }}"
@@ -226,7 +226,7 @@ Understanding this business structure is crucial, not only for assessing organiz
   </div>
 </div>
 
-<div id="heatmap2" class="heatmap" style="display: flex; justify-content: center;">
+<div id="heatmap2" class="heatmap">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/heatmap2.json" | relative_url }}"
@@ -236,7 +236,7 @@ Understanding this business structure is crucial, not only for assessing organiz
   </div>
 </div>
 
-<div id="heatmap3" class="heatmap" style="display: flex; justify-content: center;">
+<div id="heatmap3" class="heatmap">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/heatmap3.json" | relative_url }}"
