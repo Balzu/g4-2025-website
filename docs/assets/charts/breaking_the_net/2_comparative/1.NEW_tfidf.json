@@ -1,0 +1,227 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "background": "transparent",
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-273009a3c1ef62f0abbd7061fc86eed0"
+  },
+  "datasets": {
+    "data-273009a3c1ef62f0abbd7061fc86eed0": [
+      {
+        "Origine": "Settore",
+        "diff": -0.11716599761515623,
+        "token": "dato"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.1124309863687578,
+        "token": "trattamento"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.06344737062334174,
+        "token": "gdpr"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.05339654758316527,
+        "token": "cyber"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.053358781748294754,
+        "token": "personale"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.05282939417607133,
+        "token": "titolare"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.044390456052802105,
+        "token": "security"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.04255746658209668,
+        "token": "argomento"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.04120390991444911,
+        "token": "misura"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.03920415689404119,
+        "token": "gestione"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.0363528503381958,
+        "token": "processo"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.03628186681745287,
+        "token": "protezione"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.034297081265496514,
+        "token": "necessario"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.03243038885640402,
+        "token": "aziendale"
+      },
+      {
+        "Origine": "Settore",
+        "diff": -0.030827162635568325,
+        "token": "rischio"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.03388027766325858,
+        "token": "app"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.034194070099406886,
+        "token": "software"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.03484853519690403,
+        "token": "cybersecurity"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.03694674199809905,
+        "token": "esperto"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.03817113952653599,
+        "token": "utente"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.04217584063808794,
+        "token": "online"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.0460604696721211,
+        "token": "password"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.048793882923766865,
+        "token": "italia"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.05039735638901209,
+        "token": "sito"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.05085002298550277,
+        "token": "spiegare"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.05296872563517054,
+        "token": "italiano"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.058364892690699804,
+        "token": "attacco"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.05961681687638593,
+        "token": "hacker"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.0652162761150619,
+        "token": "informatico"
+      },
+      {
+        "Origine": "Giornali",
+        "diff": 0.06543572482780717,
+        "token": "usare"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Origine",
+      "legend": {
+        "title": "Origine"
+      },
+      "scale": {
+        "domain": [
+          "Giornali",
+          "Settore"
+        ],
+        "range": [
+          "#ca6702",
+          "#d3d3d3"
+        ]
+      },
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "token",
+        "type": "nominal"
+      },
+      {
+        "field": "diff",
+        "type": "quantitative"
+      },
+      {
+        "field": "Origine",
+        "type": "nominal"
+      }
+    ],
+    "x": {
+      "field": "diff",
+      "title": "TF-IDF Difference",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "token",
+      "sort": "-x",
+      "title": "",
+      "type": "nominal"
+    }
+  },
+  "height": 500,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Top 15 Distinctive Tokens by TF-IDF Difference",
+  "width": 600
+}

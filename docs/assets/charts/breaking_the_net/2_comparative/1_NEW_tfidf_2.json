@@ -1,0 +1,238 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "background": "transparent",
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-5a6ab7b0ac3dbf09a0f7dcd44951ed12"
+  },
+  "datasets": {
+    "data-5a6ab7b0ac3dbf09a0f7dcd44951ed12": [
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.270859423992016,
+        "token": "dato"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.2402922162687791,
+        "token": "attacco"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.23793363542593676,
+        "token": "sicurezza"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.2077438006375546,
+        "token": "informatico"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.1834032463394215,
+        "token": "potere"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.17311983386462884,
+        "token": "sistema"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.1431186855436741,
+        "token": "utente"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.1414205073368276,
+        "token": "azienda"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.11462702896213844,
+        "token": "informazione"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.11123067254844546,
+        "token": "venire"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.11094764284730436,
+        "token": "servizio"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.11028724021130851,
+        "token": "sito"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.0958527254531133,
+        "token": "usare"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.09387151754512572,
+        "token": "dovere"
+      },
+      {
+        "Origine": "Giornali",
+        "tfidf": 0.09339980137655725,
+        "token": "hacker"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.38802542160717224,
+        "token": "dato"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.25912602691949954,
+        "token": "sicurezza"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.19675954520553404,
+        "token": "potere"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.1836787298219116,
+        "token": "sistema"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.1819273235780793,
+        "token": "attacco"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.1425275245224927,
+        "token": "informatico"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.12387094316729483,
+        "token": "cyber"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.1228994600164191,
+        "token": "servizio"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.12277631426489964,
+        "token": "dovere"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.12270105852785998,
+        "token": "personale"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.12224268267498199,
+        "token": "trattamento"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.11705687824988481,
+        "token": "rischio"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.11206947531334677,
+        "token": "informazione"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.11138533224934978,
+        "token": "azienda"
+      },
+      {
+        "Origine": "Settore",
+        "tfidf": 0.10653475792561112,
+        "token": "venire"
+      }
+    ]
+  },
+  "facet": {
+    "column": {
+      "field": "Origine",
+      "header": {
+        "title": "Source Origin"
+      },
+      "type": "nominal"
+    }
+  },
+  "spec": {
+    "encoding": {
+      "color": {
+        "field": "Origine",
+        "legend": {
+          "title": "Origine"
+        },
+        "scale": {
+          "domain": [
+            "Giornali",
+            "Settore"
+          ],
+          "range": [
+            "#ca6702",
+            "#d3d3d3"
+          ]
+        },
+        "type": "nominal"
+      },
+      "tooltip": [
+        {
+          "field": "token",
+          "type": "nominal"
+        },
+        {
+          "field": "tfidf",
+          "type": "quantitative"
+        },
+        {
+          "field": "Origine",
+          "type": "nominal"
+        }
+      ],
+      "x": {
+        "field": "tfidf",
+        "title": "TF-IDF Score",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "token",
+        "sort": "-x",
+        "title": "",
+        "type": "nominal"
+      }
+    },
+    "height": 450,
+    "mark": {
+      "type": "bar"
+    },
+    "title": " Most Common Tokens with TF-IDFby Source",
+    "width": 300
+  }
+}

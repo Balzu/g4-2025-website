@@ -136,6 +136,10 @@ a:hover {
   text-decoration: none !important; 
 }
 
+p {
+  text-align: justify !important;
+}
+
 </style>
 
 
@@ -775,36 +779,37 @@ By applying topic modeling (LDA) to the articles covering cyberattacks on Italia
 
 ###  Cybersecurity: What We Say, What We Mean
 
+As our earlier analysis shows, not all industries receive equal media attention when targeted by cyberattacks. Utilities such as energy and water providers attract disproportionate coverage, likely due to their strategic importance. Sectors like transportation, logistics, or food services, on the other hand, receive little to no attention, even when affected. This asymmetry suggests a deeper issue: a communication gap between real-world risk and public visibility. To better understand this gap, we moved from the “who” to the “how” analyzing the language and emotional tone of cybersecurity coverage across generalist and specialist media outlets. What narratives do they construct? And what kind of sentiment do they project? 
+
+
+
+**TODO**: bottoni
+
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/NEW_most_frequent_tokens_by_source.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/1.NEW_tfidf.json" | relative_url }}"
       style="width: 100%; height: 100%"
       tooltip="true" >
     </vegachart>
   </div>
 </div>
 
-
-In cybersecurity, **words matter** and so does the emotional charge we attach to them. While the frequency of keywords such as data breach, malware, or privacy may be similar across different sources, the **emotions and tones surrounding them are not**. 
-
-  
-Our sentiment analysis reveals a striking pattern: **regardless of the source**, cybersecurity-related language tends to carry a **negative connotation**. However, something begins to shift starting in **2020**. 
-
-
-
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/2.sentiment_giornali_settore_2017_2024.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/1_NEW_tfidf_2.json" | relative_url }}"
       style="width: 100%; height: 100%"
       tooltip="true" >
     </vegachart>
   </div>
 </div>
 
-Even within general news media, we observe a **gradual trend toward more neutral — and occasionally positive — tones**, particularly when coverage involves **governmental initiatives** or **platforms responding to attacks**. 
+The chart above highlights the top 20 most distinctive words used by each type of source, using TF-IDF differential. Mainstream media often center their language on individuals and incidents, with tokens like “hacker,” “attacco,” “utente,” “online,” “password”. These terms frame cybersecurity as sudden, alarming, and personal. The stories are reactive, emotion-driven, and aimed at a broad audience. 
 
+Sector-specific outlets, in contrast, use a vocabulary rooted in governance and institutional frameworks: terms like “gdpr,” “trattamento,” “aziendale,” “titolare,” and “compliance.” These articles speak to professionals, framing digital security as a matter of planning, accountability, and process not panic. 
+This divide becomes even more apparent when we analyze sentiment by named entity. 
+ 
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -815,36 +820,54 @@ Even within general news media, we observe a **gradual trend toward more neutral
     </vegachart>
   </div>
 </div>
+ 
 
-By contrast, sector-specific sources maintain a more **technical register**, focusing on topics such as GDPR compliance, enterprise protection strategies, and the role of **DPOs (Data Protection Officers)**. The same words — security, threat, vulnerability — are used, but the **associated sentiment changes** dramatically depending on the source. 
 
-This divergence is key. 
+By analyzing the most frequently mentioned entities in our dataset, we observe a significant shift in sentiment depending on the type of media source. 
+
+In sector-specific publications, the average sentiment tends to skew more positive or neutral, especially when discussing institutional actors involved in cybersecurity legislation  such as EU the European Commission, or national regulatory bodies. Similarly, large corporations working on cybersecurity solutions are often framed in a constructive light, reflecting themes of innovation, compliance, and digital transformation. 
+
+In contrast, general news outlets show a more negative sentiment, particularly in connection with entities like Facebook, the FBI, or even the Senate typically in the context of surveillance concerns, data breaches, or regulatory inaction. These platforms and institutions are often portrayed as part of the problem rather than the solution. 
+
+This divergence is the key and reflects two distinct media ecosystems: one that interprets cybersecurity as a technical challenge, and one that dramatizes it as a social or political crisis.. 
+ 
 
 ###  When Optimism Stays in the Echo Chamber 
 
 What do we really talk about when we talk about cybersecurity? 
-
-By measuring the average sentiment across dominant topics and sources, a striking pattern emerges: **positive tones are almost exclusively reserved for sector-specific publications**, and only when discussing **corporate security and legal compliance**. These include discussions on enterprise level risk management, GDPR enforcement, and organizational resilience themes treated with a sense of control, even optimism. 
-
+By measuring the average sentiment across dominant topics and sources, a striking pattern emerges: positive tones are almost  reserved for sector-specific publications, and only when discussing corporate security and legal compliance. These include discussions on enterprise level risk management, GDPR enforcement, and organizational resilience themes treated with a sense of control, even optimism. 
 Everywhere else, the tone shifts. 
 
-In mainstream journalism, where the audience is broader and less specialized, **the sentiment trends negative  across the board**. Stories around personal privacy, digital fraud, or user tracking are overwhelmingly framed in critical terms, with few signs of hope or solutions. The most negative tones appear when users and their devices are at the center of the narrative. 
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.NEW_dominant_topic_sentiment_giornali_settore_grey.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+In mainstream journalism, where the audience is broader and less specialized, the sentiment trends negative across the board. Stories around personal privacy, digital fraud, or user tracking are overwhelmingly framed in critical terms, with few signs of hope or solutions. The most negative tones appear when users and their devices are at the center of the narrative. 
 
 The contrast is even sharper when the same topic is handled by different sources. For example, corporate cybersecurity is portrayed by industry media as an evolving opportunity a space of innovation and strategic growth. But in the general press, it’s nearly absent unless tied to crisis, scandal, or systemic failure. 
 
+ <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.article_clusters_dashboard.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+</div>
 
-**Clustering analysis  also reveals a fragmented cyber discourse.** Sector-specific publications tend to focus on regulatory compliance and enterprise risk, usually adopting a neutral or critical tone  except in 2024, when optimism emerges around corporate cybersecurity success stories. In contrast, general media emphasizes personal privacy and cybercrime, often with emotional and negative framing, especially during crises like the pandemic. 
-
+Clustering analysis also reveals a fragmented cyber discourse. Sector-specific publications tend to focus on regulatory compliance and enterprise risk, usually adopting a neutral or critical tone  except in 2024, when optimism emerges around corporate cybersecurity success stories. In contrast, general media emphasizes personal privacy and cybercrime, often with emotional and negative framing, especially during crises like the pandemic. 
 Notably, the only positive sentiment cluster originates from the sector  suggesting that optimism is largely internal and professional. Even shared topics, like corporate cybersecurity, are portrayed very differently: as progress in the sector, and as crisis in the public media narrative. 
-
  
-This divergence reveals more than just editorial choices: it points to a **split in how cybersecurity is understood, communicated, and emotionally processed**, depending on who’s talking and who’s listening. 
-
-In short, **confidence lives in the sector. Concern dominates the public sphere**. 
-
+This divergence reveals more than just editorial choices: it points to a split in how cybersecurity is understood, communicated, and emotionally processed, depending on who’s talking and who’s listening. 
+In short, confidence lives in the sector. Concern dominates the public sphere. 
 And that divide might be exactly what’s preventing Italy from building a truly shared cyber resilience culture. 
-
-
+ 
 
 ### A Communication Gap That Shapes Action 
 
@@ -867,23 +890,6 @@ When **cyber language is fragmented**, so is the response.
 From newsrooms to boardrooms, from small and medium enterprises to government agencies, the way we **talk** about cybersecurity shapes the way we **invest, legislate, educate, and defend**. 
 
 The good news? The data shows change is possible. Positive narratives do emerge  especially when **solutions, not just threats**, are placed at the center. But to bridge the communication gap, we need **more than analysis**. We need a **shared language**, one that makes cybersecurity not just a technical domain, but a **collective priority**. 
-
-
-**TODO** sistema questi grafici
-
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.article_clusters_dashboard.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-
-
-
-
-
-
 
 
 <div class="text-center my-3">
@@ -929,28 +935,29 @@ Each topic, in turn, was analyzed for sentiment,emotion ( with the model describ
 
 ###  Shared Knowledge: The Intelligent Graph Bridging Cybersecurity Gaps 
 
-<div> 
-  <iframe src="{{ site.baseurl }}/assets/graph/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
-</div>
 
 In cybersecurity, the communication gap is as critical as the technical one. On one side, we have mainstream media amplifying panic around cyber threats. On the other, trade journals speak a language so technical that it alienates most corporate professionals. Stuck in between are companies eager to train staff, yet often ill-equipped to explain the very threats they face. 
 
 To bridge this divide, we’ve developed an intelligent knowledge graph: a dynamic, visual tool that turns complex cyber data into structured, explorable insights. Designed not for the public at large, but for use in corporate training courses, the graph acts as a semantic map of the cybersecurity landscape, supporting workshops, awareness sessions, and post-training engagement. 
+
+<div> 
+  <iframe src="{{ site.baseurl }}/assets/graph/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
+</div>
 
 Rooted in the MITRE ATT&CK framework and enriched with peer-reviewed research from PubMed, Crossref, and arXiv, the graph hosts over 4,000 nodes connecting attack techniques, malware families, vulnerabilities, countermeasures, and more. Need to understand how a ransomware campaign exploits a specific vulnerability? Or which mitigations align with spear phishing? The graph doesn't just hold that knowledge, it makes it navigable. 
 
 Even more powerfully, the system integrates a local LLM (Mistral 7B) capable of answering natural language queries using context from the graph itself. Ask a question like “Which mitigations are most effective against credential dumping?” and get a grounded, explainable response. Combined with interactive visualizations and slide generation, it becomes a training companion, not just a data tool. 
 
 
-### The Communication Gap Is Real 
-
-According to the 2° CensisIISFA (2023/2024) Report, 20.8% of Italian workers still don’t know what "cybersecurity" even means — up from 17.1% the year before. Meanwhile, over 1 in 5 employees have witnessed a cybersecurity incident in their workplace in the last year, ranging from service disruptions to data breaches. And yet, much of the training still relies on static materials and vague definitions. 
-
-In this context, tools like our knowledge graph aren’t just useful, they’re necessary. They educate. They contextualize. They make cybersecurity make sense. 
-
-
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/RI0W7NRl4SU?si=exRRIXoy2hr_qgFb&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+
+### The Communication Gap Is Real 
+
+According to the 2° CensisIISFA (2023/2024) Report, 20.8% of Italian workers still don’t know what "cybersecurity" even means, up from 17.1% the year before. Meanwhile, over 1 in 5 employees have witnessed a cybersecurity incident in their workplace in the last year, ranging from service disruptions to data breaches. And yet, much of the training still relies on static materials and vague definitions. 
+
+In this context, tools like our knowledge graph aren’t just useful, they’re necessary. They educate. They contextualize. They make cybersecurity make sense. 
 
 
 
@@ -1032,10 +1039,10 @@ What begins as a cyberattack often ends in headlines, yet rarely in real underst
 This is where our graph steps in: not just as a visualization tool, but as a way to connect data, expertise, and communication into a cohesive system of shared understanding. 
 It links threats to research, concepts to countermeasures, and people to meaning, helping turn reactive defenses into informed strategies. 
 
-Because in cybersecurity, visibility isn’t just about network logs — it’s about making knowledge itself visible. 
+Because in cybersecurity, visibility isn’t just about network logs: it’s about making knowledge itself visible. 
 
 So the real question becomes: 
-**Are we truly prepared? In the invisible war, who protects whom?**
+**Are we truly prepared? In the invisible war, who protects whom and who’s investing to keep us safe?**
 
 
 # Conclusions {#conclusions}
@@ -1047,6 +1054,43 @@ Over the last decade, Italy has steadily climbed the European cybersecurity ladd
 This trajectory suggests a country that, even before the surge in cyberattacks, was aware of the need to strengthen its digital defenses: a sign of strategic foresight in the face of accelerating digitalization.  
 
 But while the research ecosystem expanded, so did the threats. **In 2023, Italy recorded its highest-ever number of cyberattacks against companies,** continuing a trend that began around 2021, the same period during which funding reached its peak.  
+
+
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/conclusions/financing/chart_top10.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+
+**todo**: bottone
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/conclusions/financing/chart_italy_projects.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
 
 This overlap raises a critical and still unresolved question:  
 
@@ -1078,47 +1122,6 @@ We can’t protect what we don’t understand, and we can’t defend with isolat
 Because the question is no longer whether the threats are real. 
 It’s whether our response is coherent — and whether it reaches those who need it most. 
 
-**TODO**: come ordinare questi grafici sotto?
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/conclusions/ita_eu_average_fino_23_arancio.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/conclusions/financig/chart_italy_projects.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/conclusions/financig/chart_top10.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/conclusions/financig/combined_chart.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
 
 # About Us  {#about-us}
 
