@@ -115,6 +115,9 @@ p a {
     color: #ca6701 !important;
 }
 
+#scrollToTopBtn {
+  background-color: #ca6701 !important;
+}
 
 .hm-btn1.active {
     background: #0a9396 !important;
@@ -216,8 +219,8 @@ Each extracted post was processed by the model to detect its dominant emotional 
 
 
 
+<h1 id="map-the-hack" style="background-color: #ca6701;">Map the Hack</h1>
 
-# Map the Attack {#map-the-attack}
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -267,21 +270,22 @@ For attacks targeting Italian organizations specifically, we went further: we ma
 </div>
 
 
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px; width: 100%;">
-  <div style="flex: 0 0 50%;">
+<div style="display: flex; justify-content: center;">
+  <div>
     <vegachart
       schema-url="{{ "/assets/charts/map_the_attack/rank_italy_attack_count_black.json" | relative_url }}"
-      style="width: 100%; height: 100%;" 
-      tooltip="true">
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
     </vegachart>
   </div>
+</div>
 
-  <div style="flex: 0 0 50%; display: flex; align-items: center;">
+<div style="display: flex; justify-content: center;">
+  <div>
     <vegachart
       schema-url="{{ "/assets/charts/map_the_attack/cloropleth_blu_verde_black.json" | relative_url }}"
-      style="width: 100%; height: auto;" 
-      tooltip="true">
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
     </vegachart>
   </div>
 </div>
@@ -655,8 +659,7 @@ This deep dive into sectoral and regional patterns confirms a fundamental truth:
 
 <br><br><br>
 
-
-# Breaking the Net {#breaking-the-net}
+<h1 id="breaking-the-net" style="background-color: #ca6701;">Breaking the Net</h1>
 
 ### The Silent Breach: Most Cyberattacks in Italy Go Unreported
 
@@ -928,10 +931,7 @@ Each topic, in turn, was analyzed for sentiment,emotion ( with the model describ
 </div>
 
 
-
-# Cyber Q&A {#cyber-q-and-a}
-
-
+<h1 id="cyber-q-and-a" style="background-color: #ca6701;">Cyber Q&A</h1>
 
 
 ###  Shared Knowledge: The Intelligent Graph Bridging Cybersecurity Gaps 
@@ -1045,8 +1045,7 @@ Because in cybersecurity, visibility isn’t just about network logs: it’s abo
 So the real question becomes: 
 **Are we truly prepared? In the invisible war, who protects whom and who’s investing to keep us safe?**
 
-
-# Conclusions {#conclusions}
+<h1 id="conclusions" style="background-color: #ca6701;">Conclusions</h1>
 
 ## Research vs. Reality: Italy’s Cybersecurity Investments Under the Microscope  
 

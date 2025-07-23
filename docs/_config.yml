@@ -52,8 +52,8 @@ navbar:
   nav:
   - title: Introduction
     url: "#introduction"
-  - title: MAP THE ATTACK
-    url: "#map-the-attack"
+  - title: MAP THE HACK
+    url: "#map-the-hack"
   - title: Breaking the Net
     url: "#breaking-the-net"
   - title: Cyber Q&A
