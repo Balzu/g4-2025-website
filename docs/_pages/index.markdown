@@ -360,6 +360,114 @@ The following section explores this dynamic in greater detail, examining how **k
   </div>
 </div>
 
+
+
+<div class="text-center my-3">
+  <a href="javascript:void(0)"
+     data-bs-toggle="modal"
+     data-bs-target="#exampleModal5"
+     class="modal-link">
+    <img src="{{ '/assets/images/ingegneria.png' | relative_url }}" alt="Actors Overview" style="height: 1.2em; vertical-align: middle; margin-right: 5px;">
+    <span class="modal_link">Technical Insight</span>
+  </a>
+</div>
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Emotion Analysis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+      </div>
+      <div class="modal-body">
+
+        <section>
+          <h5>LockBit 3.0</h5>
+          <p>One of the most advanced and active ransomware-as-a-service (RaaS) groups globally. It emerged as a rebrand of previous LockBit versions, introducing technical upgrades and a unique bug bounty program to reward vulnerability reports. Responsible for over 2,000 victims and more than $120 million in ransom payments, LockBit 3.0 is known for its aggressive double-extortion tactics and high success rate.</p>
+        </section>
+
+        <section>
+          <h5>LockBit 2.0</h5>
+          <p>The second major version in the LockBit lineage, active throughout 2021 and early 2022. It refined encryption speeds, expanded affiliate operations, and popularized double extortion and leak site usage. It laid the groundwork for the more advanced LockBit 3.0.</p>
+        </section>
+
+        <section>
+          <h5>Akira</h5>
+          <p>A RaaS group that surfaced in 2023, likely involving former Conti affiliates. Known for targeting both Windows and Linux environments using custom-built encryptors. Akira often gains access via compromised VPN credentials and communicates with victims in a casual, even mocking tone on its leak site.</p>
+        </section>
+
+        <section>
+          <h5>8Base</h5>
+          <p>Emerging in 2022, 8Base uses double-extortion tactics and custom ransomware that avoids encrypting certain file types to keep systems partially operational. The group relies on affiliates and has been disrupted by international law enforcement actions, though it remains active.</p>
+        </section>
+
+        <section>
+          <h5>Conti</h5>
+          <p>Once among the most feared RaaS groups, Conti operated like a professional corporation, complete with internal training, salaries, and bonuses. It attacked over 700 victims using high-quality ransomware and cultivated skilled affiliates. Leaked documents suggest ambitions beyond ransomware, including crypto exchanges and dark web platforms.</p>
+        </section>
+
+        <section>
+          <h5>BlackBasta</h5>
+          <p>Appeared in 2022, likely as a Conti/BlackMatter offshoot. The group quickly gained notoriety with large-scale attacks, including against Synlab Italia. It employs fast deployment, double extortion, and steep ransom demands.</p>
+        </section>
+
+        <section>
+          <h5>Alphv</h5>
+          <p>First observed in 2021 and written entirely in Rust, Alphv is run by Russian-speaking actors linked to DarkSide and BlackMatter. Its RaaS model offers affiliates generous revenue shares and supports highly customizable attacks, including triple extortion (encryption, data theft, DDoS).</p>
+        </section>
+
+        <section>
+          <h5>Cactus</h5>
+          <p>A newer ransomware group, active since late 2023, primarily targeting Italian organizations. It uses selective encryption and double-extortion tactics. Known for its aggressive negotiation approach and growing technical sophistication.</p>
+        </section>
+
+        <section>
+          <h5>RansomHub</h5>
+          <p>An emerging RaaS group since early 2024, known for targeting critical sectors like healthcare and finance. It quickly exploits known vulnerabilities and works with experienced affiliates. After a brief disappearance in 2025, it has resumed operations.</p>
+        </section>
+
+        <section>
+          <h5>NoEscape</h5>
+          <p>Appeared in 2023, likely as a reboot of the defunct Avaddon group. Offers affiliates a full-featured attack panel and uses multi-extortion tactics, including threats of data leaks and public exposure.</p>
+        </section>
+
+        <section>
+          <h5>Rhysida</h5>
+          <p>Launched in May 2023 and presenting itself as a “cybersecurity team,” Rhysida uses phishing to gain access, followed by double extortion. It has attacked government, healthcare, and educational institutions, including the British Library.</p>
+        </section>
+
+        <section>
+          <h5>Medusa</h5>
+          <p>A fast-rising RaaS group since 2023, initially closed but now affiliate-based. Uses phishing and double extortion, with public promotion of attacks via Telegram and social media. Known victims include Toyota Financial Services and the Minneapolis School District.</p>
+        </section>
+
+        <section>
+          <h5>Malas</h5>
+          <p>Emerging in March 2023, MalasLocker is ideologically driven, demanding donations to approved charities instead of ransom payments. It targets Zimbra servers via phishing and exploits and has attacked sectors in countries like Italy, Russia, and the U.S.</p>
+        </section>
+
+        <section>
+          <h5>Noname057(16)</h5>
+          <p>A pro-Russian hacktivist group active since March 2022. It conducts large-scale DDoS attacks against Western targets, including government and media websites, often using the open-source tool “DDoSIA” to coordinate volunteer participants. Despite a major takedown effort in 2024, it remains active and aligned with other hacktivist groups.</p>
+        </section>
+
+        <section>
+          <h5>Lulzsecita</h5>
+          <p>An Italian hacktivist cell linked to the global LulzSec collective, most active in the mid-2010s. Known for using SQL injection attacks against Italian universities and public entities to expose vulnerabilities and make political statements.</p>
+        </section>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 The data highlights how different sectors are targeted in different ways. **LockBit 3.0** is the most active and geographically distributed group, with a distinct preference for **Manufacturing**, echoing the earlier finding that this sector is the most targeted. Its predecessor, **LockBit 2**, displayed a broader distribution, with a notable presence in **Retail** and **General Services**, but less strategic focus overall. By contrast, politically motivated actors like **Noname057(16)** and **LulzSecITA** mainly targeted **Public Administration**, largely bypassing manufacturing. This suggests a goal not of profit but of visibility, through public disruption or data leaks, exploiting institutional vulnerabilities.
 
 A look at timelines further illustrates these dynamics. As of June 2025, only a few groups, **Akira, Cactus, Rhysida, 8Base**, and **Lockbit 3.0**, remain active in Italy, reflecting a possible shift in ransomware models. Meanwhile, **LulzSecITA**’s campaigns ended by 2020, and **LockBit 3.0** appears to have seamlessly replaced **LockBit 2**, suggesting operational continuity. The first LockBit 3.0 attacks followed immediately after LockBit 2 ceased operations, indicating **rebranding**, not retirement.
