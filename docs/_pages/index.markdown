@@ -223,7 +223,7 @@ Since 2020, the world has witnessed a sharp rise in cyberattacks, marking a clea
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
-or our project, we relied on two different datasets. The first, curated by the [University of Maryland](https://cissm.umd.edu/cyber-events-database), spans approximately ten years (from 2014 to mid-2024). The second dataset, obtained from [Ransomfeed](https://ransomfeed.it/), is more recent, containing some records from mid-2025. These datasets provided complementary perspectives: the Maryland dataset was rich in features such as event_type (e.g., exploitative or disruptive), attack_type (e.g., criminal or hacktivist), as well as detailed descriptions of the attacks and, where available, information about the actors behind them. In contrast, the Ransomfeed dataset had a more structured format, including the following fields: VICTIM, GANG, DATE, YEAR, COUNTRY. It's important to note that both datasets contained **incomplete records** — in many cases, crucial information such as the attacker’s identity or the country targeted was missing. This posed a challenge for analysis, but it reflects the reality that information on cyberattacks is not always publicly available or up to date. 
+For our project, we relied on two different datasets. The first, curated by the <strong>University of Maryland</strong>, spans approximately ten years (from 2014 to mid-2024). The second dataset, obtained from <strong>Ransomfeed</strong>, is more recent, containing some records from mid-2025. These datasets provided complementary perspectives: the Maryland dataset was rich in features such as event_type (e.g., exploitative or disruptive), attack_type (e.g., criminal or hacktivist), as well as detailed descriptions of the attacks and, where available, information about the actors behind them. In contrast, the Ransomfeed dataset had a more structured format, including the following fields: VICTIM, GANG, DATE, YEAR, COUNTRY. It's important to note that both datasets contained **incomplete records** — in many cases, crucial information such as the attacker’s identity or the country targeted was missing. This posed a challenge for analysis, but it reflects the reality that information on cyberattacks is not always publicly available or up to date. 
 
 To work with these datasets, we first performed data cleaning and removed duplicates, which we identified after merging them.  
 
@@ -231,7 +231,7 @@ For what concerns duplicates removal, since we could not check tens of thousands
 
 Next, we enriched the data: for each record, we used the attack’s country to classify it by continent, enabling us to analyze geographical trends. We also added geographic coordinates (latitude and longitude) for each country using a JSON file sourced online. 
 
-For attacks targeting Italian organizations specifically, we went further: we manually identified the headquarters of each affected company and retrieved their coordinates using publicly available sources. This allowed us to generate a detailed map of cyberattacks in Italy using **Folium**, and to create heatmaps of attack density within Italy using Altair. The rest of the visualizations in our analysis were also produced with **Altair**.  
+For attacks targeting Italian organizations specifically, we went further: we manually identified the headquarters of each affected company and retrieved their coordinates using publicly available sources. This allowed us to generate a detailed map of cyberattacks in Italy using <strong>Folium</strong> and to create heatmaps of attack density within Italy using Altair. The rest of the visualizations in our analysis were also produced with <strong>Altair</strong>  
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -547,7 +547,7 @@ Another layer of analysis explored whether these actors are **Italy-specific** o
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Actors Overview</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Actor Overview</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
@@ -572,6 +572,49 @@ To conclude our exploration of cyber actor dynamics, we conducted a **clustering
 
 ![Cluster]({{ "/assets/images/regions_actors_company_type_cluster.png" | relative_url }})
 
+
+<div class="text-center my-3">
+  <a href="javascript:void(0)"
+     data-bs-toggle="modal"
+     data-bs-target="#exampleModal8"
+     class="modal-link">
+    🛠️ <span class="modal_link">Clustering</span>
+  </a>
+</div>
+
+<div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Clustering</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+      </div>
+      <div class="modal-body">
+
+        <section>
+          <p>We conducted a clustering analysis to group threat actors based on their behavioral patterns, using two key categorical features: geographical region and targeted company type. 
+
+          The dataset was preprocessed and encoded appropriately for clustering. We applied K-Means clustering to identify groups of actors with similar targeting behaviors. To determine the optimal number of clusters (K), we used the Elbow Method. This was further validated using Silhouette Scores to assess the cohesion and separation of clusters. </p>
+
+          <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+            <img src="{{ '/assets/images/elbow_method.png' | relative_url }}" alt="Elbow Plot" class="img-fluid" style="max-width: 48%;">
+            <img src="{{ '/assets/images/silhouette.png' | relative_url }}" alt="Silhouette Plot" class="img-fluid" style="max-width: 48%;">
+          </div>
+
+          <p>Both methods indicated that an optimal number of clusters lies around K = 10, balancing model complexity with interpretability. This clustering serves as a foundational step for profiling actor groups and analyzing their targeting trends more effectively.  
+
+          Thanks to this process, we were able to identify a distinct behavioral pattern in Cluster 3, which appears to focus on the Veneto region. Further details about its composition are provided in the figures below.  </p>
+
+
+        </section>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 ### From Breach to Awareness: Is the Threat Truly Understood?
@@ -815,7 +858,7 @@ The good news? The data shows change is possible. Positive narratives do emerge 
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModal2Label">Sentiment Analysis</h5>
+        <h5 class="modal-title" id="exampleModal2Label">Emotion Analysis</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
