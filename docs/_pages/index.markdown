@@ -95,6 +95,10 @@ p a {
     color: #ca6701 !important;
 }
 
+.modal_link {
+    color: #ca6701 !important;
+}
+
 
 .hm-btn1.active {
     background: #0a9396 !important;
@@ -155,7 +159,8 @@ From **data and maps** to **media coverage, public sentiment, company responses,
      data-bs-toggle="modal"
      data-bs-target="#exampleModal"
      class="modal-link">
-    📖 <span>Technical Insight</span>
+    <img src="{{ '/assets/images/ingegneria.png' | relative_url }}" alt="Technical Insight" style="height: 1.2em; vertical-align: middle; margin-right: 5px;">
+    <span class="modal_link">Technical Insight</span>
   </a>
 </div>
 
@@ -621,7 +626,7 @@ The good news? The data shows change is possible. Positive narratives do emerge 
      data-bs-toggle="modal"
      data-bs-target="#exampleModal2"
      class="modal-link">
-    📖 <span>Technical Insight</span>
+    📖 <span class="modal_link">Technical Insight</span>
   </a>
 </div>
 
@@ -705,7 +710,7 @@ In this context, tools like our knowledge graph aren’t just useful, they’re 
      data-bs-toggle="modal"
      data-bs-target="#exampleModal3"
      class="modal-link">
-    📖 <span>Technical Insight</span>
+    📖 <span class="modal_link">Technical Insight</span>
   </a>
 </div>
 
@@ -744,7 +749,7 @@ Export and visualization with Pyvis and Streamlit, including LLM-powered search 
      data-bs-toggle="modal"
      data-bs-target="#exampleModal4"
      class="modal-link">
-    📖 <span>Technical Insight</span>
+    📖 <span class="modal_link">Technical Insight</span>
   </a>
 </div>
 
