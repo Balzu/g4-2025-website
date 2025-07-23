@@ -426,7 +426,6 @@ This divergence is key.
 
 ###  From Shared Vocabulary to Diverging Narratives 
 
-<div style="display: flex; justify-content: center;">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.article_clusters_dashboard.json" | relative_url }}"
@@ -434,7 +433,6 @@ This divergence is key.
       tooltip="true" >
     </vegachart>
   </div>
-</div>
 
 Through **K-Means clustering**, we analyzed how articles and posts group around themes, tones, and timeframes. What emerged is a layered ecosystem of narratives: 
 
@@ -761,7 +759,7 @@ It’s whether our response is coherent — and whether it reaches those who nee
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/conclusions/chart_italy_projects.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/conclusions/financig/chart_italy_projects.json" | relative_url }}"
       style="width: 100%; height: 100%"
       tooltip="true" >
     </vegachart>
@@ -771,7 +769,7 @@ It’s whether our response is coherent — and whether it reaches those who nee
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/conclusions/chart_top10.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/conclusions/financig/chart_top10.json" | relative_url }}"
       style="width: 100%; height: 100%"
       tooltip="true" >
     </vegachart>
@@ -781,7 +779,7 @@ It’s whether our response is coherent — and whether it reaches those who nee
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/conclusions/combined_chart.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/conclusions/financig/combined_chart.json" | relative_url }}"
       style="width: 100%; height: 100%"
       tooltip="true" >
     </vegachart>
