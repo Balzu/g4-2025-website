@@ -59,6 +59,9 @@ vega: true
 .heatmap { display:none; }
 .heatmap.visible { display:block; }
 
+.barchart { display:none; }
+.barchart.visible { display:block; }
+
 div aside {
     background-color: #000000;
 }
@@ -286,7 +289,12 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
 
 
 
-<div style="display: flex; justify-content: center;">
+<div class="hm-buttons">
+  <button type="button" class="hm-btn active" data-target="heatmap1">Attacks by Sector</button>
+  <button type="button" class="hm-btn" data-target="heatmap2">Attacks by Compnany Type</button>
+</div>
+
+<div id="barchart1" class="barchart visible">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json" | relative_url }}"
@@ -296,7 +304,8 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
   </div>
 </div>
 
-<div style="display: flex; justify-content: center;">
+
+<div id="barchart2" class="barchart">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/map_the_attack/SETTORI_COLPITI_ITALY_BLACK.json" | relative_url }}"
@@ -305,7 +314,6 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
     </vegachart>
   </div>
 </div>
-
 
 
 This trend is tied to both **economic weight and accelerated digitalization**, especially among small and medium enterprises (SMEs), which often lack robust cybersecurity practices. According to the [Cyber Index PMI 2024](https://www.confindustria.it/progetti/cyber-index-pmi/) by Confindustria, Politecnico di Milano, and the Italian National Cybersecurity Agency, Italian SMEs score an average of just **52 out of 100** in terms of **cyber resilience**. At the European level, [ENISA](https://www.enisa.europa.eu/topics/awareness-and-cyber-hygiene/smes-cybersecurity) also reports that **over 90% of SMEs** adopted digital tools during the pandemic **without strengthening their cybersecurity posture**, leaving many exposed to exploitive threats.
@@ -856,6 +864,21 @@ document.querySelectorAll('.hm-btn').forEach(btn=>{
     btn.classList.add('active');
 
     document.querySelectorAll('.heatmap').forEach(div=>div.classList.remove('visible'));
+    document.getElementById(target).classList.add('visible');
+  });
+});
+</script>
+
+
+<script>
+document.querySelectorAll('.hm-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const target = btn.dataset.target;
+
+    document.querySelectorAll('.hm-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.querySelectorAll('.barchart').forEach(div=>div.classList.remove('visible'));
     document.getElementById(target).classList.add('visible');
   });
 });
