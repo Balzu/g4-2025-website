@@ -72,16 +72,72 @@ canvas {
 
 # Introduction {#introduction}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+### Why Cybersecurity Matters — And Not Just for the Tech Industry 
+_A breach might start with a keystroke — but its echo depends on who’s listening._ 
 
+In today’s digital society, cybersecurity can no longer be dismissed as a purely technical issue or a concern reserved for IT departments. One breach is enough to expose the personal data of millions, shake financial markets, and erode the trust between a company and its customers. But beyond the corporate boardrooms and security operation centers, there is a deeper, more human layer to every cyberattack — and it’s unfolding online, in real time. 
+
+
+### A Look Inside the Noise: Reddit as a Mirror of Cyber Perception 
+
+While news headlines often spotlight big attacks and corporate responses, platforms like **Reddit** offer a bottom-up perspective — revealing what people actually say, feel, and fear when facing digital threats. 
+
+By analyzing thousands of Reddit comments and posts mentioning terms like phishing, data breach, ransomware, or zero trust, a more complex picture emerges. Conversations aren’t always polarized; users express both **concern and confusion**, sometimes anger, sometimes surprise. And the **volume of posts is growing**, suggesting that cybersecurity is no longer a niche topic — it's becoming a **mainstream, lived experience,** especially for those who've had their identities stolen or accounts compromised. 
+
+This growing discourse, rich in emotion and nuance, underscores a simple truth: **cybersecurity is not just about systems — it’s about people.** 
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/intro/emotion_distribution_reddit_dropdown.json | relative_url }}"
+    schema-url="{{ "/assets/charts/intro/emotion_distribution_reddit_dropdown.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
 </div>
+
+### What the Emotions Reveal 
+
+As shown in our **emotion analysis** (see technical insight), most users express **negative emotions** — fear, anger, frustration — when discussing cyber incidents. However, there are also traces of relief, curiosity, even humor, proving that digital threats are woven into the emotional fabric of online life. 
+
+These aren’t just isolated incidents; they are a reflection of how modern society processes risk, privacy, and trust in the digital age. 
+
+### Our Approach: Beyond Firewalls and Forensics 
+
+In light of this, our project adopts a **systematic, graph-based approach** to cyber threat intelligence — one that acknowledges not just the technical structure of attacks, but also their social and economic dimensions. 
+
+From **data and maps** to **media coverage, public sentiment, company responses, investment flows, and technical knowledge**, this investigation aims to decode the full lifecycle of cyber threats, with a particular focus on **Italy**. 
+
+
+<a href="#"
+   data-bs-toggle="modal"
+   data-bs-target="#exampleModal"
+   class="modal-link">
+  📖 <span>Technical Insight</span>
+</a>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Emotion Analysis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+      </div>
+      <div class="modal-body">
+        We used the multilingual **GordonAI emotion detection model** to analyze emotional responses in Reddit posts related to cybersecurity incidents. GordonAI is based on **Microsoft’s mdeberta-v3-base** and fine-tuned to classify text into seven core emotions: joy, sadness, fear, anger, surprise, disgust, and neutral. It supports **English, Italian, and Spanish**, and is optimized for short, user-generated texts. 
+
+For this task, we scraped Reddit  title,posts and comments using a curated list of **cybersecurity-related tokens** — such as ransomware, phishing, vpn, ddos, exploit, leak, password — and key phrases like "got hacked", "account stolen", "lost access", or "social engineering". 
+
+Each extracted post was processed by the model to detect its **dominant emotional tone**. This allowed us to explore how users react emotionally to specific threat types, and how different scenarios (e.g., personal account loss vs. general vulnerability disclosure) trigger distinct affective responses. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
 # Map the Attack {#map-the-attack}
