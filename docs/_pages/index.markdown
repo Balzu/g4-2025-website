@@ -758,7 +758,22 @@ This contrast underscores an important dynamic: media visibility and tone are no
 </div>
 
 
-###  What the Media Talks About - And What It Doesn’t 
+### What the Media Talks About - And What It Doesn’t 
+
+By applying topic modeling (LDA) to the articles covering cyberattacks on Italian companies, a clear pattern begins to emerge. Media narratives appear to focus predominantly on cyber threats and attack techniques, with far less attention given to topics like corporate data protection, technical vulnerabilities, or cybersecurity regulations. This likely reflects a tendency to report on the event itself the how and what of the attack rather than delving into the underlying causes or preventive measures. As a result, the broader context around cybersecurity often remains in the background, leaving key structural issues underexplored. 
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/post_attack_topics_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+
+###  Cybersecurity: What We Say, What We Mean
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -866,15 +881,7 @@ The good news? The data shows change is possible. Positive narratives do emerge 
 
 
 
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/post_attack_topics_chart.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
+
 
 
 
