@@ -475,8 +475,6 @@ navbar:
     url: "#cyber-q-and-a"
   - title: Conclusions
     url: "#conclusions"
-  - title: About us
-    url: "#about-us"
   - title: SBD
     url: https://masterbigdata.it
       

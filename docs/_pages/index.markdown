@@ -1122,12 +1122,6 @@ We can’t protect what we don’t understand, and we can’t defend with isolat
 Because the question is no longer whether the threats are real. 
 It’s whether our response is coherent — and whether it reaches those who need it most. 
 
-
-# About Us  {#about-us}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
-
-
 <script>
 document.querySelectorAll('.hm-btn1').forEach(btn=>{
   btn.addEventListener('click', ()=>{
