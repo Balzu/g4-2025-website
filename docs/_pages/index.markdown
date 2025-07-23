@@ -79,6 +79,14 @@ p a {
     color: #ca6701 !important;
 }
 
+
+.hm-btn.active {
+    background: #0a9396 !important;
+    color: #fff;
+    border-color: #0a9396 !important;
+}
+
+
 </style>
 
 
@@ -203,7 +211,7 @@ Following this overview, our data identified Italy as the second most targeted c
 </div>
 
 
-When comparing Italy’s cyber-attack trend to the European average, a clear divergence emerges. In certain years, such as **2017**, the numbers were nearly aligned, suggesting a **comparable threat level**. But shortly thereafter, Italy's curve began to **rise** steadily, with **sharp peaks** starting **around 2021**. This growth stands in stark contrast to the broader European trend, which remains more moderate, partly because many EU countries report very few incidents, in some cases fewer than 10, which pull the average down. This discrepancy underscores a pressing **need to focus attention on Italy**. While the continent as a whole faces growing cyber threats, Italy is experiencing a notably accelerated trajectory that demands specific, localized analysis and response. 
+When comparing Italy’s cyber-attack trend to the European average, a clear divergence emerges. In certain years, such as **2017** or **2020**, the numbers were nearly aligned, suggesting a **comparable threat level**. But shortly thereafter, Italy's curve began to **rise** steadily, with **sharp peaks starting around 2021**. This contrasts sharply with the broader European trend, which has remained comparatively moderate. This gap highlights the urgent **need for focused attention on Italy**, where cyber threats are escalating at a faster pace, calling for targeted, localized analysis and response. The plot depicting this comparison uses Italian cyber-attack data alongside a population-weighted European average, calculated using 2024 population figures per country to provide a more accurate regional context. 
 
 This brings us to the core of our investigation: **who is being targeted the most in Italy and why**? To better understand this phenomenon, it's essential to first clarify the structure of the Italian corporate landscape. The characteristics of the national business ecosystem play a key role in shaping both the exposure and vulnerability of different actors. The overview below provides a snapshot of this landscape, setting the stage for a deeper analysis of attack patterns and motivations.
 
@@ -270,10 +278,11 @@ Beyond the numbers and trends, each cyberattack tells a story, of **disruption, 
   <iframe src="{{ site.baseurl }}/assets/charts/map_the_attack/mappa_italia_aziende_hq_description.html" width="100%" height="400px" frameborder="0"></iframe> 
 </div>
 
-
+<br><br><br>
 When analyzing the Italian dataset more deeply, a recurring pattern emerges: the most targeted sector is **Manufacturing**, followed by **Public Administration**. 
 
 Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing sector accounted for **13% of all cyberattacks in Italy, more than twice its global share** ([Muscope report](https://www.muscope.com/en/industry-manufacturing/?utm_source=chatgpt.com)). This makes it a clear target for ransomware groups and threat actors aiming to disrupt production or exfiltrate valuable data. A complementary perspective based on **organization size** reinforces this narrative: SMEs account for **more than 400 attacks**, representing **over half of all recorded incidents**. This aligns with ISTAT data showing that SMEs make up the overwhelming majority of Italian businesses. Public Administration, the second most attacked sector, also ranks high by size category. 
+
 
 
 
@@ -287,6 +296,17 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
   </div>
 </div>
 
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/SETTORI_COLPITI_ITALY_BLACK.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+
 
 This trend is tied to both **economic weight and accelerated digitalization**, especially among small and medium enterprises (SMEs), which often lack robust cybersecurity practices. According to the [Cyber Index PMI 2024](https://www.confindustria.it/progetti/cyber-index-pmi/) by Confindustria, Politecnico di Milano, and the Italian National Cybersecurity Agency, Italian SMEs score an average of just **52 out of 100** in terms of **cyber resilience**. At the European level, [ENISA](https://www.enisa.europa.eu/topics/awareness-and-cyber-hygiene/smes-cybersecurity) also reports that **over 90% of SMEs** adopted digital tools during the pandemic **without strengthening their cybersecurity posture**, leaving many exposed to exploitive threats.
 
@@ -298,17 +318,6 @@ According to this perspective, Italy’s vulnerability lies not only in the numb
 Together, these findings reflect a broader trend: **cybercriminals prioritize sectors where disruption is most impactful, and defenses are uneven**. This raises a critical question: **are certain threat actors consistently targeting specific industries in Italy and if so, why?** The answer can reveal strategic intent, ranging from financial motives to ideological agendas, and help prevent future risks. 
 
 The following section explores this dynamic in greater detail, examining how **key threat actors operate in Italy** and which industries they pursue most aggressively.
-
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/map_the_attack/SETTORI_COLPITI_ITALY_BLACK.json" | relative_url }}"
-      style="width: 100%; height: 100%" 
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
 
 
 The data highlights how different sectors are targeted in different ways. **LockBit 3.0** is the most active and geographically distributed group, with a distinct preference for **Manufacturing**, echoing the earlier finding that this sector is the most targeted. Its predecessor, **LockBit 2**, displayed a broader distribution, with a notable presence in **Retail** and **General Services**, but less strategic focus overall. By contrast, politically motivated actors like **Noname057(16)** and **LulzSecITA** mainly targeted **Public Administration**, largely bypassing manufacturing. This suggests a goal not of profit but of visibility, through public disruption or data leaks, exploiting institutional vulnerabilities.
