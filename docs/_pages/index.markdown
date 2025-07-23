@@ -153,14 +153,12 @@ In light of this, our project adopts a **systematic, graph-based approach** to c
 
 From **data and maps** to **media coverage, public sentiment, company responses, investment flows, and technical knowledge**, this investigation aims to decode the full lifecycle of cyber threats, with a particular focus on **Italy**. 
 
-
 <div class="text-center my-3">
   <a href="javascript:void(0)"
      data-bs-toggle="modal"
-     data-bs-target="#exampleModal"
+     data-bs-target="#exampleModal2"
      class="modal-link">
-    <img src="{{ '/assets/images/ingegneria.png' | relative_url }}" alt="Technical Insight" style="height: 1.2em; vertical-align: middle; margin-right: 5px;">
-    <span class="modal_link">Technical Insight</span>
+    🛠 <span class="modal_link">Emotion Analysis</span>
   </a>
 </div>
 
@@ -172,11 +170,11 @@ From **data and maps** to **media coverage, public sentiment, company responses,
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
-        We used the multilingual <strong>GordonAI emotion detection model</strong> to analyze emotional responses in Reddit posts related to cybersecurity incidents. GordonAI is based on **Microsoft’s mdeberta-v3-base** and fine-tuned to classify text into seven core emotions: joy, sadness, fear, anger, surprise, disgust, and neutral. It supports **English, Italian, and Spanish**, and is optimized for short, user-generated texts. 
+We used the multilingual GordonAI emotion detection model to analyze emotional responses in Reddit posts related to cybersecurity incidents. GordonAI is based on Microsoft’s mdeberta-v3-base and fine-tuned to classify text into seven core emotions: joy, sadness, fear, anger, surprise, disgust, and neutral. It supports English, Italian, and Spanish, and is optimized for short, user-generated texts. 
 
-For this task, we scraped Reddit  title,posts and comments using a curated list of <strong>cybersecurity-related tokens</strong> — such as ransomware, phishing, vpn, ddos, exploit, leak, password — and key phrases like "got hacked", "account stolen", "lost access", or "social engineering". 
+For this task, we scraped Reddit  title,posts and comments and filtering relavant contents using a curated list of cybersecurity related tokens such as ransomware, phishing, vpn, ddos, exploit, leak, password  and key phrases like "got hacked", "account stolen", "lost access", or "social engineering". 
 
-Each extracted post was processed by the model to detect its <strong>dominant emotional tone</strong>. This allowed us to explore how users react emotionally to specific threat types, and how different scenarios (e.g., personal account loss vs. general vulnerability disclosure) trigger distinct affective responses. 
+Each extracted post was processed by the model to detect its dominant emotional tone. This allowed us to explore how users react emotionally to specific threat types, and how different scenarios (e.g., personal account loss vs. general vulnerability disclosure) trigger distinct affective responses. 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -733,7 +731,7 @@ The good news? The data shows change is possible. Positive narratives do emerge 
      data-bs-toggle="modal"
      data-bs-target="#exampleModal2"
      class="modal-link">
-    🛠 <span class="modal_link">Technical Insight</span>
+    🛠 <span class="modal_link">Sentiment Analysis</span>
   </a>
 </div>
 
@@ -741,35 +739,19 @@ The good news? The data shows change is possible. Positive narratives do emerge 
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModal2Label">Emotion Analysis</h5>
+        <h5 class="modal-title" id="exampleModal2Label">Sentiment Analysis</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
-To understand how cybersecurity is discussed across different sources — from mainstream media to industry reports — we went beyond surface-level headlines. We built a custom natural language processing (NLP) pipeline designed to extract  
+To understand how cybersecurity is discussed we built a custom natural language processing (NLP) pipeline. First, we cleaned and structured the text data using classic yet essential techniques: tokenization, lemmatization, stopword removal and  regular expressions (regex) given the limitations of traditional stopword lists especially when dealing with linguistic contractions, reflexive forms, and informal expressions. Then we moved on to classifying sentiment and identifying underlying themes: 
 
-  
-First, we cleaned and structured the text data using classic yet essential techniques: 
+We used a multilingual transformer model clapAI/modernBERT-large to label every article, post, and comment as positive, neutral, or negative. 
 
-- Tokenization (splitting sentences into words), 
-- Lemmatization (reducing words to their base form), 
-- Stopword removal (eliminating 
+To uncover recurring themes, we applied Latent Dirichlet Allocation (LDA), a probabilistic model that identifies clusters of related words and organizes content around them. 
 
-Once the language was cleaned and structured, we moved on to classifying emotions and identifying underlying themes: 
+We tested different numbers of topics (3, 5, 7, 10) using GridSearchCV to find the most informative structure. This process surfaced topics like: Corporate Cybersecurity practices, Data privacy and GDPR, compliance, Cyberattacks and Digital Crime etc.  
 
-We used a multilingual transformer model — clapAI/modernBERT-large — to label every article, post, and comment as positive, neutral, or negative. 
-
-To uncover recurring themes, we applied Latent Dirichlet Allocation (LDA) — a probabilistic model that identifies clusters of related words and organizes content around them. 
-We tested different numbers of topics (3, 5, 7, 10) using GridSearchCV to find the most informative structure. This process surfaced topics like: 
-
-Corporate cybersecurity practices, 
-
-Data privacy and GDPR compliance, 
-
-Technical vulnerabilities in devices, 
-
-Cybercrime and identity theft. 
-
-Each topic, in turn, was analyzed for sentiment, source, and time — allowing us to see not just what was being discussed, but how it evolved across years and media types. 
+Each topic, in turn, was analyzed for sentiment,emotion ( with the model described in the previous technical section) and time allowing us to see not just what was being discussed, but how it evolved across years and media types. 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -817,7 +799,7 @@ In this context, tools like our knowledge graph aren’t just useful, they’re 
      data-bs-toggle="modal"
      data-bs-target="#exampleModal3"
      class="modal-link">
-    📖 <span class="modal_link">Technical Insight</span>
+    🛠 <span class="modal_link">Building a Graph of Cyber Knowledge </span>
   </a>
 </div>
 
@@ -825,11 +807,11 @@ In this context, tools like our knowledge graph aren’t just useful, they’re 
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModal3Label">How It Works: Building a Graph of Cyber Knowledge</h5>
+        <h5 class="modal-title" id="exampleModal3Label">Building a Graph of Cyber Knowledge </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
-he graph is constructed through a multi-layered pipeline that blends structure with semantics: 
+The graph is constructed through a multi-layered pipeline that blends structure with semantics: 
 
 Parsing MITRE ATT&CK data in STIX format (including techniques, malware, mitigations, groups, intrusion set). 
 
@@ -856,7 +838,7 @@ Export and visualization with Pyvis and Streamlit, including LLM-powered search 
      data-bs-toggle="modal"
      data-bs-target="#exampleModal4"
      class="modal-link">
-    📖 <span class="modal_link">Technical Insight</span>
+    🛠 <span class="modal_link">Graph Metrics That Matter</span>
   </a>
 </div>
 
@@ -864,23 +846,17 @@ Export and visualization with Pyvis and Streamlit, including LLM-powered search 
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModal4Label"> Under the Hood: Graph Metrics That Matter </h5>
+        <h5 class="modal-title" id="exampleModal4Label"> Graph Metrics That Matter</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
         The current version of the graph presents a robust, semantically rich topology: 
-
-4,366 nodes, 296,187 edges — confirming a dense and diverse relational space. 
-
-Average path length: 3.77 → concepts are quickly reachable from one another. 
-
-Average clustering coefficient ~0.5 → strong local groupings of related content. 
-
-PageRank peaks at ~0.013 → some articles act as high-authority knowledge hubs. 
-
-Assortativity: +0.076 → similar-degree nodes tend to connect, suggesting self-organized thematic coherence. 
-
-These metrics confirm a navigable and highly interconnected ecosystem — ideal for applications like RAG (Retrieval-Augmented Generation), automated explanations, or exploratory training. 
+4,366 nodes, 296,187 edges confirming a dense and diverse relational space. 
+Average path length: 3.77  concepts are quickly reachable from one another. 
+Average clustering coefficient 0.5  strong local groupings of related content. 
+PageRank peaks at 0.013 some articles act as high-authority knowledge hubs. 
+Assortativity: +0.076 similar-degree nodes tend to connect, suggesting self-organized thematic coherence. 
+These metrics confirm a navigable and highly interconnected ecosystem ideal for applications like RAG (Retrieval Augmented Generation), automated explanations, or exploratory training. 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
