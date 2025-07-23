@@ -1,1 +1,405 @@
-{"config": {"background": "transparent", "view": {"stroke": "transparent"}, "axis": {"labelColor": "#ffffff", "titleColor": "#ffffff"}, "legend": {"labelColor": "#ffffff", "titleColor": "#ffffff"}, "title": {"color": "#ffffff"}}, "data": {"name": "data-44b843c7e28606577fd1198bb730a87c"}, "mark": {"type": "line", "interpolate": "monotone", "point": true}, "encoding": {"color": {"field": "continent", "scale": {"range": ["#001219", "#005f73", "#0a9396", "#94d2bd", "#e9d8a6", "#ee9b00", "#ca6702", "#bb3e03", "#ae2012", "#9b2226"]}, "title": "Continent", "type": "nominal"}, "opacity": {"condition": {"param": "param_2", "value": 1}, "value": 0.1}, "tooltip": [{"field": "year", "title": "Year", "type": "ordinal"}, {"field": "continent", "title": "Continent", "type": "nominal"}, {"field": "events", "title": "Events", "type": "quantitative"}], "x": {"field": "year", "sort": "ascending", "title": "Year", "type": "ordinal"}, "y": {"field": "events", "title": "Number of Events", "type": "quantitative"}}, "height": 450, "params": [{"name": "param_2", "select": {"type": "point", "fields": ["continent"]}, "bind": "legend"}], "title": "Cyber Events per Year by Continent", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-44b843c7e28606577fd1198bb730a87c": [{"year": "2014", "continent": "Africa", "events": 9}, {"year": "2014", "continent": "Asia", "events": 179}, {"year": "2014", "continent": "Europe", "events": 100}, {"year": "2014", "continent": "North America", "events": 294}, {"year": "2014", "continent": "Oceania", "events": 15}, {"year": "2014", "continent": "South America", "events": 11}, {"year": "2015", "continent": "Africa", "events": 23}, {"year": "2015", "continent": "Asia", "events": 174}, {"year": "2015", "continent": "Europe", "events": 160}, {"year": "2015", "continent": "North America", "events": 404}, {"year": "2015", "continent": "Oceania", "events": 29}, {"year": "2015", "continent": "South America", "events": 15}, {"year": "2016", "continent": "Africa", "events": 65}, {"year": "2016", "continent": "Asia", "events": 251}, {"year": "2016", "continent": "Europe", "events": 211}, {"year": "2016", "continent": "North America", "events": 484}, {"year": "2016", "continent": "Oceania", "events": 15}, {"year": "2016", "continent": "South America", "events": 21}, {"year": "2017", "continent": "Africa", "events": 5}, {"year": "2017", "continent": "Asia", "events": 109}, {"year": "2017", "continent": "Europe", "events": 241}, {"year": "2017", "continent": "North America", "events": 372}, {"year": "2017", "continent": "Oceania", "events": 17}, {"year": "2017", "continent": "South America", "events": 20}, {"year": "2018", "continent": "Africa", "events": 12}, {"year": "2018", "continent": "Asia", "events": 96}, {"year": "2018", "continent": "Europe", "events": 171}, {"year": "2018", "continent": "North America", "events": 471}, {"year": "2018", "continent": "Oceania", "events": 20}, {"year": "2018", "continent": "South America", "events": 9}, {"year": "2019", "continent": "Africa", "events": 20}, {"year": "2019", "continent": "Asia", "events": 141}, {"year": "2019", "continent": "Europe", "events": 180}, {"year": "2019", "continent": "North America", "events": 598}, {"year": "2019", "continent": "Oceania", "events": 35}, {"year": "2019", "continent": "South America", "events": 11}, {"year": "2020", "continent": "Africa", "events": 19}, {"year": "2020", "continent": "Asia", "events": 203}, {"year": "2020", "continent": "Europe", "events": 367}, {"year": "2020", "continent": "North America", "events": 944}, {"year": "2020", "continent": "Oceania", "events": 49}, {"year": "2020", "continent": "South America", "events": 17}, {"year": "2021", "continent": "Africa", "events": 25}, {"year": "2021", "continent": "Asia", "events": 317}, {"year": "2021", "continent": "Europe", "events": 589}, {"year": "2021", "continent": "North America", "events": 909}, {"year": "2021", "continent": "Oceania", "events": 64}, {"year": "2021", "continent": "South America", "events": 70}, {"year": "2022", "continent": "Africa", "events": 37}, {"year": "2022", "continent": "Asia", "events": 393}, {"year": "2022", "continent": "Europe", "events": 1483}, {"year": "2022", "continent": "North America", "events": 1327}, {"year": "2022", "continent": "Oceania", "events": 77}, {"year": "2022", "continent": "South America", "events": 173}, {"year": "2023", "continent": "Africa", "events": 115}, {"year": "2023", "continent": "Asia", "events": 729}, {"year": "2023", "continent": "Europe", "events": 1840}, {"year": "2023", "continent": "North America", "events": 3763}, {"year": "2023", "continent": "Oceania", "events": 160}, {"year": "2023", "continent": "South America", "events": 212}]}}
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "config": {
+        "axis": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff"
+        },
+        "background": "transparent",
+        "legend": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff"
+        },
+        "title": {
+            "color": "#ffffff"
+        },
+        "view": {
+            "stroke": "transparent"
+        }
+    },
+    "data": {
+        "name": "data-44b843c7e28606577fd1198bb730a87c"
+    },
+    "datasets": {
+        "data-44b843c7e28606577fd1198bb730a87c": [
+            {
+                "continent": "Africa",
+                "events": 9,
+                "year": "2014"
+            },
+            {
+                "continent": "Asia",
+                "events": 179,
+                "year": "2014"
+            },
+            {
+                "continent": "Europe",
+                "events": 100,
+                "year": "2014"
+            },
+            {
+                "continent": "North America",
+                "events": 294,
+                "year": "2014"
+            },
+            {
+                "continent": "Oceania",
+                "events": 15,
+                "year": "2014"
+            },
+            {
+                "continent": "South America",
+                "events": 11,
+                "year": "2014"
+            },
+            {
+                "continent": "Africa",
+                "events": 23,
+                "year": "2015"
+            },
+            {
+                "continent": "Asia",
+                "events": 174,
+                "year": "2015"
+            },
+            {
+                "continent": "Europe",
+                "events": 160,
+                "year": "2015"
+            },
+            {
+                "continent": "North America",
+                "events": 404,
+                "year": "2015"
+            },
+            {
+                "continent": "Oceania",
+                "events": 29,
+                "year": "2015"
+            },
+            {
+                "continent": "South America",
+                "events": 15,
+                "year": "2015"
+            },
+            {
+                "continent": "Africa",
+                "events": 65,
+                "year": "2016"
+            },
+            {
+                "continent": "Asia",
+                "events": 251,
+                "year": "2016"
+            },
+            {
+                "continent": "Europe",
+                "events": 211,
+                "year": "2016"
+            },
+            {
+                "continent": "North America",
+                "events": 484,
+                "year": "2016"
+            },
+            {
+                "continent": "Oceania",
+                "events": 15,
+                "year": "2016"
+            },
+            {
+                "continent": "South America",
+                "events": 21,
+                "year": "2016"
+            },
+            {
+                "continent": "Africa",
+                "events": 5,
+                "year": "2017"
+            },
+            {
+                "continent": "Asia",
+                "events": 109,
+                "year": "2017"
+            },
+            {
+                "continent": "Europe",
+                "events": 241,
+                "year": "2017"
+            },
+            {
+                "continent": "North America",
+                "events": 372,
+                "year": "2017"
+            },
+            {
+                "continent": "Oceania",
+                "events": 17,
+                "year": "2017"
+            },
+            {
+                "continent": "South America",
+                "events": 20,
+                "year": "2017"
+            },
+            {
+                "continent": "Africa",
+                "events": 12,
+                "year": "2018"
+            },
+            {
+                "continent": "Asia",
+                "events": 96,
+                "year": "2018"
+            },
+            {
+                "continent": "Europe",
+                "events": 171,
+                "year": "2018"
+            },
+            {
+                "continent": "North America",
+                "events": 471,
+                "year": "2018"
+            },
+            {
+                "continent": "Oceania",
+                "events": 20,
+                "year": "2018"
+            },
+            {
+                "continent": "South America",
+                "events": 9,
+                "year": "2018"
+            },
+            {
+                "continent": "Africa",
+                "events": 20,
+                "year": "2019"
+            },
+            {
+                "continent": "Asia",
+                "events": 141,
+                "year": "2019"
+            },
+            {
+                "continent": "Europe",
+                "events": 180,
+                "year": "2019"
+            },
+            {
+                "continent": "North America",
+                "events": 598,
+                "year": "2019"
+            },
+            {
+                "continent": "Oceania",
+                "events": 35,
+                "year": "2019"
+            },
+            {
+                "continent": "South America",
+                "events": 11,
+                "year": "2019"
+            },
+            {
+                "continent": "Africa",
+                "events": 19,
+                "year": "2020"
+            },
+            {
+                "continent": "Asia",
+                "events": 203,
+                "year": "2020"
+            },
+            {
+                "continent": "Europe",
+                "events": 367,
+                "year": "2020"
+            },
+            {
+                "continent": "North America",
+                "events": 944,
+                "year": "2020"
+            },
+            {
+                "continent": "Oceania",
+                "events": 49,
+                "year": "2020"
+            },
+            {
+                "continent": "South America",
+                "events": 17,
+                "year": "2020"
+            },
+            {
+                "continent": "Africa",
+                "events": 25,
+                "year": "2021"
+            },
+            {
+                "continent": "Asia",
+                "events": 317,
+                "year": "2021"
+            },
+            {
+                "continent": "Europe",
+                "events": 589,
+                "year": "2021"
+            },
+            {
+                "continent": "North America",
+                "events": 909,
+                "year": "2021"
+            },
+            {
+                "continent": "Oceania",
+                "events": 64,
+                "year": "2021"
+            },
+            {
+                "continent": "South America",
+                "events": 70,
+                "year": "2021"
+            },
+            {
+                "continent": "Africa",
+                "events": 37,
+                "year": "2022"
+            },
+            {
+                "continent": "Asia",
+                "events": 393,
+                "year": "2022"
+            },
+            {
+                "continent": "Europe",
+                "events": 1483,
+                "year": "2022"
+            },
+            {
+                "continent": "North America",
+                "events": 1327,
+                "year": "2022"
+            },
+            {
+                "continent": "Oceania",
+                "events": 77,
+                "year": "2022"
+            },
+            {
+                "continent": "South America",
+                "events": 173,
+                "year": "2022"
+            },
+            {
+                "continent": "Africa",
+                "events": 115,
+                "year": "2023"
+            },
+            {
+                "continent": "Asia",
+                "events": 729,
+                "year": "2023"
+            },
+            {
+                "continent": "Europe",
+                "events": 1840,
+                "year": "2023"
+            },
+            {
+                "continent": "North America",
+                "events": 3763,
+                "year": "2023"
+            },
+            {
+                "continent": "Oceania",
+                "events": 160,
+                "year": "2023"
+            },
+            {
+                "continent": "South America",
+                "events": 212,
+                "year": "2023"
+            }
+        ]
+    },
+    "encoding": {
+        "color": {
+            "field": "continent",
+            "scale": {
+                "range": [
+                    "#001219",
+                    "#005f73",
+                    "#0a9396",
+                    "#94d2bd",
+                    "#e9d8a6",
+                    "#ee9b00",
+                    "#ca6702",
+                    "#bb3e03",
+                    "#ae2012",
+                    "#9b2226"
+                ]
+            },
+            "title": "Continent",
+            "type": "nominal"
+        },
+        "opacity": {
+            "condition": {
+                "param": "param_2",
+                "value": 1
+            },
+            "value": 0.1
+        },
+        "tooltip": [
+            {
+                "field": "year",
+                "title": "Year",
+                "type": "ordinal"
+            },
+            {
+                "field": "continent",
+                "title": "Continent",
+                "type": "nominal"
+            },
+            {
+                "field": "events",
+                "title": "Events",
+                "type": "quantitative"
+            }
+        ],
+        "x": {
+            "field": "year",
+            "sort": "ascending",
+            "type": "ordinal",
+            "axis": {
+                "labelAngle": 0
+            }
+        },
+        "y": {
+            "field": "events",
+            "title": "Number of Events",
+            "type": "quantitative"
+        }
+    },
+    "height": 450,
+    "mark": {
+        "interpolate": "monotone",
+        "point": true,
+        "type": "line"
+    },
+    "params": [
+        {
+            "bind": "legend",
+            "name": "param_2",
+            "select": {
+                "fields": [
+                    "continent"
+                ],
+                "type": "point"
+            }
+        }
+    ],
+    "title": "Cyber Events per Year by Continent",
+    "width": 800
+}
