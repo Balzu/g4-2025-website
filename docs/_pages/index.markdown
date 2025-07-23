@@ -205,6 +205,43 @@ Each extracted post was processed by the model to detect its dominant emotional 
 
 Since 2020, the world has witnessed a sharp rise in cyberattacks, marking a clear upward trend that shows no sign of slowing down. This phenomenon spans across all continents, with North America experiencing the most pronounced growth, though it's worth noting that the dataset we analyzed is mostly U.S.based, which may partly explain the spike. Europe follows closely, highlighting the global scale of the threat and reinforcing the importance of a focused regional analysis. This escalation is closely linked to the rapid digital transformation triggered by the [COVID-19 pandemic](https://www.eurofound.europa.eu/en/covid-19-and-digitalisation), which compelled organizations, institutions, and individuals to adopt digital technologies at an unprecedented pace, often without adequate cybersecurity safeguards, accelerating digital adoption by three to four years in many sectors. As we shift our focus to comparing trends within Europe, and specifically between Italy and the broader region, this context becomes especially relevant.   
 
+
+<div class="text-center my-3">
+  <a href="javascript:void(0)"
+     data-bs-toggle="modal"
+     data-bs-target="#exampleModal7"
+     class="modal-link">
+    🔎 <span class="modal_link">Data Collection and Cleaning</span>
+  </a>
+</div>
+
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModal7Label" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModal7Label">Data Collection and Cleaning</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+      </div>
+      <div class="modal-body">
+or our project, we relied on two different datasets. The first, curated by the [University of Maryland](https://cissm.umd.edu/cyber-events-database), spans approximately ten years (from 2014 to mid-2024). The second dataset, obtained from [Ransomfeed](https://ransomfeed.it/), is more recent, containing some records from mid-2025. These datasets provided complementary perspectives: the Maryland dataset was rich in features such as event_type (e.g., exploitative or disruptive), attack_type (e.g., criminal or hacktivist), as well as detailed descriptions of the attacks and, where available, information about the actors behind them. In contrast, the Ransomfeed dataset had a more structured format, including the following fields: VICTIM, GANG, DATE, YEAR, COUNTRY. It's important to note that both datasets contained **incomplete records** — in many cases, crucial information such as the attacker’s identity or the country targeted was missing. This posed a challenge for analysis, but it reflects the reality that information on cyberattacks is not always publicly available or up to date. 
+
+To work with these datasets, we first performed data cleaning and removed duplicates, which we identified after merging them.  
+
+For what concerns duplicates removal, since we could not check tens of thousands of records manually, we did this check with the help of fuzzy matching: we compared pairs of records from the two different datasets belonging to the same year, and we computed the fuzzy matching score of the respective organizations. If this score was above a given threshold, than the organizations could be the same (although their names actually differed), and so we validated them manually. Doing this automatic prefiltering with fuzzy matching allowed us to dramatically speedup the process of data deduplication. 
+
+Next, we enriched the data: for each record, we used the attack’s country to classify it by continent, enabling us to analyze geographical trends. We also added geographic coordinates (latitude and longitude) for each country using a JSON file sourced online. 
+
+For attacks targeting Italian organizations specifically, we went further: we manually identified the headquarters of each affected company and retrieved their coordinates using publicly available sources. This allowed us to generate a detailed map of cyberattacks in Italy using **Folium**, and to create heatmaps of attack density within Italy using Altair. The rest of the visualizations in our analysis were also produced with **Altair**.  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px; width: 100%;">
   <div style="flex: 0 0 50%;">
     <vegachart
