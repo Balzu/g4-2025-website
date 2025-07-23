@@ -308,8 +308,8 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
 
 
 <div class="hm-buttons">
-  <button type="button" class="hm-btn2 active" data-target="heatmap1">Attacks by Sector</button>
-  <button type="button" class="hm-btn2" data-target="heatmap2">Attacks by Company Type</button>
+  <button type="button" class="hm-btn2 active" data-target="barchart1">Attacks by Sector</button>
+  <button type="button" class="hm-btn2" data-target="barchart2">Attacks by Company Type</button>
 </div>
 
 <div id="barchart1" class="barchart visible">
