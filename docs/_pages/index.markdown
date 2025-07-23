@@ -740,19 +740,6 @@ This contrast underscores an important dynamic: media visibility and tone are no
 </div>
 
 
-
-
-After this general overview, we can now reflect on the types of industries affected by cyberattacks and the sentiment of media coverage. 
-
-In the first graph, which shows the average number of articles per attack, we see that **utilities** such as electricity, water, or gas providers receive the **highest media coverage per attack**, even though they were only targeted three times. This indicates a strong media focus on critical infrastructure, likely due to the potential impact on public life and national security. 
-
-In the second graph, which breaks down the **sentiment of articles by industry**, utilities again stand out with a high **share of negative sentiment**. This could be due to an alarmist tone often used when essential services are disrupted, emphasizing risk and urgency. 
-
-However, if we look at **sectors that were less frequently attacked**, such as **transportation and warehousing, accommodation and food services, or mining and extraction**, we notice that these receive **little to no negative coverage**. In some cases, the sentiment is even neutral or slightly positive. This may be because these incidents are seen as less critical or less interesting for the general audience, and therefore are reported with a softer tone or not at all. 
-
-This contrast highlights how **media visibility and tone are not only tied to the frequency of attacks**, but also to how **newsworthy or alarming** an incident is perceived to be. 
-
-
 ###  Cybersecurity: What We Say, What We Mean 
 
 <div style="display: flex; justify-content: center;">
