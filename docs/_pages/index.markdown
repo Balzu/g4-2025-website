@@ -168,25 +168,22 @@ Each extracted post was processed by the model to detect its <strong>dominant em
   </div>
 </div>
 
+Since 2020, the world has witnessed a sharp rise in cyberattacks, marking a clear upward trend that shows no sign of slowing down. This phenomenon spans across all continents, with North America experiencing the most pronounced growth, though it's worth noting that the dataset we analyzed is mostly U.S.based, which may partly explain the spike. Europe follows closely, highlighting the global scale of the threat and reinforcing the importance of a focused regional analysis. This escalation is closely linked to the rapid digital transformation triggered by the [COVID-19 pandemic](https://www.eurofound.europa.eu/en/covid-19-and-digitalisation), which compelled organizations, institutions, and individuals to adopt digital technologies at an unprecedented pace, often without adequate cybersecurity safeguards, accelerating digital adoption by three to four years in many sectors. As we shift our focus to comparing trends within Europe, and specifically between Italy and the broader region, this context becomes especially relevant.   
 
-Since 2020, the world has witnessed a sharp rise in cyber attacks, marking a **clear upward trend** that shows **no sign of slowing down**. This phenomenon spans across all continents, with **North America** experiencing the most pronounced growth—though it's worth noting that the dataset analyzed is U.S. based, which may partly explain the spike. **Europe follows** closely, highlighting the global scale of the threat and reinforcing the importance of a focused regional analysis. This escalation is closely linked to the **rapid digital transformation** triggered by the **COVID 19 pandemic**, which compelled organizations, institutions, and individuals to adopt digital technologies at an unprecedented pace—often without adequate cybersecurity safeguards—accelerating digital adoption by three to four years in many sectors ([eurofound.europa.eu](https://www.eurofound.europa.eu)). As we shift our focus to comparing trends within Europe, and specifically between Italy and the broader region, this context becomes especially relevant.
-
-<div style="display: flex; justify-content: center;">
-  <div>
+<div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
+  <div style="flex: 0 0 65%;">
     <vegachart
       schema-url="{{ "/assets/charts/map_the_attack/rank_italy_attack_count_black.json" | relative_url }}"
-      style="width: 100%; height: 100%" 
-      tooltip="true" >
+      style="width: 100%; height: 100%;" 
+      tooltip="true">
     </vegachart>
   </div>
-</div>
 
-<div style="display: flex; justify-content: center;">
-  <div>
+  <div style="flex: 0 0 35%;">
     <vegachart
       schema-url="{{ "/assets/charts/map_the_attack/cloropleth_blu_verde_black.json" | relative_url }}"
-      style="width: 100%; height: 100%" 
-      tooltip="true" >
+      style="width: 100%; height: 100%;" 
+      tooltip="true">
     </vegachart>
   </div>
 </div>
