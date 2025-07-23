@@ -632,7 +632,48 @@ This deep dive into sectoral and regional patterns confirms a fundamental truth:
 
 # Breaking the Net {#breaking-the-net}
 
-### When Cyberattacks Happen, Who's Listening?
+### The Silent Breach: Most Cyberattacks in Italy Go Unreported
+
+
+After mapping out the landscape of cyberattacks in Europe and zooming in on Italy to identify the main threat actors, the most affected regions, and the techniques most frequently used we now turn to a crucial but often overlooked aspect: **how these incidents are reflected in the public sphere**. 
+Between 2015 and 2025, we identified around 900 cyberattacks targeting Italian companies. Yet only **17%** of them were actually covered by the media. This finding comes from a dataset we compiled by matching each documented attack (by date and organization name) against roughly 8,000 articles from both mainstream and cybersecurity-focused outlets. 
+The chart below visualizes this gap: each dot represents a cyberattack, but only the darker (orange) ones were picked up by the media. The rest the majority went unreported. While the frequency of attacks rises sharply over time, especially after 2020, media attention remains largely stagnant. 
+This disconnect suggests a broader problem. **Underreporting doesn’t just obscure the scale of the threat  it also undermines public awareness, corporate accountability, and the development of effective cybersecurity policy.**
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/media_coverage_cyberattacks.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+
+
+### Niche Networks, National Silence   
+
+So, while attacks are increasing in both frequency and severity, the information about them struggles to reach the wider population, weakening Italy's collective ability to respond, prepare, and build a stronger cybersecurity culture. 
+
+Furthermore, if we dig deeper into the few cases that were covered by the media, another pattern emerges. Most of these reports come from cybersecurity-focused outlets and specialized industry publications that primarily reach a niche audience. 
+This raises an important issue: the general public, who typically relies on mainstream media, is largely left in the dark. Our analysis shows that traditional news organizations rarely report on cyber incidents, even as their frequency and impact grow. In other words, while the attacks exist, their visibility in the broader public discourse does not. 
+
+We also looked at the tone of the articles published and found no major differences between industry-specific outlets and mainstream newspapers. 
+As a result, communication around cyber threats in Italy remains limited and fragmented. The lack of broader media coverage contributes to low public awareness and understanding of cybersecurity risks despite their growing relevance in everyday life and business. 
+
+So, while attacks are increasing in both frequency and severity, the information about them struggles to reach the wider population, weakening Italy's collective ability to respond, prepare, and build a stronger cybersecurity culture.
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/source_origin_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -644,30 +685,6 @@ This deep dive into sectoral and regional patterns confirms a fundamental truth:
   </div>
 </div>
 
-Now that we’ve examined who is being targeted by cyberattacks in Italy, who the threat actors are, and the techniques they use, we can turn to an equally important question: how are these incidents portrayed in the public sphere? 
-
-From 2015 to 2025, there have been around 900 documented cyberattacks on Italian companies. But, as this graph shows, only 118 of those were actually mentioned in the media. Each dot represents a cyberattack, and only the blue ones were covered in news outlets, while the red ones received no media attention at all. 
-
-We can clearly see a growing number of attacks over time, especially after 2020. Yet the gap between attacks and media coverage remains wide. This tells us that despite the rising frequency and impact of cyber incidents, the Italian media only reports a small fraction of them. This underrepresentation could have serious implications for public awareness, corporate accountability, and national cybersecurity policy. 
-
-
-### Niche Networks, National Silence   
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/2.articles_by_source_type.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
-
-Furthermore, if we dig deeper into the few cases that were covered by the media, another pattern emerges. Most of these reports come from cybersecurity-focused outlets — specialized industry publications that primarily reach a niche audience of professionals and insiders. 
-
-This means that the general public, who typically relies on mainstream newspapers and national media, is **often left unaware of these incidents**. As a result, communication around cyber threats in Italy remains limited and fragmented. The lack of broader media coverage contributes to a low level of public awareness and understanding of cybersecurity risks, despite their growing relevance in everyday life and business. 
-
-So, while attacks are increasing in both frequency and severity, the information about them struggles to reach the wider population, weakening Italy's collective ability to respond, prepare, and build a stronger cybersecurity culture. 
 
 ### Which Sectors Make the Headlines? 
 
@@ -813,34 +830,7 @@ The good news? The data shows change is possible. Positive narratives do emerge 
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/media_coverage_cyberattacks.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
-
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
       schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/post_attack_topics_chart.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
-
-
-
-
-
-
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/source_origin_chart.json" | relative_url }}"
       style="width: 100%; height: 100%"
       tooltip="true" >
     </vegachart>
