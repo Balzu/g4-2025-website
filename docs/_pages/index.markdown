@@ -228,9 +228,9 @@ This foundational overview helps contextualize **which types of organizations ar
 
 
 <div class="hm-buttons">
-  <button type="button" class="hm-btn active" data-target="heatmap1">Attacks per Region</button>
-  <button type="button" class="hm-btn" data-target="heatmap2">Attacks / Revenue</button>
-  <button type="button" class="hm-btn" data-target="heatmap3">Attacks / Companies</button>
+  <button type="button" class="hm-btn hm-btn1 active" data-target="heatmap1">Attacks per Region</button>
+  <button type="button" class="hm-btn hm-btn1" data-target="heatmap2">Attacks / Revenue</button>
+  <button type="button" class="hm-btn hm-btn1" data-target="heatmap3">Attacks / Companies</button>
 </div>
 
 <div id="heatmap1" class="heatmap visible">
@@ -290,8 +290,8 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
 
 
 <div class="hm-buttons">
-  <button type="button" class="hm-btn active" data-target="heatmap1">Attacks by Sector</button>
-  <button type="button" class="hm-btn" data-target="heatmap2">Attacks by Compnany Type</button>
+  <button type="button" class="hm-btn hm-btn2 active" data-target="heatmap1">Attacks by Sector</button>
+  <button type="button" class="hm-btn hm-btn2" data-target="heatmap2">Attacks by Company Type</button>
 </div>
 
 <div id="barchart1" class="barchart visible">
@@ -856,11 +856,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <script>
-document.querySelectorAll('.hm-btn').forEach(btn=>{
+document.querySelectorAll('.hm-btn1').forEach(btn=>{
   btn.addEventListener('click', ()=>{
     const target = btn.dataset.target;
 
-    document.querySelectorAll('.hm-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.hm-btn1').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
 
     document.querySelectorAll('.heatmap').forEach(div=>div.classList.remove('visible'));
@@ -871,11 +871,11 @@ document.querySelectorAll('.hm-btn').forEach(btn=>{
 
 
 <script>
-document.querySelectorAll('.hm-btn').forEach(btn=>{
+document.querySelectorAll('.hm-btn2').forEach(btn=>{
   btn.addEventListener('click', ()=>{
     const target = btn.dataset.target;
 
-    document.querySelectorAll('.hm-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.hm-btn2').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
 
     document.querySelectorAll('.barchart').forEach(div=>div.classList.remove('visible'));
