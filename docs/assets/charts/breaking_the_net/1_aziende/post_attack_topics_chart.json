@@ -72,7 +72,6 @@
     "y": {
       "field": "Topic",
       "sort": "-x",
-      "title": "Topic",
       "type": "nominal"
     }
   },

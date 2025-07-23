@@ -1390,7 +1390,6 @@
     ],
     "x": {
       "field": "YearMonth",
-      "title": "Date",
       "type": "temporal"
     },
     "y": {

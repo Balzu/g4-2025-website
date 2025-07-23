@@ -100,7 +100,6 @@
     "y": {
       "field": "origine",
       "sort": "-x",
-      "title": "Source Origin",
       "type": "nominal"
     }
   },

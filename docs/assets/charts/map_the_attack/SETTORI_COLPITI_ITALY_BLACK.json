@@ -1,1 +1,98 @@
-{"config": {"background": "transparent", "view": {"stroke": "transparent"}, "axis": {"labelColor": "#ffffff", "titleColor": "#ffffff"}, "legend": {"labelColor": "#ffffff", "titleColor": "#ffffff"}, "title": {"color": "#ffffff"}}, "data": {"name": "data-026a8394db51cc617f8bead208ccd88b"}, "mark": {"type": "bar", "color": "#ca6702"}, "encoding": {"tooltip": [{"field": "industry", "title": "Sector", "type": "nominal"}, {"field": "Attacks", "title": "Number of Attacks", "type": "quantitative"}], "x": {"field": "Attacks", "title": "Number of Attacks", "type": "quantitative"}, "y": {"field": "industry", "sort": "-x", "title": "Sector", "type": "nominal"}}, "height": 500, "title": "Top 10 Most Attacked Sectors in Italy", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-026a8394db51cc617f8bead208ccd88b": [{"industry": "Manufacturing", "Attacks": 212}, {"industry": "Public Administration", "Attacks": 120}, {"industry": "Professional, Scientific, And Technical Services", "Attacks": 67}, {"industry": "Information", "Attacks": 65}, {"industry": "Health Care And Social Assistance", "Attacks": 57}, {"industry": "Retail Trade", "Attacks": 45}, {"industry": "Management Of Companies And Enterprises", "Attacks": 41}, {"industry": "Arts, Entertainment, And Recreation", "Attacks": 41}, {"industry": "Transportation And Warehousing", "Attacks": 30}, {"industry": "Other Services (Except Public Administration)", "Attacks": 29}]}}
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "config": {
+        "axis": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff"
+        },
+        "background": "transparent",
+        "legend": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff"
+        },
+        "title": {
+            "color": "#ffffff"
+        },
+        "view": {
+            "stroke": "transparent"
+        }
+    },
+    "data": {
+        "name": "data-026a8394db51cc617f8bead208ccd88b"
+    },
+    "datasets": {
+        "data-026a8394db51cc617f8bead208ccd88b": [
+            {
+                "Attacks": 212,
+                "industry": "Manufacturing"
+            },
+            {
+                "Attacks": 120,
+                "industry": "Public Administration"
+            },
+            {
+                "Attacks": 67,
+                "industry": "Professional, Scientific, And Technical Services"
+            },
+            {
+                "Attacks": 65,
+                "industry": "Information"
+            },
+            {
+                "Attacks": 57,
+                "industry": "Health Care And Social Assistance"
+            },
+            {
+                "Attacks": 45,
+                "industry": "Retail Trade"
+            },
+            {
+                "Attacks": 41,
+                "industry": "Management Of Companies And Enterprises"
+            },
+            {
+                "Attacks": 41,
+                "industry": "Arts, Entertainment, And Recreation"
+            },
+            {
+                "Attacks": 30,
+                "industry": "Transportation And Warehousing"
+            },
+            {
+                "Attacks": 29,
+                "industry": "Other Services (Except Public Administration)"
+            }
+        ]
+    },
+    "encoding": {
+        "tooltip": [
+            {
+                "field": "industry",
+                "title": "Sector",
+                "type": "nominal"
+            },
+            {
+                "field": "Attacks",
+                "title": "Number of Attacks",
+                "type": "quantitative"
+            }
+        ],
+        "x": {
+            "field": "Attacks",
+            "title": "Number of Attacks",
+            "type": "quantitative"
+        },
+        "y": {
+            "field": "industry",
+            "sort": "-x",
+            "type": "nominal"
+        }
+    },
+    "height": 500,
+    "mark": {
+        "color": "#ca6702",
+        "type": "bar"
+    },
+    "title": "Top 10 Most Attacked Sectors in Italy",
+    "width": 700
+}

@@ -1,1 +1,82 @@
-{"config": {"background": "transparent", "view": {"stroke": "transparent", "strokeWidth": 0}, "axis": {"labelColor": "#ffffff", "titleColor": "#ffffff", "labelFontSize": 12, "titleFontSize": 14}, "legend": {"labelColor": "#ffffff", "titleColor": "#ffffff"}, "title": {"color": "#ffffff", "font": "Helvetica", "fontSize": 16}, "mark": {"color": "#ca6702"}}, "data": {"name": "data-218b46f3877539b0414c51d96c6b0bbf"}, "mark": {"type": "bar", "cornerRadiusBottomRight": 5, "cornerRadiusTopRight": 5}, "encoding": {"tooltip": [{"field": "company_type_en", "title": "Company Type", "type": "nominal"}, {"field": "Count", "title": "Count", "type": "quantitative"}], "x": {"field": "Count", "title": "Count", "type": "quantitative"}, "y": {"field": "company_type_en", "sort": "-x", "title": "Company Type", "type": "nominal"}}, "height": 500, "title": "Attacks by Company Type", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-218b46f3877539b0414c51d96c6b0bbf": [{"company_type_en": "Large Enterprise", "Count": 144}, {"company_type_en": "Other", "Count": 71}, {"company_type_en": "Public Administration", "Count": 164}, {"company_type_en": "Small and Medium Enterprise", "Count": 476}]}}
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "config": {
+        "axis": {
+            "labelColor": "#ffffff",
+            "labelFontSize": 12,
+            "titleColor": "#ffffff",
+            "titleFontSize": 14
+        },
+        "background": "transparent",
+        "legend": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff"
+        },
+        "mark": {
+            "color": "#ca6702"
+        },
+        "title": {
+            "color": "#ffffff",
+            "font": "Helvetica",
+            "fontSize": 16
+        },
+        "view": {
+            "stroke": "transparent",
+            "strokeWidth": 0
+        }
+    },
+    "data": {
+        "name": "data-218b46f3877539b0414c51d96c6b0bbf"
+    },
+    "datasets": {
+        "data-218b46f3877539b0414c51d96c6b0bbf": [
+            {
+                "company_type_en": "Large Enterprise",
+                "Count": 144
+            },
+            {
+                "company_type_en": "Other",
+                "Count": 71
+            },
+            {
+                "company_type_en": "Public Administration",
+                "Count": 164
+            },
+            {
+                "company_type_en": "Small and Medium Enterprise",
+                "Count": 476
+            }
+        ]
+    },
+    "encoding": {
+        "tooltip": [
+            {
+                "field": "company_type_en",
+                "title": "Company Type",
+                "type": "nominal"
+            },
+            {
+                "field": "Count",
+                "title": "Count",
+                "type": "quantitative"
+            }
+        ],
+        "x": {
+            "field": "Count",
+            "type": "quantitative"
+        },
+        "y": {
+            "field": "company_type_en",
+            "sort": "-x",
+            "type": "nominal"
+        }
+    },
+    "height": 500,
+    "mark": {
+        "cornerRadiusBottomRight": 5,
+        "cornerRadiusTopRight": 5,
+        "type": "bar"
+    },
+    "title": "Attacks by Company Type",
+    "width": 700
+}

@@ -245,7 +245,6 @@
     "y": {
       "field": "token",
       "sort": "-x",
-      "title": "Token",
       "type": "nominal"
     }
   },

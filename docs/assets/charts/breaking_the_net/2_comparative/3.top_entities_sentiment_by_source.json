@@ -201,7 +201,6 @@
       "y": {
         "field": "entities_clean",
         "sort": "-x",
-        "title": "Entity",
         "type": "nominal"
       }
     },

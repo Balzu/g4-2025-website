@@ -69,7 +69,6 @@
     "y": {
       "field": "Source_Type",
       "sort": "-x",
-      "title": "Source Type",
       "type": "nominal"
     }
   },

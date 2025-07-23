@@ -235,7 +235,6 @@
     "y": {
       "field": "Industry",
       "sort": "-x",
-      "title": "Settore",
       "type": "nominal"
     }
   },
@@ -243,6 +242,6 @@
   "mark": {
     "type": "bar"
   },
-  "title": "Distribuzione del sentiment per settore",
+  "title": "Sentiment distribution per sector",
   "width": 650
 }

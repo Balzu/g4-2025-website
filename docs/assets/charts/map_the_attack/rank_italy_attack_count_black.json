@@ -1,1 +1,588 @@
-{"config": {"background": "transparent", "view": {"stroke": "transparent"}, "axis": {"labelColor": "#ffffff", "titleColor": "#ffffff"}, "legend": {"labelColor": "#ffffff", "titleColor": "#ffffff"}, "title": {"color": "#ffffff"}}, "data": {"name": "data-300678e96c056805eadcbe3090d2f4ed"}, "mark": {"type": "bar"}, "encoding": {"color": {"condition": {"test": "datum.Is_Italy", "value": "#ca6702"}, "value": "lightgray"}, "tooltip": [{"field": "country_clean", "title": "Country", "type": "nominal"}, {"field": "attacks", "title": "Number of Attacks", "type": "quantitative"}], "x": {"field": "attacks", "title": "Number of Attacks", "type": "quantitative"}, "y": {"field": "country_clean", "sort": "-x", "title": "Country", "type": "nominal"}}, "height": 500, "params": [{"name": "param_3", "select": {"type": "point", "fields": ["Region"]}, "bind": {"input": "select", "options": ["Europe", "World"], "name": "Region: "}, "value": "Europe"}], "title": "Cyber Attacks by Country", "transform": [{"filter": {"param": "param_3"}}], "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-300678e96c056805eadcbe3090d2f4ed": [{"continent": "Europe", "country_clean": "Albania", "attacks": 9, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Andorra", "attacks": 2, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Austria", "attacks": 114, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Belarus", "attacks": 31, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Belgium", "attacks": 206, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Bosnia And Herzegovina", "attacks": 6, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Bulgaria", "attacks": 39, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Croatia", "attacks": 27, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Cyprus", "attacks": 19, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Czech Republic", "attacks": 104, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Denmark", "attacks": 86, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Estonia", "attacks": 27, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Faroe Islands", "attacks": 2, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Finland", "attacks": 44, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "France", "attacks": 712, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Germany", "attacks": 881, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Gibraltar", "attacks": 2, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Greece", "attacks": 65, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Guernsey", "attacks": 1, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Hungary", "attacks": 31, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Iceland", "attacks": 3, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Ireland", "attacks": 93, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Isle Of Man", "attacks": 2, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Italy", "attacks": 902, "Is_Italy": true, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Kosovo", "attacks": 1, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Latvia", "attacks": 52, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Liechtenstein", "attacks": 2, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Lithuania", "attacks": 80, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Luxembourg", "attacks": 32, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Malta", "attacks": 20, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Moldova", "attacks": 19, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Monaco", "attacks": 3, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Montenegro", "attacks": 6, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Netherlands", "attacks": 249, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "North Macedonia", "attacks": 6, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Northern Cyprus", "attacks": 1, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Norway", "attacks": 81, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Poland", "attacks": 192, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Portugal", "attacks": 83, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Romania", "attacks": 76, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Russia", "attacks": 431, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Serbia", "attacks": 13, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Slovakia", "attacks": 27, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Slovenia", "attacks": 8, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Spain", "attacks": 402, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Sweden", "attacks": 151, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Switzerland", "attacks": 221, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Turkey", "attacks": 9, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Ukraine", "attacks": 395, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "United Kingdom", "attacks": 1513, "Is_Italy": false, "Region": "Europe"}, {"continent": "Europe", "country_clean": "Vatican City", "attacks": 2, "Is_Italy": false, "Region": "Europe"}, {"continent": "North America", "country_clean": "United States", "attacks": 13450, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "United Kingdom", "attacks": 1513, "Is_Italy": false, "Region": "World"}, {"continent": "North America", "country_clean": "Canada", "attacks": 1094, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "Italy", "attacks": 902, "Is_Italy": true, "Region": "World"}, {"continent": "Europe", "country_clean": "Germany", "attacks": 881, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "France", "attacks": 712, "Is_Italy": false, "Region": "World"}, {"continent": "Asia", "country_clean": "India", "attacks": 591, "Is_Italy": false, "Region": "World"}, {"continent": "Oceania", "country_clean": "Australia", "attacks": 555, "Is_Italy": false, "Region": "World"}, {"continent": "South America", "country_clean": "Brazil", "attacks": 469, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "Russia", "attacks": 431, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "Spain", "attacks": 402, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "Ukraine", "attacks": 395, "Is_Italy": false, "Region": "World"}, {"continent": "Asia", "country_clean": "Israel", "attacks": 328, "Is_Italy": false, "Region": "World"}, {"continent": "Asia", "country_clean": "Japan", "attacks": 323, "Is_Italy": false, "Region": "World"}, {"continent": "Asia", "country_clean": "China", "attacks": 258, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "Netherlands", "attacks": 249, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "Switzerland", "attacks": 221, "Is_Italy": false, "Region": "World"}, {"continent": "North America", "country_clean": "Mexico", "attacks": 217, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "Belgium", "attacks": 206, "Is_Italy": false, "Region": "World"}, {"continent": "Europe", "country_clean": "Poland", "attacks": 192, "Is_Italy": false, "Region": "World"}]}}
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "config": {
+        "axis": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff"
+        },
+        "background": "transparent",
+        "legend": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff"
+        },
+        "title": {
+            "color": "#ffffff"
+        },
+        "view": {
+            "stroke": "transparent"
+        }
+    },
+    "data": {
+        "name": "data-300678e96c056805eadcbe3090d2f4ed"
+    },
+    "datasets": {
+        "data-300678e96c056805eadcbe3090d2f4ed": [
+            {
+                "attacks": 9,
+                "continent": "Europe",
+                "country_clean": "Albania",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 2,
+                "continent": "Europe",
+                "country_clean": "Andorra",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 114,
+                "continent": "Europe",
+                "country_clean": "Austria",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 31,
+                "continent": "Europe",
+                "country_clean": "Belarus",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 206,
+                "continent": "Europe",
+                "country_clean": "Belgium",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 6,
+                "continent": "Europe",
+                "country_clean": "Bosnia And Herzegovina",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 39,
+                "continent": "Europe",
+                "country_clean": "Bulgaria",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 27,
+                "continent": "Europe",
+                "country_clean": "Croatia",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 19,
+                "continent": "Europe",
+                "country_clean": "Cyprus",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 104,
+                "continent": "Europe",
+                "country_clean": "Czech Republic",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 86,
+                "continent": "Europe",
+                "country_clean": "Denmark",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 27,
+                "continent": "Europe",
+                "country_clean": "Estonia",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 2,
+                "continent": "Europe",
+                "country_clean": "Faroe Islands",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 44,
+                "continent": "Europe",
+                "country_clean": "Finland",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 712,
+                "continent": "Europe",
+                "country_clean": "France",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 881,
+                "continent": "Europe",
+                "country_clean": "Germany",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 2,
+                "continent": "Europe",
+                "country_clean": "Gibraltar",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 65,
+                "continent": "Europe",
+                "country_clean": "Greece",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 1,
+                "continent": "Europe",
+                "country_clean": "Guernsey",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 31,
+                "continent": "Europe",
+                "country_clean": "Hungary",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 3,
+                "continent": "Europe",
+                "country_clean": "Iceland",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 93,
+                "continent": "Europe",
+                "country_clean": "Ireland",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 2,
+                "continent": "Europe",
+                "country_clean": "Isle Of Man",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 902,
+                "continent": "Europe",
+                "country_clean": "Italy",
+                "Is_Italy": true,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 1,
+                "continent": "Europe",
+                "country_clean": "Kosovo",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 52,
+                "continent": "Europe",
+                "country_clean": "Latvia",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 2,
+                "continent": "Europe",
+                "country_clean": "Liechtenstein",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 80,
+                "continent": "Europe",
+                "country_clean": "Lithuania",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 32,
+                "continent": "Europe",
+                "country_clean": "Luxembourg",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 20,
+                "continent": "Europe",
+                "country_clean": "Malta",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 19,
+                "continent": "Europe",
+                "country_clean": "Moldova",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 3,
+                "continent": "Europe",
+                "country_clean": "Monaco",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 6,
+                "continent": "Europe",
+                "country_clean": "Montenegro",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 249,
+                "continent": "Europe",
+                "country_clean": "Netherlands",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 6,
+                "continent": "Europe",
+                "country_clean": "North Macedonia",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 1,
+                "continent": "Europe",
+                "country_clean": "Northern Cyprus",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 81,
+                "continent": "Europe",
+                "country_clean": "Norway",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 192,
+                "continent": "Europe",
+                "country_clean": "Poland",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 83,
+                "continent": "Europe",
+                "country_clean": "Portugal",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 76,
+                "continent": "Europe",
+                "country_clean": "Romania",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 431,
+                "continent": "Europe",
+                "country_clean": "Russia",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 13,
+                "continent": "Europe",
+                "country_clean": "Serbia",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 27,
+                "continent": "Europe",
+                "country_clean": "Slovakia",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 8,
+                "continent": "Europe",
+                "country_clean": "Slovenia",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 402,
+                "continent": "Europe",
+                "country_clean": "Spain",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 151,
+                "continent": "Europe",
+                "country_clean": "Sweden",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 221,
+                "continent": "Europe",
+                "country_clean": "Switzerland",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 9,
+                "continent": "Europe",
+                "country_clean": "Turkey",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 395,
+                "continent": "Europe",
+                "country_clean": "Ukraine",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 1513,
+                "continent": "Europe",
+                "country_clean": "United Kingdom",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 2,
+                "continent": "Europe",
+                "country_clean": "Vatican City",
+                "Is_Italy": false,
+                "Region": "Europe"
+            },
+            {
+                "attacks": 13450,
+                "continent": "North America",
+                "country_clean": "United States",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 1513,
+                "continent": "Europe",
+                "country_clean": "United Kingdom",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 1094,
+                "continent": "North America",
+                "country_clean": "Canada",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 902,
+                "continent": "Europe",
+                "country_clean": "Italy",
+                "Is_Italy": true,
+                "Region": "World"
+            },
+            {
+                "attacks": 881,
+                "continent": "Europe",
+                "country_clean": "Germany",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 712,
+                "continent": "Europe",
+                "country_clean": "France",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 591,
+                "continent": "Asia",
+                "country_clean": "India",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 555,
+                "continent": "Oceania",
+                "country_clean": "Australia",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 469,
+                "continent": "South America",
+                "country_clean": "Brazil",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 431,
+                "continent": "Europe",
+                "country_clean": "Russia",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 402,
+                "continent": "Europe",
+                "country_clean": "Spain",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 395,
+                "continent": "Europe",
+                "country_clean": "Ukraine",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 328,
+                "continent": "Asia",
+                "country_clean": "Israel",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 323,
+                "continent": "Asia",
+                "country_clean": "Japan",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 258,
+                "continent": "Asia",
+                "country_clean": "China",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 249,
+                "continent": "Europe",
+                "country_clean": "Netherlands",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 221,
+                "continent": "Europe",
+                "country_clean": "Switzerland",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 217,
+                "continent": "North America",
+                "country_clean": "Mexico",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 206,
+                "continent": "Europe",
+                "country_clean": "Belgium",
+                "Is_Italy": false,
+                "Region": "World"
+            },
+            {
+                "attacks": 192,
+                "continent": "Europe",
+                "country_clean": "Poland",
+                "Is_Italy": false,
+                "Region": "World"
+            }
+        ]
+    },
+    "encoding": {
+        "color": {
+            "condition": {
+                "test": "datum.Is_Italy",
+                "value": "#ca6702"
+            },
+            "value": "lightgray"
+        },
+        "tooltip": [
+            {
+                "field": "country_clean",
+                "title": "Country",
+                "type": "nominal"
+            },
+            {
+                "field": "attacks",
+                "title": "Number of Attacks",
+                "type": "quantitative"
+            }
+        ],
+        "x": {
+            "field": "attacks",
+            "title": "Number of Attacks",
+            "type": "quantitative"
+        },
+        "y": {
+            "field": "country_clean",
+            "sort": "-x",
+            "type": "nominal"
+        }
+    },
+    "height": 500,
+    "mark": {
+        "type": "bar"
+    },
+    "params": [
+        {
+            "bind": {
+                "input": "select",
+                "name": "Region: ",
+                "options": [
+                    "Europe",
+                    "World"
+                ]
+            },
+            "name": "param_3",
+            "select": {
+                "fields": [
+                    "Region"
+                ],
+                "type": "point"
+            },
+            "value": "Europe"
+        }
+    ],
+    "title": "Cyber Attacks by Country",
+    "transform": [
+        {
+            "filter": {
+                "param": "param_3"
+            }
+        }
+    ],
+    "width": 600
+}
