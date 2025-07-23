@@ -608,7 +608,7 @@ To conclude our exploration of cyber actor dynamics, we conducted a **clustering
           <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
             <img src="{{ '/assets/images/img1.jpeg' | relative_url }}" alt="Immagine 1" class="img-fluid" style="max-width: 32%;">
             <img src="{{ '/assets/images/img2.jpeg' | relative_url }}" alt="Immagine 2" class="img-fluid" style="max-width: 32%;">
-            <img src="{{ '/assets/images/img3.jpeg' | relative_url }}" alt="Immagine 3" class="img-fluid" style="max-width: 32%;">
+            <img src="{{ '/assets/images/img3.png' | relative_url }}" alt="Immagine 3" class="img-fluid" style="max-width: 32%;">
           </div>
 
         </section>
