@@ -71,6 +71,10 @@ canvas {
     max-width: 100% !important;
 }
 
+strong {
+    font-weight: 900 !important;
+}
+
 </style>
 
 
@@ -148,46 +152,50 @@ Each extracted post was processed by the model to detect its **dominant emotiona
 
 # Map the Attack {#map-the-attack}
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/trend_black.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/trend_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
 Since 2020, the world has witnessed a sharp rise in cyber attacks, marking a **clear upward trend** that shows **no sign of slowing down**. This phenomenon spans across all continents, with **North America** experiencing the most pronounced growth—though it's worth noting that the dataset analyzed is U.S. based, which may partly explain the spike. **Europe follows** closely, highlighting the global scale of the threat and reinforcing the importance of a focused regional analysis. This escalation is closely linked to the **rapid digital transformation** triggered by the **COVID 19 pandemic**, which compelled organizations, institutions, and individuals to adopt digital technologies at an unprecedented pace—often without adequate cybersecurity safeguards—accelerating digital adoption by three to four years in many sectors ([eurofound.europa.eu](https://www.eurofound.europa.eu)). As we shift our focus to comparing trends within Europe, and specifically between Italy and the broader region, this context becomes especially relevant.
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/rank_italy_attack_count_black.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/rank_italy_attack_count_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/cloropleth_blu_verde_black.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/cloropleth_blu_verde_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
 Following this overview, a bar chart and a choropleth map of Europe offer a clearer picture of how cyber-attacks are ranked quantitatively by country and how they are geographically distributed across the region. **Italy** stands out as the second most targeted country in Europe, trailing only the United Kingdom—which recorded around 1,500 attacks compared to Italy’s approximately 900. The gap is significant, yet Italy clearly remains **a primary target**. Other major European powers like France, Germany, Spain, and Russia also rank among the top, though they fall behind Italy in total incidents. On a global scale, Italy still holds a prominent position, ranking **fourth** overall (after USA, UK and Canada). The United States dominates the landscape with a dramatically higher volume of attacks, underscoring both the scale of the threat and the importance of regional resilience.
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
@@ -206,28 +214,34 @@ Understanding this business structure is crucial, not only for assessing organiz
   <button type="button" class="hm-btn" data-target="heatmap3">Attacks / Companies</button>
 </div>
 
-<div id="heatmap1" class="heatmap visible">
-  <vegachart
-    schema-url="{{ "/assets/charts/heatmap1.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div id="heatmap1" class="heatmap visible" style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/heatmap1.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
-<div id="heatmap2" class="heatmap">
-  <vegachart
-    schema-url="{{ "/assets/charts/heatmap2.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div id="heatmap2" class="heatmap" style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/heatmap2.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
-<div id="heatmap3" class="heatmap">
-  <vegachart
-    schema-url="{{ "/assets/charts/heatmap3.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div id="heatmap3" class="heatmap" style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/heatmap3.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
@@ -241,38 +255,41 @@ This foundational overview helps contextualize **which types of organizations ma
 
 This concentration of attacks on the manufacturing sector is likely tied to its **economic weight and increasing digitalization**, especially among **small and medium enterprises** that often lack mature cybersecurity protocols. According to the Cyber Index SME Report 2024 by Confindustria, Politecnico di Milano, and the Italian National Cybersecurity Agency, SMEs in Italy achieve a low average cyber-resilience score of just 52/100—highlighting widespread **gaps in risk awareness and security readiness.** At the European level, [ENISA](https://www.enisa.europa.eu/publications/enisa-report-cybersecurity-for-smes) has similarly noted that over 90% of SMEs adopted new digital tools during the pandemic without implementing additional cybersecurity measures. These vulnerabilities are further underscored by sector-specific analyses: in Italy, manufacturing alone accounted for over 13% of all cyberattacks in 2023—more than double its global share—making it a clear target for ransomware groups and threat actors focused on disrupting production or exfiltrating sensitive data (Muscope Manufacturing Cyber Risk Overview).
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/settori_colpiti_italy_black.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/settori_colpiti_italy_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
 Together, these findings reflect a broader trend: cyber attackers tend to focus on sectors where **disruption can be maximized, and defenses are uneven** — highlighting systemic vulnerabilities that require urgent attention. This observation raises a critical question in the Italian context: **Are certain threat actors consistently targeting specific industries within the country — and if so, what drives these choices?** Identifying recurring patterns in attacker behavior can offer more than just a catalog of incidents. It can point to strategic intent—whether it's the exploitation of persistent vulnerabilities, economic sabotage, political motivations, or larger operations tied to ransomware or espionage campaigns. Understanding **who these actors are, how they operate, and which sectors they pursue most aggressively** is key to anticipating future risks. The following section delves into this aspect in greater detail, examining the activity of major threat actors in Italy and their preferred targets across different sectors. 
 
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/actor_industry_finale.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/actor_industry_finale.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 The plot highlights the intersection between **threat actors** and the **sectors** they most frequently target in Italy. From this analysis, several clear patterns emerge—both in terms of volume and strategic focus. **LockBit 3.0** stands out as the most prominent actor in terms of both volume and distribution of attacks, showing a clear preference for the manufacturing sector — which is, in fact, the most targeted sector in Italy. This correlation suggests a deliberate focus on **high-value industrial targets**, while notably, LockBit 3.0 appears to avoid the information sector almost entirely. A similar pattern is observed with its predecessor, **LockBit 2**, although this version shows a more even distribution across various sectors, with slightly higher activity in retail trade and lower interest in general services. In contrast, actors such as **Anonymous, Anonymous Italy, Noname057(16), LulzSecITA,** and **Killnet** seem to operate with a more **politically driven agenda**, primarily targeting public administration while largely ignoring the manufacturing sector. This behavior suggests an intention to **expose vulnerabilities** and **sensitive data** for demonstrative purposes, **rather than financial gain**, possibly exploiting known weaknesses or poorly secured access points within government institutions.
 
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok_prova1_black.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/duration_gangs_italy_ok_prova1_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
@@ -280,13 +297,14 @@ Looking at the timeline of activity for these threat actors in Italy further rei
 
 As a final significant insight into the activity of these actors in Italy, an assessment was made to determine whether their operations are more **"generalist"** in nature — targeting multiple sectors across Europe — or if their focus is specifically on Italy. The analysis reveals that 14 out of the top 15 threat actors active in Italy also operate across the broader European landscape, suggesting a widespread, non-exclusive targeting strategy. The only exception is Sandworm, a notorious state-sponsored group linked to Unit 74455 of the Russian GRU. **Sandworm** has not been observed conducting operations in Italy, which aligns with its established profile: a highly sophisticated and destructive actor known for complex, coordinated cyberattacks, often aimed at critical infrastructure in **geopolitically strategic contexts**. Recognized by both MITRE ATT&CK and Western intelligence services as one of the most dangerous cyber threat actors globally, Sandworm’s absence from the Italian threat landscape may reflect its focus on targets deemed of higher strategic relevance to Russian state interests.
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/attori_europa_black.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/attori_europa_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 This overview of sectoral and regional attack patterns underlines a clear reality: Italian businesses—particularly those in **manufacturing** and **public administration** — are at the epicenter of the national cyber threat landscape. Whether due to their economic weight, the sensitivity of the data they manage, or their uneven cybersecurity posture, these organizations present high-value opportunities for threat actors. At the same time, the geographic distribution of attacks closely mirrors the country's economic map, with Northern Italy—and to some extent, Lazio—bearing the brunt of cyber incidents.
@@ -296,12 +314,15 @@ These findings highlight a crucial point: **the cyber threat in Italy is not an 
 
 
 **TODO**
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json" | relative_url }}"
-    style="width: 100%; height: 100%" 
-    tooltip="true" >
-  </vegachart>
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
