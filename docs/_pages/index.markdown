@@ -9,6 +9,10 @@ subtitle: "Data, Emotions, and Investments in the Cyber War"
 vega: true  
 ---
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+
 <style>
   /* Full‑page hero background */
   .site-hero {
@@ -86,12 +90,14 @@ By analyzing thousands of Reddit comments and posts mentioning terms like phishi
 
 This growing discourse, rich in emotion and nuance, underscores a simple truth: **cybersecurity is not just about systems — it’s about people.** 
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/intro/emotion_distribution_reddit_dropdown.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/intro/emotion_distribution_reddit_dropdown.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 ### What the Emotions Reveal 
@@ -306,105 +312,250 @@ These findings highlight a crucial point: **the cyber threat in Italy is not an 
 
 # Breaking the Net {#breaking-the-net}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+### When Cyberattacks Happen, Who's Listening?
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/2.articles_by_source_type.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+Now that we’ve examined who is being targeted by cyberattacks in Italy, who the threat actors are, and the techniques they use, we can turn to an equally important question: how are these incidents portrayed in the public sphere? 
+
+From 2015 to 2025, there have been around 900 documented cyberattacks on Italian companies. But, as this graph shows, only 118 of those were actually mentioned in the media. Each dot represents a cyberattack, and only the blue ones were covered in news outlets, while the red ones received no media attention at all. 
+
+We can clearly see a growing number of attacks over time, especially after 2020. Yet the gap between attacks and media coverage remains wide. This tells us that despite the rising frequency and impact of cyber incidents, the Italian media only reports a small fraction of them. This underrepresentation could have serious implications for public awareness, corporate accountability, and national cybersecurity policy. 
+
+
+### Niche Networks, National Silence   
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/2.articles_by_source_type.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+Furthermore, if we dig deeper into the few cases that were covered by the media, another pattern emerges. Most of these reports come from cybersecurity-focused outlets — specialized industry publications that primarily reach a niche audience of professionals and insiders. 
+
+This means that the general public, who typically relies on mainstream newspapers and national media, is often left unaware of these incidents. As a result, communication around cyber threats in Italy remains limited and fragmented. The lack of broader media coverage contributes to a low level of public awareness and understanding of cybersecurity risks — despite their growing relevance in everyday life and business. 
+
+So, while attacks are increasing in both frequency and severity, the information about them struggles to reach the wider population — weakening Italy's collective ability to respond, prepare, and build a stronger cybersecurity culture. 
+
+### Which Sectors Make the Headlines? 
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+After this general overview, we can now reflect on the types of industries affected by cyberattacks and the sentiment of media coverage. 
+
+In the first graph, which shows the average number of articles per attack, we see that **utilities** — such as electricity, water, or gas providers — receive the **highest media coverage per attack**, even though they were only targeted three times. This indicates a strong media focus on critical infrastructure, likely due to the potential impact on public life and national security. 
+
+In the second graph, which breaks down the **sentiment of articles by industry**, utilities again stand out — with a high **share of negative sentiment**. This could be due to an alarmist tone often used when essential services are disrupted, emphasizing risk and urgency. 
+
+However, if we look at **sectors that were less frequently attacked**, such as t**ransportation and warehousing, accommodation and food services, or mining and extraction**, we notice that these receive **little to no negative coverage** — in some cases, the sentiment is even neutral or slightly positive. This may be because these incidents are seen as less critical or less interesting for the general audience, and therefore are reported with a softer tone or not at all. 
+
+This contrast highlights how **media visibility and tone are not only tied to the frequency of attacks**, but also to how **newsworthy or alarming** an incident is perceived to be. 
+
+
+###  Cybersecurity: What We Say, What We Mean 
+
+**TODO**: manca chart 'most frequent tokens by source'?
+
+
+In cybersecurity, **words matter** — and so does the emotional charge we attach to them. While the frequency of keywords such as data breach, malware, or privacy may be similar across different sources, the **emotions and tones surrounding them are not**. 
+
+  
+Our sentiment analysis reveals a striking pattern: **regardless of the source**, cybersecurity-related language tends to carry a **negative connotation**. However, something begins to shift starting in **2020**. 
+
+
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/2.sentiment_giornali_settore_2017_2024.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+Even within general news media, we observe a **gradual trend toward more neutral — and occasionally positive — tones**, particularly when coverage involves **governmental initiatives** or **platforms responding to attacks**. 
+
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/3.top_entities_sentiment_by_source.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+By contrast, sector-specific sources maintain a more **technical register**, focusing on topics such as GDPR compliance, enterprise protection strategies, and the role of **DPOs (Data Protection Officers)**. The same words — security, threat, vulnerability — are used, but the **associated sentiment changes** dramatically depending on the source. 
+
+This divergence is key. 
+
+###  From Shared Vocabulary to Diverging Narratives 
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.article_clusters_dashboard.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+Through **K-Means clustering**, we analyzed how articles and posts group around themes, tones, and timeframes. What emerged is a layered ecosystem of narratives: 
+
+- **Sector publications** dominate conversations on compliance, device security, and enterprise risk. These are mostly **neutral or critical**, except for Cluster 3, where an optimistic tone appears in 2024 — likely tied to **new solutions or successful implementations.**
+- **General media**, on the other hand, focuses heavily on personal privacy and cybercrime, especially around pivotal moments like the pandemic. These stories tend to be **more emotional**, and **rarely positive**. 
+
+The only **cluster with a positive sentiment** comes from the **sector**, signaling that **optimism about cybersecurity is mostly internal** — confined to insiders, vendors, and specialists. In the public narrative, **alarm still dominates**. 
+
+What’s most telling is that even when the same topics are discussed, they are framed very differently. Corporate cybersecurity, for instance, is treated as an opportunity in sector pieces, but rarely appears in general media in anything but **crisis mode**. 
+
+
+###  A Communication Gap That Shapes Action 
+
+
+This gap isn’t just semantic — it’s strategic. 
+
+If the **perception of cybersecurity** remains focused solely on breaches and blame, while technical sources highlight regulation, governance, and risk management, the broader public may fail to grasp the full scope of what's at stake. 
+
+This discrepancy is confirmed by recent research. 
+
+According to the **Cyber Index PMI 2024**, only **15%** of Italian small and medium enterprises (SMEs/PMI) have a strategic approach to cyber risk. Over **half (56%)** still lack awareness or tools to react effectively. The disconnect is not just about capacity — it’s about **narrative**. If risk is not **communicated with clarity and realism**, action will lag behind awareness. 
+
+A **2024 cross-cultural study** further supports this view: 
+
+While Italians acknowledge cyber threats as real, they tend to adopt a **passive, delegated approach**, trusting institutions or service providers to take care of security. Compared to countries like Germany or the UK, Italy stands in the **middle tier**: aware, but not proactive.([paper](https://arxiv.org/abs/2405.16215v2)) 
+
+
+### A Final Call: Words Are Not Just Words
+
+When **cyber language is fragmented**, so is the response. 
+
+From newsrooms to boardrooms, from SMEs/PMI to government agencies, the way we talk about cybersecurity shapes the way we **invest, legislate, educate, and defend**. 
+
+The good news? The data shows change is possible. Positive narratives do emerge — especially when **solutions, not just threats**, are placed at the center. But to bridge the communication gap, we need **more than analysis**. We need a **shared language**, one that makes cybersecurity not just a technical domain, but a **collective priority**. 
+
+
+**TODO** - quest i grafici sotto, dove devono andare?
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/media_coverage_cyberattacks.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_chart.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/post_attack_topics_chart.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/media_coverage_cyberattacks.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry_chart.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/post_attack_topics_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_source_origin_chart.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_source_origin_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/source_origin_chart.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/source_origin_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
-1.average_sentiment_giornali_settore.json:
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/2.sentiment_giornali_settore_2017_2024.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/3.top_entities_sentiment_by_source.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.article_clusters_dashboard.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
+**TODO**: modal 
+
 
 
 # Cyber Q&A {#cyber-q-and-a}
 
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/RI0W7NRl4SU?si=exRRIXoy2hr_qgFb&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+###  Shared Knowledge: The Intelligent Graph Bridging Cybersecurity Gaps 
 
 <div> 
   <iframe src="{{ site.baseurl }}/assets/graph/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
 </div>
 
+In cybersecurity, the communication gap is as critical as the technical one. On one side, we have mainstream media amplifying panic around cyber threats. On the other, trade journals speak a language so technical that it alienates most corporate professionals. Stuck in between are companies — eager to train staff, yet often ill-equipped to explain the very threats they face. 
 
+To bridge this divide, we’ve developed an intelligent knowledge graph: a dynamic, visual tool that turns complex cyber data into structured, explorable insights. Designed not for the public at large, but for use in corporate training courses, the graph acts as a semantic map of the cybersecurity landscape, supporting workshops, awareness sessions, and post-training engagement. 
+
+Rooted in the MITRE ATT&CK framework and enriched with peer-reviewed research from PubMed, Crossref, and arXiv, the graph hosts over 4,000 nodes connecting attack techniques, malware families, vulnerabilities, countermeasures, and more. Need to understand how a ransomware campaign exploits a specific vulnerability? Or which mitigations align with spear phishing? The graph doesn't just hold that knowledge — it makes it navigable. 
+
+Even more powerfully, the system integrates a local LLM (Mistral 7B) capable of answering natural language queries using context from the graph itself. Ask a question like “Which mitigations are most effective against credential dumping?” — and get a grounded, explainable response. Combined with interactive visualizations and slide generation, it becomes a training companion, not just a data tool. 
+
+
+### The Communication Gap Is Real 
+
+According to the 2° CensisIISFA (2023/2024) Report, 20.8% of Italian workers still don’t know what "cybersecurity" even means — up from 17.1% the year before. Meanwhile, over 1 in 5 employees have witnessed a cybersecurity incident in their workplace in the last year, ranging from service disruptions to data breaches. And yet, much of the training still relies on static materials and vague definitions. 
+
+In this context, tools like our knowledge graph aren’t just useful — they’re necessary. They educate. They contextualize. They make cybersecurity make sense. 
+
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/RI0W7NRl4SU?si=exRRIXoy2hr_qgFb&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+**TODO**: modal (How It Works: Building a Graph of Cyber Knowledge )
+**TODO**: modal (Under the Hood: Graph Metrics That Matter)
+
+
+###  From Attacks to Awareness: A Graph That Connects the Dots 
+What begins as a cyberattack often ends in headlines — yet rarely in real understanding. Public narratives tend to dramatize, while companies react with urgency, investing in solutions they may not fully grasp. Somewhere between the breach and the boardroom, technical knowledge gets lost in translation. 
+
+This is where our graph steps in: not just as a visualization tool, but as a way to connect data, expertise, and communication into a cohesive system of shared understanding. 
+It links threats to research, concepts to countermeasures, and people to meaning — helping turn reactive defenses into informed strategies. 
+
+Because in cybersecurity, visibility isn’t just about network logs — it’s about making knowledge itself visible. 
+
+So the real question becomes: 
+**Are we truly prepared? In the invisible war, who protects whom?**
 
 
 # Conclusions {#conclusions}
@@ -436,39 +587,57 @@ His words offer an honest reflection — and leave us with a crucial, open-ended
 
 Will these investments eventually strengthen Italy’s cybersecurity landscape, or do we need to rethink how research is connected to real-world needs and resilience?” 
 
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/conclusions/ita_eu_average_fino_23_arancio.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+
+### A System That Knows — But Can It Act? 
+
+This disconnect highlights a deeper issue: cybersecurity isn’t just a technical problem. It’s a systems problem — spanning infrastructure, education, policy, communication, labor, and equity. 
+
+We can’t protect what we don’t understand, and we can’t defend with isolated tools. 
+**What we need is an ecological vision of cybersecurity**: one that connects institutions, individuals, technologies, and knowledge in a way that is resilient, transparent, and inclusive. 
+
+Because the question is no longer whether the threats are real. 
+It’s whether our response is coherent — and whether it reaches those who need it most. 
+
+**TODO**: come ordinare questi grafici sotto?
+
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/conclusions/ita_eu_average_fino_23_arancio.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/conclusions/chart_italy_projects.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/conclusions/chart_italy_projects.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/conclusions/chart_top10.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/conclusions/chart_top10.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/conclusions/combined_chart.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/conclusions/combined_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
 </div>
 
 # About Us  {#about-us}
