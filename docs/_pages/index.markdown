@@ -43,7 +43,7 @@ vega: true
   margin-bottom:1rem;
   flex-wrap:wrap;
 }
-.hm-btn {
+.hm-btn1 {
   cursor:pointer;
   padding:.5rem .9rem;
   border:1px solid #ccc;
@@ -51,7 +51,20 @@ vega: true
   border-radius:4px;
   font-size:.9rem;
 }
-.hm-btn.active {
+.hm-btn1.active {
+  background:#d33;
+  color:#fff;
+  border-color:#d33;
+}
+.hm-btn2 {
+  cursor:pointer;
+  padding:.5rem .9rem;
+  border:1px solid #ccc;
+  background:#f5f5f5;
+  border-radius:4px;
+  font-size:.9rem;
+}
+.hm-btn2.active {
   background:#d33;
   color:#fff;
   border-color:#d33;
@@ -83,7 +96,12 @@ p a {
 }
 
 
-.hm-btn.active {
+.hm-btn1.active {
+    background: #0a9396 !important;
+    color: #fff;
+    border-color: #0a9396 !important;
+}
+.hm-btn2.active {
     background: #0a9396 !important;
     color: #fff;
     border-color: #0a9396 !important;
@@ -228,9 +246,9 @@ This foundational overview helps contextualize **which types of organizations ar
 
 
 <div class="hm-buttons">
-  <button type="button" class="hm-btn hm-btn1 active" data-target="heatmap1">Attacks per Region</button>
-  <button type="button" class="hm-btn hm-btn1" data-target="heatmap2">Attacks / Revenue</button>
-  <button type="button" class="hm-btn hm-btn1" data-target="heatmap3">Attacks / Companies</button>
+  <button type="button" class="hm-btn1 active" data-target="heatmap1">Attacks per Region</button>
+  <button type="button" class="hm-btn1" data-target="heatmap2">Attacks / Revenue</button>
+  <button type="button" class="hm-btn1" data-target="heatmap3">Attacks / Companies</button>
 </div>
 
 <div id="heatmap1" class="heatmap visible">
@@ -290,8 +308,8 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
 
 
 <div class="hm-buttons">
-  <button type="button" class="hm-btn hm-btn2 active" data-target="heatmap1">Attacks by Sector</button>
-  <button type="button" class="hm-btn hm-btn2" data-target="heatmap2">Attacks by Company Type</button>
+  <button type="button" class="hm-btn2 active" data-target="heatmap1">Attacks by Sector</button>
+  <button type="button" class="hm-btn2" data-target="heatmap2">Attacks by Company Type</button>
 </div>
 
 <div id="barchart1" class="barchart visible">
