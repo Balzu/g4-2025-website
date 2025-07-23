@@ -1,0 +1,248 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "axisY": {
+      "labelLimit": 300
+    },
+    "background": "transparent",
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-afcdc8796c0aae7ee46f598457f62196"
+  },
+  "datasets": {
+    "data-afcdc8796c0aae7ee46f598457f62196": [
+      {
+        "Count": 1,
+        "Industry": "accommodation and food services",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 5,
+        "Industry": "arts, entertainment, and recreation",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 2,
+        "Industry": "arts, entertainment, and recreation",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 2,
+        "Industry": "arts, entertainment, and recreation",
+        "sentiment_label": "positive"
+      },
+      {
+        "Count": 2,
+        "Industry": "educational services",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 1,
+        "Industry": "educational services",
+        "sentiment_label": "positive"
+      },
+      {
+        "Count": 2,
+        "Industry": "finance and insurance",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 4,
+        "Industry": "health care and social assistance",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 1,
+        "Industry": "health care and social assistance",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 1,
+        "Industry": "health care and social assistance",
+        "sentiment_label": "positive"
+      },
+      {
+        "Count": 3,
+        "Industry": "information",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 2,
+        "Industry": "information",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 1,
+        "Industry": "information",
+        "sentiment_label": "positive"
+      },
+      {
+        "Count": 7,
+        "Industry": "manufacturing",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 2,
+        "Industry": "manufacturing",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 3,
+        "Industry": "manufacturing",
+        "sentiment_label": "positive"
+      },
+      {
+        "Count": 1,
+        "Industry": "mining, quarrying, and oil and gas extraction",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 3,
+        "Industry": "other services (except public administration)",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 1,
+        "Industry": "other services (except public administration)",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 2,
+        "Industry": "professional, scientific, and technical services",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 1,
+        "Industry": "professional, scientific, and technical services",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 18,
+        "Industry": "public administration",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 14,
+        "Industry": "public administration",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 1,
+        "Industry": "retail trade",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 1,
+        "Industry": "retail trade",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 1,
+        "Industry": "transportation and warehousing",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 1,
+        "Industry": "transportation and warehousing",
+        "sentiment_label": "positive"
+      },
+      {
+        "Count": 6,
+        "Industry": "undetermined",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 2,
+        "Industry": "undetermined",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 1,
+        "Industry": "undetermined",
+        "sentiment_label": "positive"
+      },
+      {
+        "Count": 13,
+        "Industry": "utilities",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 17,
+        "Industry": "utilities",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 3,
+        "Industry": "utilities",
+        "sentiment_label": "positive"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "sentiment_label",
+      "scale": {
+        "domain": [
+          "neutral",
+          "negative",
+          "positive"
+        ],
+        "range": [
+          "#d3d3d3",
+          "#ca6702",
+          "#94d2bd"
+        ]
+      },
+      "title": "Sentiment",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Industry",
+        "title": "Settore",
+        "type": "nominal"
+      },
+      {
+        "field": "sentiment_label",
+        "title": "Sentiment",
+        "type": "nominal"
+      },
+      {
+        "field": "Count",
+        "title": "Numero di articoli",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Count",
+      "title": "Numero di articoli",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Industry",
+      "sort": "-x",
+      "title": "Settore",
+      "type": "nominal"
+    }
+  },
+  "height": 450,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Distribuzione del sentiment per settore",
+  "width": 650
+}

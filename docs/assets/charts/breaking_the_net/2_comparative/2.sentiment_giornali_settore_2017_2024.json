@@ -1,9 +1,20 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "config": {
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "background": "transparent",
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
     "view": {
-      "continuousHeight": 300,
-      "continuousWidth": 300
+      "stroke": "transparent"
     }
   },
   "data": {
@@ -1348,8 +1359,8 @@
       "field": "Origine",
       "scale": {
         "range": [
-          "#005f73",
-          "#ae2012"
+          "#ca6702",
+          "#d3d3d3"
         ]
       },
       "title": "Source",

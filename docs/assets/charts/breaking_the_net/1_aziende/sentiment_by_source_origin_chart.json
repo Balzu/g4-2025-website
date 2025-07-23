@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "axisY": {
+      "labelLimit": 300
+    },
+    "background": "transparent",
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-3427790bc7124e3c6ad79f1bee9917b1"
+  },
+  "datasets": {
+    "data-3427790bc7124e3c6ad79f1bee9917b1": [
+      {
+        "Count": 20,
+        "origine": "Giornali",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 8,
+        "origine": "Giornali",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 2,
+        "origine": "Giornali",
+        "sentiment_label": "positive"
+      },
+      {
+        "Count": 46,
+        "origine": "Settore",
+        "sentiment_label": "negative"
+      },
+      {
+        "Count": 41,
+        "origine": "Settore",
+        "sentiment_label": "neutral"
+      },
+      {
+        "Count": 11,
+        "origine": "Settore",
+        "sentiment_label": "positive"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "sentiment_label",
+      "scale": {
+        "domain": [
+          "neutral",
+          "negative",
+          "positive"
+        ],
+        "range": [
+          "#d3d3d3",
+          "#ca6702",
+          "#94d2bd"
+        ]
+      },
+      "title": "Sentiment",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "origine",
+        "title": "Source Origin",
+        "type": "nominal"
+      },
+      {
+        "field": "sentiment_label",
+        "title": "Sentiment",
+        "type": "nominal"
+      },
+      {
+        "field": "Count",
+        "title": "Number of Articles",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Count",
+      "title": "Number of Articles",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "origine",
+      "sort": "-x",
+      "title": "Source Origin",
+      "type": "nominal"
+    }
+  },
+  "height": 50,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Sentiment Distribution by Source Origin",
+  "width": 500
+}

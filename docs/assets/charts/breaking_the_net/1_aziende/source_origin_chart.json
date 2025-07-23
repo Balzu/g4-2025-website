@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "axisY": {
+      "labelLimit": 300
+    },
+    "background": "transparent",
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-1f880263a1dcf75e50d2a89966ecc295"
+  },
+  "datasets": {
+    "data-1f880263a1dcf75e50d2a89966ecc295": [
+      {
+        "Count": 98,
+        "Origine": "Settore"
+      },
+      {
+        "Count": 30,
+        "Origine": "Giornali"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Origine",
+      "legend": {
+        "title": "Source Origin"
+      },
+      "scale": {
+        "domain": [
+          "Settore",
+          "Giornali"
+        ],
+        "range": [
+          "#d3d3d3",
+          "#ca6702"
+        ]
+      },
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Origine",
+        "title": "Source Origin",
+        "type": "nominal"
+      },
+      {
+        "field": "Count",
+        "title": "Number of Articles",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Count",
+      "title": "Number of Articles",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Origine",
+      "sort": "-x",
+      "title": "Source Origin",
+      "type": "nominal"
+    }
+  },
+  "height": 50,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Number of Articles by Source Origin",
+  "width": 500
+}

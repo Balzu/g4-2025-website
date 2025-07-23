@@ -1,0 +1,183 @@
+{
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "axisY": {
+      "labelLimit": 300
+    }
+  },
+  "data": {
+    "name": "data-4213b4f10b5d079946534e55d3c3d6b3"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "color": {
+      "field": "color",
+      "legend": null,
+      "scale": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Industry",
+        "title": "Industry",
+        "type": "nominal"
+      },
+      {
+        "field": "Articles_per_Attack",
+        "format": ".2f",
+        "title": "Average Articles per Attack",
+        "type": "quantitative"
+      },
+      {
+        "field": "Article_Count",
+        "title": "Number of Articles",
+        "type": "quantitative"
+      },
+      {
+        "field": "Attack_Count",
+        "title": "Number of Attacks",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Articles_per_Attack",
+      "title": "Average Articles per Attack",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Industry",
+      "sort": "-x",
+      "title": "Industry",
+      "type": "nominal"
+    }
+  },
+  "height": 450,
+  "title": "Normalized Media Coverage per Cyberattack",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-4213b4f10b5d079946534e55d3c3d6b3": [
+      {
+        "Industry": "utilities",
+        "Article_Count": 33,
+        "Attack_Count": 3,
+        "Articles_per_Attack": 11.0,
+        "color": "#ca6702"
+      },
+      {
+        "Industry": "public administration",
+        "Article_Count": 32,
+        "Attack_Count": 10,
+        "Articles_per_Attack": 3.2,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "arts, entertainment, and recreation",
+        "Article_Count": 9,
+        "Attack_Count": 3,
+        "Articles_per_Attack": 3.0,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "manufacturing",
+        "Article_Count": 12,
+        "Attack_Count": 5,
+        "Articles_per_Attack": 2.4,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "retail trade",
+        "Article_Count": 2,
+        "Attack_Count": 1,
+        "Articles_per_Attack": 2.0,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "transportation and warehousing",
+        "Article_Count": 2,
+        "Attack_Count": 1,
+        "Articles_per_Attack": 2.0,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "finance and insurance",
+        "Article_Count": 2,
+        "Attack_Count": 1,
+        "Articles_per_Attack": 2.0,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "undetermined",
+        "Article_Count": 9,
+        "Attack_Count": 5,
+        "Articles_per_Attack": 1.8,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "professional, scientific, and technical services",
+        "Article_Count": 3,
+        "Attack_Count": 2,
+        "Articles_per_Attack": 1.5,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "educational services",
+        "Article_Count": 3,
+        "Attack_Count": 2,
+        "Articles_per_Attack": 1.5,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "health care and social assistance",
+        "Article_Count": 6,
+        "Attack_Count": 5,
+        "Articles_per_Attack": 1.2,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "information",
+        "Article_Count": 6,
+        "Attack_Count": 5,
+        "Articles_per_Attack": 1.2,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "accommodation and food services",
+        "Article_Count": 1,
+        "Attack_Count": 1,
+        "Articles_per_Attack": 1.0,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "mining, quarrying, and oil and gas extraction",
+        "Article_Count": 1,
+        "Attack_Count": 1,
+        "Articles_per_Attack": 1.0,
+        "color": "#d3d3d3"
+      },
+      {
+        "Industry": "other services (except public administration)",
+        "Article_Count": 4,
+        "Attack_Count": 4,
+        "Articles_per_Attack": 1.0,
+        "color": "#d3d3d3"
+      }
+    ]
+  }
+}

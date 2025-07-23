@@ -77,33 +77,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/intro/1.bottone_reddit_sentiment_trend.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/intro/emotion_distribution_reddit_dropdown.json | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
 </div>
-
-
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/intro/2.bottone_reddit_normalized_comments.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
-
-
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/intro/3.emotion_distribution_reddit_dropdown.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
-
-
 
 
 # Map the Attack {#map-the-attack}
@@ -276,25 +254,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/articles_by_source_type.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/2.articles_by_source_type.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
 </div>
 
 
-1.media_coverage_cyberattacks.json
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/1.media_coverage_cyberattacks.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_coverage_per_attack.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/media_coverage_cyberattacks.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
@@ -302,21 +271,48 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_chart.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/post_attack_topics_chart.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry_chart.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_source_origin_chart.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/source_origin_chart.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
 </div>
 
 1.average_sentiment_giornali_settore.json:
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/1.average_sentiment_giornali_settore.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
-
 <div>
   <vegachart
     schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/2.sentiment_giornali_settore_2017_2024.json" | relative_url }}"
@@ -335,15 +331,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div>
   <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.most_frequent_tokens_by_source.json" | relative_url }}"
-    style="width: 100%; height: 100%"
-    tooltip="true" >
-  </vegachart>
-</div>
-
-<div>
-  <vegachart
-    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/5.dominant_topic_sentiment_giornali_settore.json" | relative_url }}"
+    schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/4.article_clusters_dashboard.json" | relative_url }}"
     style="width: 100%; height: 100%"
     tooltip="true" >
   </vegachart>
@@ -400,6 +388,32 @@ Will these investments eventually strengthen Italy’s cybersecurity landscape, 
   </vegachart>
 </div>
 
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/conclusions/chart_italy_projects.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/conclusions/chart_top10.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
+
+
+<div>
+  <vegachart
+    schema-url="{{ "/assets/charts/conclusions/combined_chart.json" | relative_url }}"
+    style="width: 100%; height: 100%"
+    tooltip="true" >
+  </vegachart>
+</div>
 
 # About Us  {#about-us}
 

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "axisY": {
+      "labelLimit": 300
+    },
+    "background": "transparent",
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-9caaba229fc89e247ed7f601c3ddaa56"
+  },
+  "datasets": {
+    "data-9caaba229fc89e247ed7f601c3ddaa56": [
+      {
+        "Count": 66,
+        "Topic": "Cyber threats and attack techniques"
+      },
+      {
+        "Count": 19,
+        "Topic": "Cybersecurity and corporate data protection"
+      },
+      {
+        "Count": 16,
+        "Topic": "Technical vulnerabilities and cyber risks"
+      },
+      {
+        "Count": 13,
+        "Topic": "Cybersecurity regulations and best practices"
+      },
+      {
+        "Count": 9,
+        "Topic": "Global cyberattacks and malware"
+      },
+      {
+        "Count": 5,
+        "Topic": "Privacy threats on digital platforms"
+      }
+    ]
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "Topic",
+        "title": "Topic",
+        "type": "nominal"
+      },
+      {
+        "field": "Count",
+        "title": "Number of Articles",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Count",
+      "title": "Number of Articles",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Topic",
+      "sort": "-x",
+      "title": "Topic",
+      "type": "nominal"
+    }
+  },
+  "height": 450,
+  "mark": {
+    "color": "#d3d3d3",
+    "type": "bar"
+  },
+  "title": "Most Frequent Topics in Post-Attack Headlines",
+  "width": 700
+}

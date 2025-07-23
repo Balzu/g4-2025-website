@@ -1,0 +1,100 @@
+{
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    }
+  },
+  "data": {
+    "name": "data-a23210d23b32e83027f44543ceea3de7"
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#94d2bd"
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "country_full",
+        "title": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "netEcContribution",
+        "format": ",.0f",
+        "title": "Funding (\u20ac)",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "netEcContribution",
+      "title": "Total EU Funding (\u20ac)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "country_full",
+      "sort": "-x",
+      "title": "Country",
+      "type": "nominal"
+    }
+  },
+  "height": 400,
+  "title": "Top 10 Countries by EU Cybersecurity Funding (HORIZON Programme, 2014\u20132022)",
+  "width": 700,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-a23210d23b32e83027f44543ceea3de7": [
+      {
+        "country_full": "Spain",
+        "netEcContribution": 158843053.65
+      },
+      {
+        "country_full": "Germany",
+        "netEcContribution": 150514727.461108
+      },
+      {
+        "country_full": "Italy",
+        "netEcContribution": 138887282.39889
+      },
+      {
+        "country_full": "France",
+        "netEcContribution": 118117361.52
+      },
+      {
+        "country_full": "United Kingdom",
+        "netEcContribution": 103363342.31
+      },
+      {
+        "country_full": "Greece",
+        "netEcContribution": 97376283.17
+      },
+      {
+        "country_full": "Netherlands",
+        "netEcContribution": 69427115.08
+      },
+      {
+        "country_full": "Belgium",
+        "netEcContribution": 52449035.0
+      },
+      {
+        "country_full": "Austria",
+        "netEcContribution": 44187548.81
+      },
+      {
+        "country_full": "Norway",
+        "netEcContribution": 40369323.9
+      }
+    ]
+  }
+}

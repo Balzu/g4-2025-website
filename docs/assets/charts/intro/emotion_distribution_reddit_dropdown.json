@@ -1,0 +1,200 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "background": "transparent",
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "name": "data-33621aae8232034098f501c4c4fafc2b"
+  },
+  "datasets": {
+    "data-33621aae8232034098f501c4c4fafc2b": [
+      {
+        "Origine": "Reddit_Commenti",
+        "count": 188,
+        "gordon_ai_emotion_label": "Anger",
+        "percentage": 16.534740545294635
+      },
+      {
+        "Origine": "Reddit_Commenti",
+        "count": 81,
+        "gordon_ai_emotion_label": "Disgust",
+        "percentage": 7.12401055408971
+      },
+      {
+        "Origine": "Reddit_Commenti",
+        "count": 287,
+        "gordon_ai_emotion_label": "Fear",
+        "percentage": 25.241864555848725
+      },
+      {
+        "Origine": "Reddit_Commenti",
+        "count": 19,
+        "gordon_ai_emotion_label": "Joy",
+        "percentage": 1.6710642040457344
+      },
+      {
+        "Origine": "Reddit_Commenti",
+        "count": 521,
+        "gordon_ai_emotion_label": "Neutral",
+        "percentage": 45.822339489885664
+      },
+      {
+        "Origine": "Reddit_Commenti",
+        "count": 33,
+        "gordon_ai_emotion_label": "Sadness",
+        "percentage": 2.9023746701846966
+      },
+      {
+        "Origine": "Reddit_Commenti",
+        "count": 8,
+        "gordon_ai_emotion_label": "Surprise",
+        "percentage": 0.7036059806508356
+      },
+      {
+        "Origine": "Reddit_Post",
+        "count": 55,
+        "gordon_ai_emotion_label": "Anger",
+        "percentage": 13.85390428211587
+      },
+      {
+        "Origine": "Reddit_Post",
+        "count": 30,
+        "gordon_ai_emotion_label": "Disgust",
+        "percentage": 7.5566750629722925
+      },
+      {
+        "Origine": "Reddit_Post",
+        "count": 189,
+        "gordon_ai_emotion_label": "Fear",
+        "percentage": 47.607052896725435
+      },
+      {
+        "Origine": "Reddit_Post",
+        "count": 5,
+        "gordon_ai_emotion_label": "Joy",
+        "percentage": 1.2594458438287155
+      },
+      {
+        "Origine": "Reddit_Post",
+        "count": 106,
+        "gordon_ai_emotion_label": "Neutral",
+        "percentage": 26.700251889168765
+      },
+      {
+        "Origine": "Reddit_Post",
+        "count": 12,
+        "gordon_ai_emotion_label": "Sadness",
+        "percentage": 3.022670025188917
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "gordon_ai_emotion_label",
+      "legend": null,
+      "scale": {
+        "domain": [
+          "Anger",
+          "Disgust",
+          "Fear",
+          "Joy",
+          "Neutral",
+          "Sadness",
+          "Surprise"
+        ],
+        "range": [
+          "#ae2012",
+          "#ae2012",
+          "#ae2012",
+          "#0a9396",
+          "#e9d8a6",
+          "#ae2012",
+          "#0a9396"
+        ]
+      },
+      "title": "Emotion",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "gordon_ai_emotion_label",
+        "title": "Emotion",
+        "type": "nominal"
+      },
+      {
+        "field": "Origine",
+        "title": "Source",
+        "type": "nominal"
+      },
+      {
+        "field": "count",
+        "title": "Count",
+        "type": "quantitative"
+      },
+      {
+        "field": "percentage",
+        "format": ".1f",
+        "title": "Percent",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "percentage",
+      "title": "Percentage",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "gordon_ai_emotion_label",
+      "sort": "-x",
+      "title": "Emotion",
+      "type": "nominal"
+    }
+  },
+  "height": 300,
+  "mark": {
+    "type": "bar"
+  },
+  "params": [
+    {
+      "bind": {
+        "input": "select",
+        "name": "Select Reddit Source: ",
+        "options": [
+          "Reddit_Commenti",
+          "Reddit_Post"
+        ]
+      },
+      "name": "param_4",
+      "select": {
+        "fields": [
+          "Origine"
+        ],
+        "type": "point"
+      },
+      "value": "Reddit_Commenti"
+    }
+  ],
+  "title": "Emotion Distribution",
+  "transform": [
+    {
+      "filter": {
+        "param": "param_4"
+      }
+    }
+  ],
+  "width": 500
+}

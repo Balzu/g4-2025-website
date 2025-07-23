@@ -1,0 +1,163 @@
+{
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    }
+  },
+  "vconcat": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#94d2bd"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "start_year",
+            "title": "Year",
+            "type": "quantitative"
+          },
+          {
+            "field": "num_projects",
+            "title": "Projects",
+            "type": "quantitative"
+          },
+          {
+            "field": "total_funding",
+            "format": ",.0f",
+            "title": "Total Funding (\u20ac)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": null,
+          "field": "start_year",
+          "title": "Project Start Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {
+            "titleColor": "#94d2bd"
+          },
+          "field": "num_projects",
+          "title": "Number of Projects",
+          "type": "quantitative"
+        }
+      },
+      "height": 200,
+      "width": 700
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "red",
+        "point": true
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "start_year",
+            "title": "Year",
+            "type": "quantitative"
+          },
+          {
+            "field": "funding_share",
+            "format": ".2f",
+            "title": "Share of EU Funds (%)",
+            "type": "quantitative"
+          },
+          {
+            "field": "total_funding",
+            "format": ",.0f",
+            "title": "Total Funding (\u20ac)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "start_year",
+          "title": "Project Start Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {
+            "titleColor": "red"
+          },
+          "field": "funding_share",
+          "title": "Share of EU Funding (%)",
+          "type": "quantitative"
+        }
+      },
+      "height": 200,
+      "width": 700
+    }
+  ],
+  "data": {
+    "name": "data-2d2662d72261e9c33a7a2d289ec50efe"
+  },
+  "resolve": {
+    "scale": {
+      "x": "shared"
+    }
+  },
+  "spacing": 0,
+  "title": "Italy: Cybersecurity Projects and Share of EU Funding (HORIZON Programme)",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-2d2662d72261e9c33a7a2d289ec50efe": [
+      {
+        "start_year": 2015,
+        "num_projects": 11,
+        "total_funding": 9055026.42,
+        "funding_share": 0.6937198648211538
+      },
+      {
+        "start_year": 2016,
+        "num_projects": 11,
+        "total_funding": 10801499.870000001,
+        "funding_share": 0.8275199521374904
+      },
+      {
+        "start_year": 2017,
+        "num_projects": 18,
+        "total_funding": 8991536.63,
+        "funding_share": 0.6888558118086698
+      },
+      {
+        "start_year": 2018,
+        "num_projects": 25,
+        "total_funding": 19912829.19,
+        "funding_share": 1.5255532709857653
+      },
+      {
+        "start_year": 2019,
+        "num_projects": 36,
+        "total_funding": 42976177.97,
+        "funding_share": 3.292472819960943
+      },
+      {
+        "start_year": 2020,
+        "num_projects": 37,
+        "total_funding": 31655729.59889,
+        "funding_share": 2.4251954041407386
+      },
+      {
+        "start_year": 2021,
+        "num_projects": 18,
+        "total_funding": 15494482.72,
+        "funding_share": 1.1870567748152527
+      }
+    ]
+  }
+}

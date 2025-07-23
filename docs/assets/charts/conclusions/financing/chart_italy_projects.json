@@ -1,0 +1,110 @@
+{
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    }
+  },
+  "data": {
+    "name": "data-78fdea25158b60854d2f0fb7cbcef877"
+  },
+  "mark": {
+    "type": "line",
+    "color": "#94d2bd",
+    "point": true
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "year",
+        "title": "Year",
+        "type": "ordinal"
+      },
+      {
+        "field": "active_projects_count",
+        "title": "Active Projects",
+        "type": "quantitative"
+      },
+      {
+        "field": "total_net_contrib",
+        "format": ",.0f",
+        "title": "Total EU Contribution (\u20ac)",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "year",
+      "title": "Year",
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "active_projects_count",
+      "title": "Active Projects",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "title": "Italy: Number of Active Projects per Year (HORIZON Programme)",
+  "width": 700,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-78fdea25158b60854d2f0fb7cbcef877": [
+      {
+        "year": 2015,
+        "active_projects_count": 11,
+        "total_net_contrib": 3036873.75
+      },
+      {
+        "year": 2016,
+        "active_projects_count": 22,
+        "total_net_contrib": 6930161.869999999
+      },
+      {
+        "year": 2017,
+        "active_projects_count": 40,
+        "total_net_contrib": 10545891.34
+      },
+      {
+        "year": 2018,
+        "active_projects_count": 60,
+        "total_net_contrib": 19135703.09
+      },
+      {
+        "year": 2019,
+        "active_projects_count": 90,
+        "total_net_contrib": 29444408.5
+      },
+      {
+        "year": 2020,
+        "active_projects_count": 107,
+        "total_net_contrib": 37024441.510000005
+      },
+      {
+        "year": 2021,
+        "active_projects_count": 115,
+        "total_net_contrib": 40607705.5
+      },
+      {
+        "year": 2022,
+        "active_projects_count": 88,
+        "total_net_contrib": 27113348.64
+      },
+      {
+        "year": 2023,
+        "active_projects_count": 59,
+        "total_net_contrib": 19623472.21
+      }
+    ]
+  }
+}
