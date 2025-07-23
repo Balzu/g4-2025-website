@@ -69,6 +69,19 @@ vega: true
   color:#fff;
   border-color:#d33;
 }
+.hm-btn3 {
+  cursor:pointer;
+  padding:.5rem .9rem;
+  border:1px solid #ccc;
+  background:#f5f5f5;
+  border-radius:4px;
+  font-size:.9rem;
+}
+.hm-btn3.active {
+  background:#d33;
+  color:#fff;
+  border-color:#d33;
+}
 .heatmap { display:none; }
 .heatmap.visible { display:block; }
 
@@ -109,6 +122,11 @@ p a {
     border-color: #0a9396 !important;
 }
 .hm-btn2.active {
+    background: #0a9396 !important;
+    color: #fff;
+    border-color: #0a9396 !important;
+}
+.hm-btn3.active {
     background: #0a9396 !important;
     color: #fff;
     border-color: #0a9396 !important;
