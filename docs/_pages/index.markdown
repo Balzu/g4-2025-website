@@ -188,7 +188,8 @@ Since 2020, the world has witnessed a sharp rise in cyber attacks, marking a **c
 </div>
 
 
-Following this overview, a bar chart and a choropleth map of Europe offer a clearer picture of how cyber-attacks are ranked quantitatively by country and how they are geographically distributed across the region. **Italy** stands out as the second most targeted country in Europe, trailing only the United Kingdom—which recorded around 1,500 attacks compared to Italy’s approximately 900. The gap is significant, yet Italy clearly remains **a primary target**. Other major European powers like France, Germany, Spain, and Russia also rank among the top, though they fall behind Italy in total incidents. On a global scale, Italy still holds a prominent position, ranking **fourth** overall (after USA, UK and Canada). The United States dominates the landscape with a dramatically higher volume of attacks, underscoring both the scale of the threat and the importance of regional resilience.
+Following this overview, our data identified Italy as the second most targeted country in Europe, with around **900 attacks**, trailing only the United Kingdom, which recorded approximately 1,500. The gap is significant, yet **Italy** clearly remains a **primary target**. Other major European powers like France, Germany, Spain, and Russia also rank among the top, though they fall behind Italy in total incidents. On a global scale, Italy still holds a prominent position, ranking **fourth** overall (after USA, UK and Canada). The United States dominates the landscape with a dramatically higher volume of attacks, underscoring both the scale of the threat and the importance of regional resilience.
+
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -201,14 +202,18 @@ Following this overview, a bar chart and a choropleth map of Europe offer a clea
 </div>
 
 
-When comparing Italy’s cyber-attack trend to the European average, a clear divergence emerges. In certain years—such as 2017—the numbers were nearly aligned, suggesting a comparable threat level. But shortly thereafter, Italy's curve began to rise steadily, with **sharp peaks** starting **around 2021**. This growth stands in stark contrast to the broader European trend, which remains more moderate—partly because many EU countries report very few incidents, in some cases fewer than 10, which pull the average down. This discrepancy underscores a pressing **need to focus attention on Italy**. While the continent as a whole faces growing cyber threats, Italy is experiencing a notably accelerated trajectory that demands specific, localized analysis and response. 
-This brings us to the core of our investigation: **who is being targeted the most in Italy—and why?** To better understand this phenomenon, it's essential to first clarify the structure of the Italian corporate landscape. The characteristics of the national business ecosystem play a key role in shaping both the exposure and vulnerability of different actors. The overview below provides a snapshot of this landscape, setting the stage for a deeper analysis of attack patterns and motivations.
+When comparing Italy’s cyber-attack trend to the European average, a clear divergence emerges. In certain years, such as **2017**, the numbers were nearly aligned, suggesting a **comparable threat level**. But shortly thereafter, Italy's curve began to **rise** steadily, with **sharp peaks** starting **around 2021**. This growth stands in stark contrast to the broader European trend, which remains more moderate, partly because many EU countries report very few incidents, in some cases fewer than 10, which pull the average down. This discrepancy underscores a pressing **need to focus attention on Italy**. While the continent as a whole faces growing cyber threats, Italy is experiencing a notably accelerated trajectory that demands specific, localized analysis and response. 
+
+This brings us to the core of our investigation: **who is being targeted the most in Italy and why**? To better understand this phenomenon, it's essential to first clarify the structure of the Italian corporate landscape. The characteristics of the national business ecosystem play a key role in shaping both the exposure and vulnerability of different actors. The overview below provides a snapshot of this landscape, setting the stage for a deeper analysis of attack patterns and motivations.
 
 
 ![Infografica]({{ "/assets/images/infografica.png" | relative_url }})
 
-The infographic is based on data from **ISTAT (2022)** — not the most recent, but still a reliable reference for outlining the structure of Italian enterprises. According to this data, Italy hosts a large number of businesses, the vast majority of which are **micro** and **small enterprises**, making up **78.9%** and **18.5%** of the total, respectively. This overwhelmingly small-scale composition has important implications for cybersecurity readiness and resilience. In terms of geographic distribution, there is a clear regional divide: the **North of Italy dominates** in the number of companies with three or more employees. Specifically, the **North-West** accounts for **28.7%** of these businesses, while the **North-East** follows with **22.7%**. Unfortunately, up-to-date and detailed reports on the sectoral distribution of Italian companies are currently lacking, limiting a more granular analysis by industry. Nonetheless, this foundational overview helps contextualize **which types of organizations may be more exposed to cyber threats—and why.** 
-Understanding this business structure is crucial, not only for assessing organizational readiness, but also for interpreting **how and where cyberattacks unfold across the country.** With this context in mind, we then turned our attention to the **geographic distribution of attacks** — evaluating not just their frequency, but how they correlate with the economic and structural makeup of each region.
+The infographic is based on data from **ISTAT (2022)**, not the most recent, but still a reliable reference for outlining the structure of Italian enterprises. According to this data, Italy hosts a large number of businesses, the vast majority of which are **micro** and **small enterprises**, making up **78.9%** and **18.5%** of the total, respectively. This small-scale composition has important implications for cybersecurity readiness and resilience. In terms of geographic distribution, there is a clear regional divide: the North of Italy dominates; specifically, the **North-West** accounts for **28.7%** of these businesses, while the **North-East** follows with **22.7%**. 
+
+
+This foundational overview helps contextualize **which types of organizations are more exposed to cyber threats and why**. Understanding Italy’s business landscape is essential not only for assessing organizational readiness, but also for interpreting where and how cyberattacks unfold. Building on this, we turned our attention to the **geographic distribution** of attacks, examining not just their frequency, but how they align with the economic and structural profiles of each region. 
+
 
 <div class="hm-buttons">
   <button type="button" class="hm-btn active" data-target="heatmap1">Attacks per Region</button>
@@ -247,15 +252,73 @@ Understanding this business structure is crucial, not only for assessing organiz
 </div>
 
 
-When examining the distribution of attacks across Italian regions—both in terms of raw incident counts and data normalized by the number of companies and total regional revenue — **Lombardy** unsurprisingly emerges as the most targeted region during the timeframe considered in this study, followed by **Lazio**. Overall, cyberattacks appear to be more concentrated in **Northern Italy** — a trend that aligns with data from ISTAT, which shows that approximately **51%** of Italian companies are located in the northern regions. When examining the map normalized by the number of companies per region, the picture becomes even clearer: **Northern Italy appears more heavily targeted, likely because it simply hosts a larger volume of businesses, regardless of their size.**
+When examining the distribution of attacks across Italian regions, both in terms of raw incident counts and data normalized by the number of companies and total regional revenue, **Lombardy** unsurprisingly emerges as the most targeted region, followed by **Lazio**. Overall, cyberattacks appear more concentrated in **Northern Italy**, a trend aligned with ISTAT data showing that **over 50%** of Italian companies are based in the North. However, Lazio still stands out. Even when adjusting for business density, it ranks among the most attacked regions, likely due to the concentration of **public administration institutions in Rome**, which might represent a target for **ideologically motivated** threat actors.
 
-However, Lazio still stands out. Even when adjusting for business density, it ranks as the most attacked region — suggesting that factors beyond company count are at play. One likely explanation is the high concentration of **public administration** entities headquartered in **Rome**, making Lazio a particularly attractive target for threat actors with political or ideological motives.
+**Italy ranks among the lowest in Europe for digital skills**: according to the Digital Economy and Society Index ([DESI](https://digital-strategy.ec.europa.eu/it/policies/desi)), only **46%** of Italians had at least basic digital skills in 2021, far below the EU average and well behind countries like the Netherlands and Finland (both at 79%). **This digital gap is particularly pronounced in Southern Italy**, often perceived as more vulnerable to cyber threats due to lower levels of digital readiness. 
 
-The picture shifts again when looking at attacks normalized by total regional revenue. In this case, Lazio continues to appear among the most affected, along with wealthy northern regions like Lombardy, Piedmont, and Emilia-Romagna. Interestingly, regions such as Umbria and some areas in Southern Italy — including Molise, Campania, and Basilicata — also emerge as disproportionately targeted. This suggests that, while these regions may host fewer companies, they might include large, high revenue enterprises that represent valuable targets for **financially motivated cybercriminals.** 
+When attacks are normalized by regional revenue, **Lazio** remains prominent, alongside wealthy industrial regions like Lombardy, Piedmont, and Emilia-Romagna. Interestingly, several Southern and Central regions, such as Campania, Umbria, and Molise, also appear disproportionately targeted. This may reflect the presence of high-revenue enterprises within otherwise smaller business ecosystems, making them attractive targets for **financially motivated threat actors**. Overall, the distribution underscores that cybercriminals tend to prioritize **economic value** and **digital surface area**, rather than focusing solely on raw company numbers or regions perceived as less prepared.
 
-This foundational overview helps contextualize **which types of organizations may be more exposed to cyber threats — and why**. When analyzing our dataset of cyber-attacks in Italy, a clear pattern emerges: **the most targeted sector is Manufacturing, followed by Public Administration.**
 
-This concentration of attacks on the manufacturing sector is likely tied to its **economic weight and increasing digitalization**, especially among **small and medium enterprises** that often lack mature cybersecurity protocols. According to the Cyber Index SME Report 2024 by Confindustria, Politecnico di Milano, and the Italian National Cybersecurity Agency, SMEs in Italy achieve a low average cyber-resilience score of just 52/100—highlighting widespread **gaps in risk awareness and security readiness.** At the European level, [ENISA](https://www.enisa.europa.eu/publications/enisa-report-cybersecurity-for-smes) has similarly noted that over 90% of SMEs adopted new digital tools during the pandemic without implementing additional cybersecurity measures. These vulnerabilities are further underscored by sector-specific analyses: in Italy, manufacturing alone accounted for over 13% of all cyberattacks in 2023—more than double its global share—making it a clear target for ransomware groups and threat actors focused on disrupting production or exfiltrating sensitive data (Muscope Manufacturing Cyber Risk Overview).
+### Zooming in: Cyberattacks across Italy, one incident at a time
+
+
+Beyond the numbers and trends, each cyberattack tells a story, of **disruption, vulnerability, and intent**. This map brings those stories into focus, marking the real-world locations where digital threats have struck Italian organizations. From ransomware assaults on manufacturing firms in Lombardy to breaches in public institutions across Lazio, the geography of cyber risk mirrors the country’s economic and institutional footprint. Some regions emerge as **hot spots**; others reveal isolated but high-impact incidents, each one leaving behind a trail of consequences, some still unfolding. This view reminds us that **cybersecurity is not just a systemic issue, it’s a local one, too**. Behind every point on the map is a breach that mattered.
+
+
+
+
+
+When analyzing the Italian dataset more deeply, a recurring pattern emerges: the most targeted sector is **Manufacturing**, followed by **Public Administration**. 
+
+Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing sector accounted for **13% of all cyberattacks in Italy, more than twice its global share** ([Muscope report](https://www.muscope.com/en/industry-manufacturing/?utm_source=chatgpt.com)). This makes it a clear target for ransomware groups and threat actors aiming to disrupt production or exfiltrate valuable data. A complementary perspective based on **organization size** reinforces this narrative: SMEs account for **more than 400 attacks**, representing **over half of all recorded incidents**. This aligns with ISTAT data showing that SMEs make up the overwhelming majority of Italian businesses. Public Administration, the second most attacked sector, also ranks high by size category. 
+
+
+
+
+
+
+
+
+This trend is tied to both **economic weight and accelerated digitalization**, especially among small and medium enterprises (SMEs), which often lack robust cybersecurity practices. According to the [Cyber Index PMI 2024](https://www.confindustria.it/progetti/cyber-index-pmi/) by Confindustria, Politecnico di Milano, and the Italian National Cybersecurity Agency, Italian SMEs score an average of just **52 out of 100** in terms of **cyber resilience**. At the European level, [ENISA](https://www.enisa.europa.eu/topics/awareness-and-cyber-hygiene/smes-cybersecurity) also reports that **over 90% of SMEs** adopted digital tools during the pandemic **without strengthening their cybersecurity posture**, leaving many exposed to exploitive threats.
+
+While Italy does not rank among the most digitally advanced countries in the EU, its position as one of the most frequently targeted by cyberattacks may, paradoxically, stem from that very imbalance. As one cybersecurity expert we interviewed explained:
+> _If all intrusions were actually detected and publicly reported, Italy would likely top the European charts._
+
+According to this perspective, Italy’s vulnerability lies not only in the number of connected systems, but in how **unprepared** many institutions are to secure them. Three core factors were cited. First, there’s a widespread **lack of cybersecurity expertise at the decision-making level**, both within companies and in the public bodies meant to protect them. Cybersecurity governance is often assigned to professionals with legal or administrative backgrounds, who may lack the technical expertise required to keep pace with fast-evolving digital threats. Second, **security** is still widely **perceived as a cost rather than a strategic investment**, a cultural mindset that ultimately **discourages proactive defense**. Lastly, the Italian cybersecurity market is dominated by few large enterprises with ties to the defense sector, whose priorities are often misaligned with the needs of Italy’s industrial backbone (small and medium enterprises). This leads to a slow and uncoordinated response system, **leaving much of Italy’s digital infrastructure vulnerable to attacks**.
+
+
+
+
+
+Together, these findings reflect a broader trend: **cybercriminals prioritize sectors where disruption is most impactful, and defenses are uneven**. This raises a critical question: **are certain threat actors consistently targeting specific industries in Italy and if so, why?** The answer can reveal strategic intent, ranging from financial motives to ideological agendas, and help prevent future risks. 
+
+The following section explores this dynamic in greater detail, examining how **key threat actors operate in Italy** and which industries they pursue most aggressively.
+
+
+
+
+The data highlights how different sectors are targeted in different ways. **LockBit 3.0** is the most active and geographically distributed group, with a distinct preference for **Manufacturing**, echoing the earlier finding that this sector is the most targeted. Its predecessor, **LockBit 2**, displayed a broader distribution, with a notable presence in **Retail** and **General Services**, but less strategic focus overall. By contrast, politically motivated actors like **Noname057(16)** and **LulzSecITA** mainly targeted **Public Administration**, largely bypassing manufacturing. This suggests a goal not of profit but of visibility, through public disruption or data leaks, exploiting institutional vulnerabilities.
+
+A look at timelines further illustrates these dynamics. As of June 2025, only a few groups, **Akira, Cactus, Rhysida, 8Base**, and **Lockbit 3.0**, remain active in Italy, reflecting a possible shift in ransomware models. Meanwhile, **LulzSecITA**’s campaigns ended by 2020, and **LockBit 3.0** appears to have seamlessly replaced **LockBit 2**, suggesting operational continuity. The first LockBit 3.0 attacks followed immediately after LockBit 2 ceased operations, indicating **rebranding**, not retirement.
+
+
+
+
+Another layer of analysis explored whether these actors are **Italy-specific** or operate across Europe. The answer is nearly unanimous: 14 out of the top 15 actors active in Italy also conduct campaigns throughout Europe. The only exception is **Sandworm**, a Russian state-sponsored group known for critical infrastructure attacks. Its absence in Italy likely reflects a strategic focus on more geopolitically sensitive targets elsewhere in Europe ([MITRE ATT&CK](https://attack.mitre.org/groups/G0034/)). 
+
+
+
+
+To conclude our exploration of cyber actor dynamics, we conducted a **clustering analysis of behavioral patterns and target preferences**. This yielded **10 distinct groups**, all showing intense activity in **Lombardy**, Italy’s economic engine, and in **Lazio**, specifically cluster 2 and 8, a region rich in institutional targets. **Cluster 3** stands out for its exclusive **focus on Veneto**, perhaps drawn by local industry or regional vulnerabilities. Overall, the clustering confirms that **regional economics**, especially those with dense concentrations of SMEs and public assets, remain priority targets for cyber threat actors.
+
+
+
+
+### From Breach to Awareness: Is the Threat Truly Understood?
+
+
+This deep dive into sectoral and regional patterns confirms a fundamental truth: **Italy’s most productive and institutional regions are at the center of its cyber threat landscape**. Whether due to economic weight, critical data exposure, or structural weaknesses, these areas face elevated and persistent risks. But here’s the real question: **does the public understand the scale of this threat?** In an age where ransomware can stop hospitals from working, leak court information, or shut down factories, one would expect cyberattacks to dominate headlines and shape national policy conversations. And yet, **visibility doesn't always match severity**. The next section shifts focus from the attackers to the **narrative**, how cyber incidents are portrayed in Italian media, acknowledged by institutions, and ultimately **perceived by society**. 
+
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -268,9 +331,6 @@ This concentration of attacks on the manufacturing sector is likely tied to its 
 </div>
 
 
-Together, these findings reflect a broader trend: cyber attackers tend to focus on sectors where **disruption can be maximized, and defenses are uneven** — highlighting systemic vulnerabilities that require urgent attention. This observation raises a critical question in the Italian context: **Are certain threat actors consistently targeting specific industries within the country — and if so, what drives these choices?** Identifying recurring patterns in attacker behavior can offer more than just a catalog of incidents. It can point to strategic intent—whether it's the exploitation of persistent vulnerabilities, economic sabotage, political motivations, or larger operations tied to ransomware or espionage campaigns. Understanding **who these actors are, how they operate, and which sectors they pursue most aggressively** is key to anticipating future risks. The following section delves into this aspect in greater detail, examining the activity of major threat actors in Italy and their preferred targets across different sectors. 
-
-
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
@@ -280,8 +340,6 @@ Together, these findings reflect a broader trend: cyber attackers tend to focus 
     </vegachart>
   </div>
 </div>
-
-The plot highlights the intersection between **threat actors** and the **sectors** they most frequently target in Italy. From this analysis, several clear patterns emerge—both in terms of volume and strategic focus. **LockBit 3.0** stands out as the most prominent actor in terms of both volume and distribution of attacks, showing a clear preference for the manufacturing sector — which is, in fact, the most targeted sector in Italy. This correlation suggests a deliberate focus on **high-value industrial targets**, while notably, LockBit 3.0 appears to avoid the information sector almost entirely. A similar pattern is observed with its predecessor, **LockBit 2**, although this version shows a more even distribution across various sectors, with slightly higher activity in retail trade and lower interest in general services. In contrast, actors such as **Anonymous, Anonymous Italy, Noname057(16), LulzSecITA,** and **Killnet** seem to operate with a more **politically driven agenda**, primarily targeting public administration while largely ignoring the manufacturing sector. This behavior suggests an intention to **expose vulnerabilities** and **sensitive data** for demonstrative purposes, **rather than financial gain**, possibly exploiting known weaknesses or poorly secured access points within government institutions.
 
 
 <div style="display: flex; justify-content: center;">
@@ -295,9 +353,6 @@ The plot highlights the intersection between **threat actors** and the **sectors
 </div>
 
 
-Looking at the timeline of activity for these threat actors in Italy further reinforces the patterns observed. As of 2025, only a few groups — **Akira, Cactus, 8Base, and Everest** — remain actively targeting Italian entities, suggesting a shift in the threat landscape or the **emergence** of new **ransomware-as-a-service** models. Notably, **Anonymous’** campaigns appear confined to a distinct period between 2015 and 2019, indicating that their influence in the Italian cyber threat environment has waned significantly over the past years. This temporal distribution also supports the hypothesis that LockBit 3.0 is a direct rebrand of the same group behind LockBit 2: LockBit 2’s activity visibly ends in June 2022, immediately followed by the first recorded attacks of LockBit 3.0 in July 2022. This seamless transition strongly implies operational continuity, not just in tactics but also in infrastructure and targeting logic — particularly the focused attention on the manufacturing sector discussed earlier.
-
-As a final significant insight into the activity of these actors in Italy, an assessment was made to determine whether their operations are more **"generalist"** in nature — targeting multiple sectors across Europe — or if their focus is specifically on Italy. The analysis reveals that 14 out of the top 15 threat actors active in Italy also operate across the broader European landscape, suggesting a widespread, non-exclusive targeting strategy. The only exception is Sandworm, a notorious state-sponsored group linked to Unit 74455 of the Russian GRU. **Sandworm** has not been observed conducting operations in Italy, which aligns with its established profile: a highly sophisticated and destructive actor known for complex, coordinated cyberattacks, often aimed at critical infrastructure in **geopolitically strategic contexts**. Recognized by both MITRE ATT&CK and Western intelligence services as one of the most dangerous cyber threat actors globally, Sandworm’s absence from the Italian threat landscape may reflect its focus on targets deemed of higher strategic relevance to Russian state interests.
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -308,11 +363,6 @@ As a final significant insight into the activity of these actors in Italy, an as
     </vegachart>
   </div>
 </div>
-
-This overview of sectoral and regional attack patterns underlines a clear reality: Italian businesses—particularly those in **manufacturing** and **public administration** — are at the epicenter of the national cyber threat landscape. Whether due to their economic weight, the sensitivity of the data they manage, or their uneven cybersecurity posture, these organizations present high-value opportunities for threat actors. At the same time, the geographic distribution of attacks closely mirrors the country's economic map, with Northern Italy—and to some extent, Lazio—bearing the brunt of cyber incidents.
-
-
-These findings highlight a crucial point: **the cyber threat in Italy is not an abstract or distant phenomenon, but one that directly affects the core of its productive fabric**. And yet, **how visible is this risk to the broader public? To what extent has it penetrated mainstream discourse, and how is it being perceived by media and institutions?** The next section explores these questions, beginning with a look at how the presence of cyberattacks in Italy has evolved in public reporting over time.
 
 
 **TODO**
