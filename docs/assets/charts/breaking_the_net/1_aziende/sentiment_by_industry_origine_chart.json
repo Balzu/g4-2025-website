@@ -1,0 +1,366 @@
+{
+  "config": {
+    "background": "transparent",
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "legend": {
+      "labelColor": "#ffffff",
+      "titleColor": "#ffffff"
+    },
+    "title": {
+      "color": "#ffffff"
+    },
+    "axisY": {
+      "labelLimit": 300
+    }
+  },
+  "data": {
+    "name": "data-838e7446a06ed1bb507e7482e028739a"
+  },
+  "facet": {
+    "column": {
+      "field": "origine",
+      "title": "Source Type",
+      "type": "nominal"
+    }
+  },
+  "spec": {
+    "mark": {
+      "type": "bar"
+    },
+    "encoding": {
+      "color": {
+        "field": "sentiment_label",
+        "scale": {
+          "domain": [
+            "neutral",
+            "negative",
+            "positive"
+          ],
+          "range": [
+            "#d3d3d3",
+            "#ca6702",
+            "#94d2bd"
+          ]
+        },
+        "title": "Sentiment",
+        "type": "nominal"
+      },
+      "tooltip": [
+        {
+          "field": "origine",
+          "title": "Source",
+          "type": "nominal"
+        },
+        {
+          "field": "Industry",
+          "title": "Industry",
+          "type": "nominal"
+        },
+        {
+          "field": "sentiment_label",
+          "title": "Sentiment",
+          "type": "nominal"
+        },
+        {
+          "field": "Count",
+          "title": "Number of Articles",
+          "type": "quantitative"
+        }
+      ],
+      "x": {
+        "field": "Count",
+        "title": "Number of Articles",
+        "type": "quantitative"
+      },
+      "y": {
+        "field": "Industry",
+        "sort": "-x",
+        "title": "Industry",
+        "type": "nominal"
+      }
+    },
+    "height": 450,
+    "width": 300
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-838e7446a06ed1bb507e7482e028739a": [
+      {
+        "origine": "Giornali",
+        "Industry": "arts, entertainment, and recreation",
+        "sentiment_label": "negative",
+        "Count": 3
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "arts, entertainment, and recreation",
+        "sentiment_label": "positive",
+        "Count": 1
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "finance and insurance",
+        "sentiment_label": "negative",
+        "Count": 1
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "information",
+        "sentiment_label": "negative",
+        "Count": 2
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "other services (except public administration)",
+        "sentiment_label": "negative",
+        "Count": 1
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "professional, scientific, and technical services",
+        "sentiment_label": "negative",
+        "Count": 1
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "professional, scientific, and technical services",
+        "sentiment_label": "neutral",
+        "Count": 1
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "public administration",
+        "sentiment_label": "negative",
+        "Count": 6
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "public administration",
+        "sentiment_label": "neutral",
+        "Count": 5
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "undetermined",
+        "sentiment_label": "negative",
+        "Count": 2
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "utilities",
+        "sentiment_label": "negative",
+        "Count": 4
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "utilities",
+        "sentiment_label": "neutral",
+        "Count": 2
+      },
+      {
+        "origine": "Giornali",
+        "Industry": "utilities",
+        "sentiment_label": "positive",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "accommodation and food services",
+        "sentiment_label": "neutral",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "arts, entertainment, and recreation",
+        "sentiment_label": "negative",
+        "Count": 2
+      },
+      {
+        "origine": "Settore",
+        "Industry": "arts, entertainment, and recreation",
+        "sentiment_label": "neutral",
+        "Count": 2
+      },
+      {
+        "origine": "Settore",
+        "Industry": "arts, entertainment, and recreation",
+        "sentiment_label": "positive",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "educational services",
+        "sentiment_label": "neutral",
+        "Count": 2
+      },
+      {
+        "origine": "Settore",
+        "Industry": "educational services",
+        "sentiment_label": "positive",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "finance and insurance",
+        "sentiment_label": "negative",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "health care and social assistance",
+        "sentiment_label": "negative",
+        "Count": 4
+      },
+      {
+        "origine": "Settore",
+        "Industry": "health care and social assistance",
+        "sentiment_label": "neutral",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "health care and social assistance",
+        "sentiment_label": "positive",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "information",
+        "sentiment_label": "negative",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "information",
+        "sentiment_label": "neutral",
+        "Count": 2
+      },
+      {
+        "origine": "Settore",
+        "Industry": "information",
+        "sentiment_label": "positive",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "manufacturing",
+        "sentiment_label": "negative",
+        "Count": 7
+      },
+      {
+        "origine": "Settore",
+        "Industry": "manufacturing",
+        "sentiment_label": "neutral",
+        "Count": 2
+      },
+      {
+        "origine": "Settore",
+        "Industry": "manufacturing",
+        "sentiment_label": "positive",
+        "Count": 3
+      },
+      {
+        "origine": "Settore",
+        "Industry": "mining, quarrying, and oil and gas extraction",
+        "sentiment_label": "neutral",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "other services (except public administration)",
+        "sentiment_label": "negative",
+        "Count": 2
+      },
+      {
+        "origine": "Settore",
+        "Industry": "other services (except public administration)",
+        "sentiment_label": "neutral",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "professional, scientific, and technical services",
+        "sentiment_label": "negative",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "public administration",
+        "sentiment_label": "negative",
+        "Count": 12
+      },
+      {
+        "origine": "Settore",
+        "Industry": "public administration",
+        "sentiment_label": "neutral",
+        "Count": 9
+      },
+      {
+        "origine": "Settore",
+        "Industry": "retail trade",
+        "sentiment_label": "negative",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "retail trade",
+        "sentiment_label": "neutral",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "transportation and warehousing",
+        "sentiment_label": "neutral",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "transportation and warehousing",
+        "sentiment_label": "positive",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "undetermined",
+        "sentiment_label": "negative",
+        "Count": 4
+      },
+      {
+        "origine": "Settore",
+        "Industry": "undetermined",
+        "sentiment_label": "neutral",
+        "Count": 2
+      },
+      {
+        "origine": "Settore",
+        "Industry": "undetermined",
+        "sentiment_label": "positive",
+        "Count": 1
+      },
+      {
+        "origine": "Settore",
+        "Industry": "utilities",
+        "sentiment_label": "negative",
+        "Count": 9
+      },
+      {
+        "origine": "Settore",
+        "Industry": "utilities",
+        "sentiment_label": "neutral",
+        "Count": 15
+      },
+      {
+        "origine": "Settore",
+        "Industry": "utilities",
+        "sentiment_label": "positive",
+        "Count": 2
+      }
+    ]
+  }
+}

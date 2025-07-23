@@ -229,7 +229,7 @@
     ],
     "x": {
       "field": "Count",
-      "title": "Numero di articoli",
+      "title": "Number of articles",
       "type": "quantitative"
     },
     "y": {

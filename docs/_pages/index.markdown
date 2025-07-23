@@ -75,6 +75,9 @@ vega: true
 .barchart { display:none; }
 .barchart.visible { display:block; }
 
+.chart_ { display:none; }
+.chart_.visible { display:block; }
+
 div aside {
     background-color: #000000;
 }
@@ -688,15 +691,16 @@ So, while attacks are increasing in both frequency and severity, the information
 
 ### Which Sectors Make the Headlines? 
 
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry_chart.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
+After this broader analysis, we turned our attention to the types of industries affected by cyberattacks and how the media responds to them in both visibility and tone. 
+The first chart shows the average number of articles published per attack across different sectors a measure of media attention. Strikingly, utility companies (such as electricity, gas, and water providers) top the list, despite having been targeted only three times during the observed period. This suggests that attacks on critical infrastructure regardless of how frequent they are trigger disproportionate media coverage, likely because of their potential consequences for national security and daily life. 
+
+At the other end of the spectrum, sectors like accommodation and food services, mining, and certain professional services receive far less media attention, even when incidents occur. These cases often go unnoticed or are reported in niche outlets only. 
+
+The second chart breaks down media sentiment by industry. Again, utilities stand out with a significantly higher share of negative-toned articles. This is likely tied to the alarmist framing often used when essential public services are at risk, where urgency and public impact dominate the narrative. 
+
+In contrast, industries that receive less attention such as transportation, retail, and hospitality show a very different picture: sentiment tends to be neutral or even slightly positive, when covered at all. These attacks may be seen as less critical or less sensational, and are therefore communicated with a softer tone or ignored entirely. 
+
+This contrast underscores an important dynamic: media visibility and tone are not just shaped by how often an industry is targeted, but by how “newsworthy” an attack is perceived to be. Critical infrastructure gets headlines and alarm while other sectors often stay in the shadows, regardless of the real risks involved. 
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -707,6 +711,36 @@ So, while attacks are increasing in both frequency and severity, the information
     </vegachart>
   </div>
 </div>
+
+
+
+<div class="hm-buttons">
+  <button type="button" class="hm-btn3 active" data-target="chart_1">General Sentiment</button>
+  <button type="button" class="hm-btn3" data-target="chart_2">Sentiment by Source</button>
+</div>
+
+<div id="chart_1" class="chart_ visible">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/sentiment_by_industry_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+<div id="chart_2" class="chart_">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/sentiment_by_industry_origine_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
+
+
 
 After this general overview, we can now reflect on the types of industries affected by cyberattacks and the sentiment of media coverage. 
 
@@ -1103,6 +1137,21 @@ document.querySelectorAll('.hm-btn2').forEach(btn=>{
     btn.classList.add('active');
 
     document.querySelectorAll('.barchart').forEach(div=>div.classList.remove('visible'));
+    document.getElementById(target).classList.add('visible');
+  });
+});
+</script>
+
+
+<script>
+document.querySelectorAll('.hm-btn3').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const target = btn.dataset.target;
+
+    document.querySelectorAll('.hm-btn3').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.querySelectorAll('.chart_').forEach(div=>div.classList.remove('visible'));
     document.getElementById(target).classList.add('visible');
   });
 });
