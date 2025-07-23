@@ -372,7 +372,15 @@ A look at timelines further illustrates these dynamics. As of June 2025, only a 
 
 Another layer of analysis explored whether these actors are **Italy-specific** or operate across Europe. The answer is nearly unanimous: 14 out of the top 15 actors active in Italy also conduct campaigns throughout Europe. The only exception is **Sandworm**, a Russian state-sponsored group known for critical infrastructure attacks. Its absence in Italy likely reflects a strategic focus on more geopolitically sensitive targets elsewhere in Europe ([MITRE ATT&CK](https://attack.mitre.org/groups/G0034/)). 
 
-
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/map_the_attack/attori_europa_black.json" | relative_url }}"
+      style="width: 100%; height: 100%" 
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
 
 To conclude our exploration of cyber actor dynamics, we conducted a **clustering analysis of behavioral patterns and target preferences**. This yielded **10 distinct groups**, all showing intense activity in **Lombardy**, Italy’s economic engine, and in **Lazio**, specifically cluster 2 and 8, a region rich in institutional targets. **Cluster 3** stands out for its exclusive **focus on Veneto**, perhaps drawn by local industry or regional vulnerabilities. Overall, the clustering confirms that **regional economics**, especially those with dense concentrations of SMEs and public assets, remain priority targets for cyber threat actors.
 
