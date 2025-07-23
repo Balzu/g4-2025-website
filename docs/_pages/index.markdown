@@ -492,6 +492,42 @@ Another layer of analysis explored whether these actors are **Italy-specific** o
   </div>
 </div>
 
+
+
+<div class="text-center my-3">
+  <a href="javascript:void(0)"
+     data-bs-toggle="modal"
+     data-bs-target="#exampleModal6"
+     class="modal-link">
+    👾 <span class="modal_link">Actor Overview</span>
+  </a>
+</div>
+
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Actors Overview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+      </div>
+      <div class="modal-body">
+
+        <section>
+          <h5>Sandworm (Unit 74455)</h5>
+          <p>A state-sponsored Russian cyber warfare group under the GRU, infamous for large-scale disruptive attacks like NotPetya and Industroyer2. Specializes in sabotage of critical infrastructure across Ukraine, Europe, and NATO countries. </p>
+        </section>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 To conclude our exploration of cyber actor dynamics, we conducted a **clustering analysis of behavioral patterns and target preferences**. This yielded **10 distinct groups**, all showing intense activity in **Lombardy**, Italy’s economic engine, and in **Lazio**, specifically cluster 2 and 8, a region rich in institutional targets. **Cluster 3** stands out for its exclusive **focus on Veneto**, perhaps drawn by local industry or regional vulnerabilities. Overall, the clustering confirms that **regional economics**, especially those with dense concentrations of SMEs and public assets, remain priority targets for cyber threat actors.
 
 ![Cluster]({{ "/assets/images/regions_actors_company_type_cluster.png" | relative_url }})
