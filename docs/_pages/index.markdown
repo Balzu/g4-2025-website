@@ -393,10 +393,7 @@ To conclude our exploration of cyber actor dynamics, we conducted a **clustering
 
 This deep dive into sectoral and regional patterns confirms a fundamental truth: **Italy’s most productive and institutional regions are at the center of its cyber threat landscape**. Whether due to economic weight, critical data exposure, or structural weaknesses, these areas face elevated and persistent risks. But here’s the real question: **does the public understand the scale of this threat?** In an age where ransomware can stop hospitals from working, leak court information, or shut down factories, one would expect cyberattacks to dominate headlines and shape national policy conversations. And yet, **visibility doesn't always match severity**. The next section shifts focus from the attackers to the **narrative**, how cyber incidents are portrayed in Italian media, acknowledged by institutions, and ultimately **perceived by society**. 
 
-
-
-
-
+<br><br><br>
 
 
 # Breaking the Net {#breaking-the-net}
