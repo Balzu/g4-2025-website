@@ -92,11 +92,11 @@ In today’s digital society, cybersecurity can no longer be dismissed as a pure
 
 ### A Look Inside the Noise: Reddit as a Mirror of Cyber Perception 
 
-While news headlines often spotlight big attacks and corporate responses, platforms like **Reddit** offer a bottom-up perspective — revealing what people actually say, feel, and fear when facing digital threats. 
+While news headlines often spotlight big attacks and corporate responses, platforms like **Reddit** offer a bottom up perspective,  revealing what people actually say, feel, and fear when facing digital threats. 
 
-By analyzing thousands of Reddit comments and posts mentioning terms like phishing, data breach, ransomware, or zero trust, a more complex picture emerges. Conversations aren’t always polarized; users express both **concern and confusion**, sometimes anger, sometimes surprise. And the **volume of posts is growing**, suggesting that cybersecurity is no longer a niche topic — it's becoming a **mainstream, lived experience,** especially for those who've had their identities stolen or accounts compromised. 
+By analyzing thousands of Reddit comments and posts mentioning terms like phishing, data breach, ransomware, or zero trust, a more complex picture emerges. Conversations aren’t always polarized; users express both **concern and confusion**, sometimes anger, sometimes surprise. And the **volume of posts is growing**, suggesting that cybersecurity is no longer a niche topic but it's becoming a **mainstream, lived experience**, especially for those who've had their identities stolen or accounts compromised. 
 
-This growing discourse, rich in emotion and nuance, underscores a simple truth: **cybersecurity is not just about systems — it’s about people.** 
+This growing discourse, rich in emotion and nuance, underscores a simple truth: **cybersecurity is not just about systems, it’s about people**. 
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -364,6 +364,16 @@ This deep dive into sectoral and regional patterns confirms a fundamental truth:
 
 ### When Cyberattacks Happen, Who's Listening?
 
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_source_origin_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
 Now that we’ve examined who is being targeted by cyberattacks in Italy, who the threat actors are, and the techniques they use, we can turn to an equally important question: how are these incidents portrayed in the public sphere? 
 
 From 2015 to 2025, there have been around 900 documented cyberattacks on Italian companies. But, as this graph shows, only 118 of those were actually mentioned in the media. Each dot represents a cyberattack, and only the blue ones were covered in news outlets, while the red ones received no media attention at all. 
@@ -385,9 +395,9 @@ We can clearly see a growing number of attacks over time, especially after 2020.
 
 Furthermore, if we dig deeper into the few cases that were covered by the media, another pattern emerges. Most of these reports come from cybersecurity-focused outlets — specialized industry publications that primarily reach a niche audience of professionals and insiders. 
 
-This means that the general public, who typically relies on mainstream newspapers and national media, is often left unaware of these incidents. As a result, communication around cyber threats in Italy remains limited and fragmented. The lack of broader media coverage contributes to a low level of public awareness and understanding of cybersecurity risks — despite their growing relevance in everyday life and business. 
+This means that the general public, who typically relies on mainstream newspapers and national media, is **often left unaware of these incidents**. As a result, communication around cyber threats in Italy remains limited and fragmented. The lack of broader media coverage contributes to a low level of public awareness and understanding of cybersecurity risks, despite their growing relevance in everyday life and business. 
 
-So, while attacks are increasing in both frequency and severity, the information about them struggles to reach the wider population — weakening Italy's collective ability to respond, prepare, and build a stronger cybersecurity culture. 
+So, while attacks are increasing in both frequency and severity, the information about them struggles to reach the wider population, weakening Italy's collective ability to respond, prepare, and build a stronger cybersecurity culture. 
 
 ### Which Sectors Make the Headlines? 
 
@@ -401,23 +411,41 @@ So, while attacks are increasing in both frequency and severity, the information
   </div>
 </div>
 
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_chart.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
+
 After this general overview, we can now reflect on the types of industries affected by cyberattacks and the sentiment of media coverage. 
 
-In the first graph, which shows the average number of articles per attack, we see that **utilities** — such as electricity, water, or gas providers — receive the **highest media coverage per attack**, even though they were only targeted three times. This indicates a strong media focus on critical infrastructure, likely due to the potential impact on public life and national security. 
+In the first graph, which shows the average number of articles per attack, we see that **utilities** such as electricity, water, or gas providers receive the **highest media coverage per attack**, even though they were only targeted three times. This indicates a strong media focus on critical infrastructure, likely due to the potential impact on public life and national security. 
 
-In the second graph, which breaks down the **sentiment of articles by industry**, utilities again stand out — with a high **share of negative sentiment**. This could be due to an alarmist tone often used when essential services are disrupted, emphasizing risk and urgency. 
+In the second graph, which breaks down the **sentiment of articles by industry**, utilities again stand out with a high **share of negative sentiment**. This could be due to an alarmist tone often used when essential services are disrupted, emphasizing risk and urgency. 
 
-However, if we look at **sectors that were less frequently attacked**, such as t**ransportation and warehousing, accommodation and food services, or mining and extraction**, we notice that these receive **little to no negative coverage** — in some cases, the sentiment is even neutral or slightly positive. This may be because these incidents are seen as less critical or less interesting for the general audience, and therefore are reported with a softer tone or not at all. 
+However, if we look at **sectors that were less frequently attacked**, such as **transportation and warehousing, accommodation and food services, or mining and extraction**, we notice that these receive **little to no negative coverage**. In some cases, the sentiment is even neutral or slightly positive. This may be because these incidents are seen as less critical or less interesting for the general audience, and therefore are reported with a softer tone or not at all. 
 
 This contrast highlights how **media visibility and tone are not only tied to the frequency of attacks**, but also to how **newsworthy or alarming** an incident is perceived to be. 
 
 
 ###  Cybersecurity: What We Say, What We Mean 
 
-**TODO**: manca chart 'most frequent tokens by source'?
+<div style="display: flex; justify-content: center;">
+  <div>
+    <vegachart
+      schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/NEW_most_frequent_tokens_by_source.json" | relative_url }}"
+      style="width: 100%; height: 100%"
+      tooltip="true" >
+    </vegachart>
+  </div>
+</div>
 
 
-In cybersecurity, **words matter** — and so does the emotional charge we attach to them. While the frequency of keywords such as data breach, malware, or privacy may be similar across different sources, the **emotions and tones surrounding them are not**. 
+In cybersecurity, **words matter** and so does the emotional charge we attach to them. While the frequency of keywords such as data breach, malware, or privacy may be similar across different sources, the **emotions and tones surrounding them are not**. 
 
   
 Our sentiment analysis reveals a striking pattern: **regardless of the source**, cybersecurity-related language tends to carry a **negative connotation**. However, something begins to shift starting in **2020**. 
@@ -451,7 +479,56 @@ By contrast, sector-specific sources maintain a more **technical register**, foc
 
 This divergence is key. 
 
-###  From Shared Vocabulary to Diverging Narratives 
+###  When Optimism Stays in the Echo Chamber 
+
+What do we really talk about when we talk about cybersecurity? 
+
+By measuring the average sentiment across dominant topics and sources, a striking pattern emerges: **positive tones are almost exclusively reserved for sector-specific publications**, and only when discussing **corporate security and legal compliance**. These include discussions on enterprise level risk management, GDPR enforcement, and organizational resilience themes treated with a sense of control, even optimism. 
+
+Everywhere else, the tone shifts. 
+
+In mainstream journalism, where the audience is broader and less specialized, **the sentiment trends negative  across the board**. Stories around personal privacy, digital fraud, or user tracking are overwhelmingly framed in critical terms, with few signs of hope or solutions. The most negative tones appear when users and their devices are at the center of the narrative. 
+
+The contrast is even sharper when the same topic is handled by different sources. For example, corporate cybersecurity is portrayed by industry media as an evolving opportunity a space of innovation and strategic growth. But in the general press, it’s nearly absent unless tied to crisis, scandal, or systemic failure. 
+
+
+**Clustering analysis  also reveals a fragmented cyber discourse.** Sector-specific publications tend to focus on regulatory compliance and enterprise risk, usually adopting a neutral or critical tone  except in 2024, when optimism emerges around corporate cybersecurity success stories. In contrast, general media emphasizes personal privacy and cybercrime, often with emotional and negative framing, especially during crises like the pandemic. 
+
+Notably, the only positive sentiment cluster originates from the sector  suggesting that optimism is largely internal and professional. Even shared topics, like corporate cybersecurity, are portrayed very differently: as progress in the sector, and as crisis in the public media narrative. 
+
+ 
+This divergence reveals more than just editorial choices: it points to a **split in how cybersecurity is understood, communicated, and emotionally processed**, depending on who’s talking and who’s listening. 
+
+In short, **confidence lives in the sector. Concern dominates the public sphere**. 
+
+And that divide might be exactly what’s preventing Italy from building a truly shared cyber resilience culture. 
+
+
+
+### A Communication Gap That Shapes Action 
+
+This gap isn’t just semantic, it’s strategic. 
+
+ If the **perception of cybersecurity** remains focused solely on breaches and blame, while technical sources highlight regulation, governance, and risk management, the broader public may fail to grasp the full scope of what's at stake. 
+
+This discrepancy is confirmed by recent research. 
+
+According to the **Cyber Index PMI 2024**, only **15%** of Italian small and medium enterprises have a strategic approach to cyber risk. **Over half (56%) still lack awareness or tools to react effectively**. The disconnect is not just about capacity , it’s about narrative. If risk is not communicated with clarity and realism, action will lag behind awareness. 
+
+A 2024 cross-cultural study further supports this view: 
+
+While Italians acknowledge cyber threats as real, they tend to adopt a **passive, delegated approach**, trusting institutions or service providers to take care of security. Compared to countries like Germany or the UK, Italy stands in the middle tier: aware, but not proactive.([paper](https://arxiv.org/abs/2405.16215v2)) 
+
+### A Final Call: Words Are Not Just Words 
+
+When **cyber language is fragmented**, so is the response. 
+
+From newsrooms to boardrooms, from small and medium enterprises to government agencies, the way we **talk** about cybersecurity shapes the way we **invest, legislate, educate, and defend**. 
+
+The good news? The data shows change is possible. Positive narratives do emerge  especially when **solutions, not just threats**, are placed at the center. But to bridge the communication gap, we need **more than analysis**. We need a **shared language**, one that makes cybersecurity not just a technical domain, but a **collective priority**. 
+
+
+**TODO** sistema questi grafici
 
   <div>
     <vegachart
@@ -461,52 +538,6 @@ This divergence is key.
     </vegachart>
   </div>
 
-Through **K-Means clustering**, we analyzed how articles and posts group around themes, tones, and timeframes. What emerged is a layered ecosystem of narratives: 
-
-- **Sector publications** dominate conversations on compliance, device security, and enterprise risk. These are mostly **neutral or critical**, except for Cluster 3, where an optimistic tone appears in 2024 — likely tied to **new solutions or successful implementations.**
-- **General media**, on the other hand, focuses heavily on personal privacy and cybercrime, especially around pivotal moments like the pandemic. These stories tend to be **more emotional**, and **rarely positive**. 
-
-The only **cluster with a positive sentiment** comes from the **sector**, signaling that **optimism about cybersecurity is mostly internal** — confined to insiders, vendors, and specialists. In the public narrative, **alarm still dominates**. 
-
-What’s most telling is that even when the same topics are discussed, they are framed very differently. Corporate cybersecurity, for instance, is treated as an opportunity in sector pieces, but rarely appears in general media in anything but **crisis mode**. 
-
-
-###  A Communication Gap That Shapes Action 
-
-
-This gap isn’t just semantic — it’s strategic. 
-
-If the **perception of cybersecurity** remains focused solely on breaches and blame, while technical sources highlight regulation, governance, and risk management, the broader public may fail to grasp the full scope of what's at stake. 
-
-This discrepancy is confirmed by recent research. 
-
-According to the **Cyber Index PMI 2024**, only **15%** of Italian small and medium enterprises (SMEs/PMI) have a strategic approach to cyber risk. Over **half (56%)** still lack awareness or tools to react effectively. The disconnect is not just about capacity — it’s about **narrative**. If risk is not **communicated with clarity and realism**, action will lag behind awareness. 
-
-A **2024 cross-cultural study** further supports this view: 
-
-While Italians acknowledge cyber threats as real, they tend to adopt a **passive, delegated approach**, trusting institutions or service providers to take care of security. Compared to countries like Germany or the UK, Italy stands in the **middle tier**: aware, but not proactive.([paper](https://arxiv.org/abs/2405.16215v2)) 
-
-
-### A Final Call: Words Are Not Just Words
-
-When **cyber language is fragmented**, so is the response. 
-
-From newsrooms to boardrooms, from SMEs/PMI to government agencies, the way we talk about cybersecurity shapes the way we **invest, legislate, educate, and defend**. 
-
-The good news? The data shows change is possible. Positive narratives do emerge — especially when **solutions, not just threats**, are placed at the center. But to bridge the communication gap, we need **more than analysis**. We need a **shared language**, one that makes cybersecurity not just a technical domain, but a **collective priority**. 
-
-
-**TODO** - quest i grafici sotto, dove devono andare?
-
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/normalized_chart.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
 
 
 <div style="display: flex; justify-content: center;">
@@ -533,15 +564,7 @@ The good news? The data shows change is possible. Positive narratives do emerge 
 
 
 
-<div style="display: flex; justify-content: center;">
-  <div>
-    <vegachart
-      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_source_origin_chart.json" | relative_url }}"
-      style="width: 100%; height: 100%"
-      tooltip="true" >
-    </vegachart>
-  </div>
-</div>
+
 
 
 <div style="display: flex; justify-content: center;">
@@ -620,20 +643,20 @@ Each topic, in turn, was analyzed for sentiment, source, and time — allowing u
   <iframe src="{{ site.baseurl }}/assets/graph/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
 </div>
 
-In cybersecurity, the communication gap is as critical as the technical one. On one side, we have mainstream media amplifying panic around cyber threats. On the other, trade journals speak a language so technical that it alienates most corporate professionals. Stuck in between are companies — eager to train staff, yet often ill-equipped to explain the very threats they face. 
+In cybersecurity, the communication gap is as critical as the technical one. On one side, we have mainstream media amplifying panic around cyber threats. On the other, trade journals speak a language so technical that it alienates most corporate professionals. Stuck in between are companies eager to train staff, yet often ill-equipped to explain the very threats they face. 
 
 To bridge this divide, we’ve developed an intelligent knowledge graph: a dynamic, visual tool that turns complex cyber data into structured, explorable insights. Designed not for the public at large, but for use in corporate training courses, the graph acts as a semantic map of the cybersecurity landscape, supporting workshops, awareness sessions, and post-training engagement. 
 
-Rooted in the MITRE ATT&CK framework and enriched with peer-reviewed research from PubMed, Crossref, and arXiv, the graph hosts over 4,000 nodes connecting attack techniques, malware families, vulnerabilities, countermeasures, and more. Need to understand how a ransomware campaign exploits a specific vulnerability? Or which mitigations align with spear phishing? The graph doesn't just hold that knowledge — it makes it navigable. 
+Rooted in the MITRE ATT&CK framework and enriched with peer-reviewed research from PubMed, Crossref, and arXiv, the graph hosts over 4,000 nodes connecting attack techniques, malware families, vulnerabilities, countermeasures, and more. Need to understand how a ransomware campaign exploits a specific vulnerability? Or which mitigations align with spear phishing? The graph doesn't just hold that knowledge, it makes it navigable. 
 
-Even more powerfully, the system integrates a local LLM (Mistral 7B) capable of answering natural language queries using context from the graph itself. Ask a question like “Which mitigations are most effective against credential dumping?” — and get a grounded, explainable response. Combined with interactive visualizations and slide generation, it becomes a training companion, not just a data tool. 
+Even more powerfully, the system integrates a local LLM (Mistral 7B) capable of answering natural language queries using context from the graph itself. Ask a question like “Which mitigations are most effective against credential dumping?” and get a grounded, explainable response. Combined with interactive visualizations and slide generation, it becomes a training companion, not just a data tool. 
 
 
 ### The Communication Gap Is Real 
 
 According to the 2° CensisIISFA (2023/2024) Report, 20.8% of Italian workers still don’t know what "cybersecurity" even means — up from 17.1% the year before. Meanwhile, over 1 in 5 employees have witnessed a cybersecurity incident in their workplace in the last year, ranging from service disruptions to data breaches. And yet, much of the training still relies on static materials and vague definitions. 
 
-In this context, tools like our knowledge graph aren’t just useful — they’re necessary. They educate. They contextualize. They make cybersecurity make sense. 
+In this context, tools like our knowledge graph aren’t just useful, they’re necessary. They educate. They contextualize. They make cybersecurity make sense. 
 
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/RI0W7NRl4SU?si=exRRIXoy2hr_qgFb&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -720,10 +743,10 @@ These metrics confirm a navigable and highly interconnected ecosystem — ideal 
 
 
 ###  From Attacks to Awareness: A Graph That Connects the Dots 
-What begins as a cyberattack often ends in headlines — yet rarely in real understanding. Public narratives tend to dramatize, while companies react with urgency, investing in solutions they may not fully grasp. Somewhere between the breach and the boardroom, technical knowledge gets lost in translation. 
+What begins as a cyberattack often ends in headlines, yet rarely in real understanding. Public narratives tend to dramatize, while companies react with urgency, investing in solutions they may not fully grasp. Somewhere between the breach and the boardroom, technical knowledge gets lost in translation. 
 
 This is where our graph steps in: not just as a visualization tool, but as a way to connect data, expertise, and communication into a cohesive system of shared understanding. 
-It links threats to research, concepts to countermeasures, and people to meaning — helping turn reactive defenses into informed strategies. 
+It links threats to research, concepts to countermeasures, and people to meaning, helping turn reactive defenses into informed strategies. 
 
 Because in cybersecurity, visibility isn’t just about network logs — it’s about making knowledge itself visible. 
 
@@ -735,35 +758,35 @@ So the real question becomes:
 
 ## Research vs. Reality: Italy’s Cybersecurity Investments Under the Microscope  
 
-Over the last decade, Italy has steadily climbed the European cybersecurity ladder — at least on paper. According to data from Horizon 2020 and Horizon Europe, the country ranks third in terms of net cybersecurity funding received, behind only Spain and Germany. From 2015 onward, Italy’s involvement in EU-backed research projects has grown consistently, peaking in 2021 with **115 active initiatives.**  
+Over the last decade, Italy has steadily climbed the European cybersecurity ladder, at least on paper. According to data from Horizon 2020 and Horizon Europe, the country ranks third in terms of net cybersecurity funding received, behind only Spain and Germany. From 2015 onward, Italy’s involvement in EU-backed research projects has grown consistently, peaking in 2021 with **115 active initiatives.**  
 
-This trajectory suggests a country that, even before the surge in cyberattacks, was aware of the need to strengthen its digital defenses — a sign of strategic foresight in the face of accelerating digitalization.  
+This trajectory suggests a country that, even before the surge in cyberattacks, was aware of the need to strengthen its digital defenses: a sign of strategic foresight in the face of accelerating digitalization.  
 
-But while the research ecosystem expanded, so did the threats. **In 2023, Italy recorded its highest-ever number of cyberattacks against companies,** continuing a trend that began around 2021 — the same period during which funding reached its peak.  
+But while the research ecosystem expanded, so did the threats. **In 2023, Italy recorded its highest-ever number of cyberattacks against companies,** continuing a trend that began around 2021, the same period during which funding reached its peak.  
 
 This overlap raises a critical and still unresolved question:  
 
 ### Are these investments paying off in the real world?  
 
-At present, the answer is unclear. It’s possible the benefits of funding are simply delayed — that training, infrastructure, and innovation need time to convert into effective defense mechanisms. But another possibility looms: that **the translation of research into operational security is too slow, too fragmented, or even misaligned** with the actual needs of Italian businesses.  
+At present, the answer is unclear. It’s possible the benefits of funding are simply delayed, that is that training, infrastructure, and innovation need time to convert into effective defense mechanisms. But another possibility looms: that **the translation of research into operational security is too slow, too fragmented, or even misaligned** with the actual needs of Italian businesses.  
 
-This isn’t just a budgeting issue — it’s a structural one. The numbers tell one story, but they also invite a deeper investigation:  
+This isn’t just a budgeting issue, it’s a structural one. The numbers tell one story, but they also invite a deeper investigation:  
 
 ### Does Italy’s cybersecurity model need a rethink? And if so, where should we start?  
 
-To explore this further, we asked a **senior academic figure**  for their honest view on the situation. Here's what they shared:  
+To explore this further, we asked an **experienced voice in the cybersecurity field**  for their honest view on the situation. Here's what they shared:  
 
 >As far as I know, the increase in projects hasn’t brought any significant or visible benefits. It mainly reflects better organizational capacity in the Italian ecosystem to apply for and manage funds. I haven’t seen more strategic selection of projects, nor clear impact in terms of cybersecurity outcomes or the emergence of new actors in the field.  
 >For example, Spain has focused its funding on building infrastructure and labs. In contrast, in Italy, a large portion of funds has gone toward increasing precarious or part-time roles in public and private organizations. In the short term, this boosts fund usage rates, but in the long term, it brings little benefit — and even creates social costs, as we’re seeing in the academic sector.
 
-His words offer an honest reflection — and leave us with a crucial, open-ended question:  
+Their words offer an honest reflection and leave us with a crucial, open-ended question:  
 
 Will these investments eventually strengthen Italy’s cybersecurity landscape, or do we need to rethink how research is connected to real-world needs and resilience?” 
 
 
 ### A System That Knows — But Can It Act? 
 
-This disconnect highlights a deeper issue: cybersecurity isn’t just a technical problem. It’s a systems problem — spanning infrastructure, education, policy, communication, labor, and equity. 
+This disconnect highlights a deeper issue: cybersecurity isn’t just a technical problem. It’s a systems problem spanning infrastructure, education, policy, communication, labor, and equity. 
 
 We can’t protect what we don’t understand, and we can’t defend with isolated tools. 
 **What we need is an ecological vision of cybersecurity**: one that connects institutions, individuals, technologies, and knowledge in a way that is resilient, transparent, and inclusive. 
