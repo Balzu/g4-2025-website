@@ -39,6 +39,7 @@ vega: true
 
 .hm-buttons {
   display:flex;
+  justify-content: center;
   gap:.5rem;
   margin-bottom:1rem;
   flex-wrap:wrap;
@@ -86,10 +87,10 @@ vega: true
 .heatmap.visible { display: flex; justify-content: center;}
 
 .barchart { display:none; }
-.barchart.visible { display:block; }
+.barchart.visible { display: flex; justify-content: center; }
 
 .chart_ { display:none; }
-.chart_.visible { display:block; }
+.chart_.visible { display: flex; justify-content: center; }
 
 div aside {
     background-color: #000000;
