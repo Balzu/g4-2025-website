@@ -749,7 +749,7 @@ This contrast underscores an important dynamic: media visibility and tone are no
 <div id="chart_1" class="chart_ visible">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/sentiment_by_industry_chart.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry_chart.json" | relative_url }}"
       style="width: 100%; height: 100%" 
       tooltip="true" >
     </vegachart>
@@ -759,7 +759,7 @@ This contrast underscores an important dynamic: media visibility and tone are no
 <div id="chart_2" class="chart_">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/sentiment_by_industry_origine_chart.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/breaking_the_net/1_aziende/sentiment_by_industry_origine_chart.json" | relative_url }}"
       style="width: 100%; height: 100%" 
       tooltip="true" >
     </vegachart>
