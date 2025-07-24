@@ -83,7 +83,7 @@ vega: true
   border-color:#d33;
 }
 .heatmap { display:none; }
-.heatmap.visible { display:block; }
+.heatmap.visible { display: flex; justify-content: center;}
 
 .barchart { display:none; }
 .barchart.visible { display:block; }
