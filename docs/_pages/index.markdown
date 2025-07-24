@@ -436,7 +436,7 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
 <div id="barchart1" class="barchart visible">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/map_the_attack/SETTORI_COLPITI_ITALY_BLACK.json" | relative_url }}"
       style="width: 100%; height: 100%" 
       tooltip="true" >
     </vegachart>
@@ -447,15 +447,13 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
 <div id="barchart2" class="barchart">
   <div>
     <vegachart
-      schema-url="{{ "/assets/charts/map_the_attack/SETTORI_COLPITI_ITALY_BLACK.json" | relative_url }}"
+      schema-url="{{ "/assets/charts/map_the_attack/industry_size_italy_black.json" | relative_url }}"
       style="width: 100%; height: 100%" 
       tooltip="true" >
     </vegachart>
   </div>
 </div>
 
-
-This trend is tied to both **economic weight and accelerated digitalization**, especially among small and medium enterprises (SMEs), which often lack robust cybersecurity practices. According to the [Cyber Index PMI 2024](https://www.confindustria.it/progetti/cyber-index-pmi/) by Confindustria, Politecnico di Milano, and the Italian National Cybersecurity Agency, Italian SMEs score an average of just **52 out of 100** in terms of **cyber resilience**. At the European level, [ENISA](https://www.enisa.europa.eu/topics/awareness-and-cyber-hygiene/smes-cybersecurity) also reports that **over 90% of SMEs** adopted digital tools during the pandemic **without strengthening their cybersecurity posture**, leaving many exposed to exploitive threats.
 
 While Italy does not rank among the most digitally advanced countries in the EU, its position as one of the most frequently targeted by cyberattacks may, paradoxically, stem from that very imbalance. As one cybersecurity expert we interviewed explained:
 > _If all intrusions were actually detected and publicly reported, Italy would likely top the European charts._
