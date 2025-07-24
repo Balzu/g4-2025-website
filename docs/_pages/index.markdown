@@ -171,6 +171,18 @@ p a {
     border-color: #0a9396 !important;
 }
 
+.hm-btn4.active {
+    background: #0a9396 !important;
+    color: #fff;
+    border-color: #0a9396 !important;
+}
+
+.hm-btn5.active {
+    background: #0a9396 !important;
+    color: #fff;
+    border-color: #0a9396 !important;
+}
+
 a:hover {
   text-decoration: none !important; 
 }
