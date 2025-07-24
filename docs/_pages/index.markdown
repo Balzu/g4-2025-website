@@ -97,6 +97,21 @@ vega: true
   color:#fff;
   border-color:#d33;
 }
+
+.hm-btn5 {
+  cursor:pointer;
+  padding:.5rem .9rem;
+  border:1px solid #ccc;
+  background:#f5f5f5;
+  border-radius:4px;
+  font-size:.9rem;
+}
+.hm-btn5.active {
+  background:#d33;
+  color:#fff;
+  border-color:#d33;
+}
+
 .heatmap { display:none; }
 .heatmap.visible { display: flex; justify-content: center;}
 
@@ -108,6 +123,9 @@ vega: true
 
 .tf_idf { display:none; }
 .tf_idf.visible { display: flex; justify-content: center;}
+
+.trends { display:none; }
+.trends.visible { display: flex; justify-content: center;}
 
 div aside {
     background-color: #000000;
@@ -1089,20 +1107,23 @@ But while the research ecosystem expanded, so did the threats. **In 2023, Italy 
 </div>
 
 
-**todo**: bottone
 
-<div style="display: flex; justify-content: center;">
+<div class="hm-buttons">
+  <button type="button" class="hm-btn5 active" data-target="trends1">Active Projects</button>
+  <button type="button" class="hm-btn5" data-target="trends2">Attack Trend</button>
+</div>
+
+<div id="trends1" class="trends visible">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/conclusions/financing/chart_italy_projects.json" | relative_url }}"
-      style="width: 100%; height: 100%"
+      style="width: 100%; height: 100%" 
       tooltip="true" >
     </vegachart>
   </div>
 </div>
 
-
-<div style="display: flex; justify-content: center;">
+<div id="trends2" class="trends">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/map_the_attack/average_trend_italy_europe_black.json" | relative_url }}"
@@ -1111,6 +1132,7 @@ But while the research ecosystem expanded, so did the threats. **In 2023, Italy 
     </vegachart>
   </div>
 </div>
+
 
 
 This overlap raises a critical and still unresolved question:  
@@ -1197,6 +1219,21 @@ document.querySelectorAll('.hm-btn4').forEach(btn=>{
     btn.classList.add('active');
 
     document.querySelectorAll('.tf_idf').forEach(div=>div.classList.remove('visible'));
+    document.getElementById(target).classList.add('visible');
+  });
+});
+</script>
+
+
+<script>
+document.querySelectorAll('.hm-btn5').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const target = btn.dataset.target;
+
+    document.querySelectorAll('.hm-btn5').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.querySelectorAll('.trends').forEach(div=>div.classList.remove('visible'));
     document.getElementById(target).classList.add('visible');
   });
 });
