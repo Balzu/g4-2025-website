@@ -198,7 +198,7 @@ p {
 
 
 ### Why Cybersecurity Matters — And Not Just for the Tech Industry 
-_A breach might start with a keystroke — but its echo depends on who’s listening._ 
+_A breach might start with a keystroke, but its echo depends on who’s listening._ 
 
 In today’s digital society, cybersecurity can no longer be dismissed as a purely technical issue or a concern reserved for IT departments. One breach is enough to expose the personal data of millions, shake financial markets, and erode the trust between a company and its customers. But beyond the corporate boardrooms and security operation centers, there is a deeper, more human layer to every cyberattack  and it’s unfolding online, in real time. 
 
@@ -226,7 +226,7 @@ This growing discourse, rich in emotion and nuance, underscores a simple truth: 
 
 ### What the Emotions Reveal 
 
-As shown in our **emotion analysis** (see technical insight), most users express **negative emotions** — fear, anger, frustration — when discussing cyber incidents. However, there are also traces of relief, curiosity, even humor, proving that digital threats are woven into the emotional fabric of online life. 
+As shown in our **emotion analysis** (see technical insight), most users express **negative emotions** (fear, anger, frustration) when discussing cyber incidents. However, there are also traces of relief, curiosity, even humor, proving that digital threats are woven into the emotional fabric of online life. 
 
 These aren’t just isolated incidents; they are a reflection of how modern society processes risk, privacy, and trust in the digital age. 
 
@@ -234,7 +234,7 @@ These aren’t just isolated incidents; they are a reflection of how modern soci
 
 ### Our Approach: Beyond Firewalls and Forensics 
 
-In light of this, our project adopts a **systematic, graph-based approach** to cyber threat intelligence — one that acknowledges not just the technical structure of attacks, but also their social and economic dimensions. 
+In light of this, our project adopts a **systematic, graph-based approach** to cyber threat intelligence, one that acknowledges not just the technical structure of attacks, but also their social and economic dimensions. 
 
 From **data and maps** to **media coverage, public sentiment, company responses, investment flows, and technical knowledge**, this investigation aims to decode the full lifecycle of cyber threats, with a particular focus on **Italy**. 
 
@@ -309,7 +309,7 @@ Since 2020, the world has witnessed a sharp rise in cyberattacks, marking a clea
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
       </div>
       <div class="modal-body">
-For our project, we relied on two different datasets. The first, curated by the <strong>University of Maryland</strong>, spans approximately ten years (from 2014 to mid-2024). The second dataset, obtained from <strong>Ransomfeed</strong>, is more recent, containing some records from mid-2025. These datasets provided complementary perspectives: the Maryland dataset was rich in features such as event_type (e.g., exploitative or disruptive), attack_type (e.g., criminal or hacktivist), as well as detailed descriptions of the attacks and, where available, information about the actors behind them. In contrast, the Ransomfeed dataset had a more structured format, including the following fields: VICTIM, GANG, DATE, YEAR, COUNTRY. It's important to note that both datasets contained **incomplete records** — in many cases, crucial information such as the attacker’s identity or the country targeted was missing. This posed a challenge for analysis, but it reflects the reality that information on cyberattacks is not always publicly available or up to date. 
+For our project, we relied on two different datasets. The first, curated by the <strong>University of Maryland</strong>, spans approximately ten years (from 2014 to mid-2024). The second dataset, obtained from <strong>Ransomfeed</strong>, is more recent, containing some records from mid-2025. These datasets provided complementary perspectives: the Maryland dataset was rich in features such as event_type (e.g., exploitative or disruptive), attack_type (e.g., criminal or hacktivist), as well as detailed descriptions of the attacks and, where available, information about the actors behind them. In contrast, the Ransomfeed dataset had a more structured format, including the following fields: VICTIM, GANG, DATE, YEAR, COUNTRY. It's important to note that both datasets contained <strong>incomplete records</strong>, in many cases, crucial information such as the attacker’s identity or the country targeted was missing. This posed a challenge for analysis, but it reflects the reality that information on cyberattacks is not always publicly available or up to date. 
 
 To work with these datasets, we first performed data cleaning and removed duplicates, which we identified after merging them.  
 
@@ -936,7 +936,7 @@ As our earlier analysis shows, not all industries receive equal media attention 
 
 The chart above highlights the top 20 most distinctive words used by each type of source, using TF-IDF differential. Mainstream media often center their language on individuals and incidents, with tokens like “hacker,” “attacco,” “utente,” “online,” “password”. These terms frame cybersecurity as sudden, alarming, and personal. The stories are reactive, emotion-driven, and aimed at a broad audience. 
 
-Sector-specific outlets, in contrast, use a vocabulary rooted in governance and institutional frameworks: terms like “gdpr,” “trattamento,” “aziendale,” “titolare,” and “compliance.” These articles speak to professionals, framing digital security as a matter of planning, accountability, and process not panic. 
+Sector-specific outlets, in contrast, use a vocabulary rooted in governance and institutional frameworks: terms like “gdpr,” “trattamento,” “aziendale” and “titolare”. These articles speak to professionals, framing digital security as a matter of planning, accountability, and process not panic. 
 This divide becomes even more apparent when we analyze sentiment by named entity. 
  
 
@@ -960,7 +960,7 @@ In sector-specific publications, the average sentiment tends to skew more positi
 
 In contrast, general news outlets show a more negative sentiment, particularly in connection with entities like Facebook, the FBI, or even the Senate typically in the context of surveillance concerns, data breaches, or regulatory inaction. These platforms and institutions are often portrayed as part of the problem rather than the solution. 
 
-This divergence is the key and reflects two distinct media ecosystems: one that interprets cybersecurity as a technical challenge, and one that dramatizes it as a social or political crisis.. 
+This divergence is the key and reflects two distinct media ecosystems: one that interprets cybersecurity as a technical challenge, and one that dramatizes it as a social or political crisis.
  
 
 <br>
@@ -1137,11 +1137,11 @@ The graph is constructed through a multi-layered pipeline that blends structure 
 
 Parsing MITRE ATT&CK data in STIX format (including techniques, malware, mitigations, groups, intrusion set). 
 
-Named Entity Recognition (NER) to match abstract terms from 3,000+ research articles with MITRE concepts — generating “citation” edges. 
+Named Entity Recognition (NER) to match abstract terms from 3,000+ research articles with MITRE concepts, generating “citation” edges. 
 
-Topic modeling (LDA) to categorize disconnected articles into 10 macro cyber topics (e.g., Phishing & Machine Learning, Blockchain Security). 
+Topic modeling (LDA) to categorize disconnected articles into 10 macro cyber topics (e.g., Phishing, Machine Learning, Blockchain Security). 
 
-Semantic similarity mapping using Sentence Transformers, linking articles to MITRE entities even when terms differ — capturing latent relations. 
+Semantic similarity mapping using Sentence Transformers, linking articles to MITRE entities even when terms differ, capturing latent relations. 
 
 Thematic clustering by connecting articles within the same topic. 
 
@@ -1282,7 +1282,7 @@ This isn’t just a budgeting issue, it’s a structural one. The numbers tell o
 To explore this further, we asked an **experienced voice in the cybersecurity field**  for their honest view on the situation. Here's what they shared:  
 
 >As far as I know, the increase in projects hasn’t brought any significant or visible benefits. It mainly reflects better organizational capacity in the Italian ecosystem to apply for and manage funds. I haven’t seen more strategic selection of projects, nor clear impact in terms of cybersecurity outcomes or the emergence of new actors in the field.  
->For example, Spain has focused its funding on building infrastructure and labs. In contrast, in Italy, a large portion of funds has gone toward increasing precarious or part-time roles in public and private organizations. In the short term, this boosts fund usage rates, but in the long term, it brings little benefit — and even creates social costs, as we’re seeing in the academic sector.
+>For example, Spain has focused its funding on building infrastructure and labs. In contrast, in Italy, a large portion of funds has gone toward increasing precarious or part-time roles in public and private organizations. In the short term, this boosts fund usage rates, but in the long term, it brings little benefit, and even creates social costs, as we’re seeing in the academic sector.
 
 Their words offer an honest reflection and leave us with a crucial, open-ended question:  
 
@@ -1301,7 +1301,7 @@ We can’t protect what we don’t understand, and we can’t defend with isolat
 **What we need is an ecological vision of cybersecurity**: one that connects institutions, individuals, technologies, and knowledge in a way that is resilient, transparent, and inclusive. 
 
 Because the question is no longer whether the threats are real. 
-It’s whether our response is coherent — and whether it reaches those who need it most. 
+It’s whether our response is coherent, and whether it reaches those who need it most. 
 
 <script>
 document.querySelectorAll('.hm-btn1').forEach(btn=>{
