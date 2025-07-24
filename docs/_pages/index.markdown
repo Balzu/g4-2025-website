@@ -3,7 +3,7 @@ layout: dark_layout
 title: "Home"
 show_sidetoc: true
 header_type: hero
-header_img: assets/images/cyber_attacks_world_hd.gif
+header_img: assets/images/binary.gif
 header_title: "The Italian Job… of Cybercrime"
 subtitle: "Data, Emotions, and Investments in the Cyber War"
 vega: true  
@@ -638,7 +638,7 @@ To conclude our exploration of cyber actor dynamics, we conducted a **clustering
           <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
             <img src="{{ '/assets/images/img1.jpeg' | relative_url }}" alt="Immagine 1" class="img-fluid" style="max-width: 32%;">
             <img src="{{ '/assets/images/img2.jpeg' | relative_url }}" alt="Immagine 2" class="img-fluid" style="max-width: 32%;">
-            <img src="{{ '/assets/images/img3.png' | relative_url }}" alt="Immagine 3" class="img-fluid" style="max-width: 32%;">
+            <img src="{{ '/assets/images/img3.png' | relative_url }}" alt="Immagine 3" class="img-fluid" style="max-width: 32%; height: max-content;">
           </div>
 
         </section>
