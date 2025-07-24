@@ -1265,8 +1265,6 @@ But while the research ecosystem expanded, so did the threats. **In 2023, Italy 
 This overlap raises a critical and still unresolved question:  
 
 
-<br>
-
 
 ### Are these investments paying off in the real world?  
 
