@@ -202,6 +202,7 @@ _A breach might start with a keystroke — but its echo depends on who’s liste
 
 In today’s digital society, cybersecurity can no longer be dismissed as a purely technical issue or a concern reserved for IT departments. One breach is enough to expose the personal data of millions, shake financial markets, and erode the trust between a company and its customers. But beyond the corporate boardrooms and security operation centers, there is a deeper, more human layer to every cyberattack  and it’s unfolding online, in real time. 
 
+<br>
 
 ### A Look Inside the Noise: Reddit as a Mirror of Cyber Perception 
 
@@ -221,11 +222,15 @@ This growing discourse, rich in emotion and nuance, underscores a simple truth: 
   </div>
 </div>
 
+<br>
+
 ### What the Emotions Reveal 
 
 As shown in our **emotion analysis** (see technical insight), most users express **negative emotions** — fear, anger, frustration — when discussing cyber incidents. However, there are also traces of relief, curiosity, even humor, proving that digital threats are woven into the emotional fabric of online life. 
 
 These aren’t just isolated incidents; they are a reflection of how modern society processes risk, privacy, and trust in the digital age. 
+
+<br>
 
 ### Our Approach: Beyond Firewalls and Forensics 
 
@@ -265,6 +270,8 @@ Each extracted post was processed by the model to detect its dominant emotional 
 
 
 
+<br>
+
 
 
 <h1 id="map-the-hack" style="background-color: #ca6701;">Map the Hack</h1>
@@ -279,6 +286,8 @@ Each extracted post was processed by the model to detect its dominant emotional 
     </vegachart>
   </div>
 </div>
+
+<br>
 
 Since 2020, the world has witnessed a sharp rise in cyberattacks, marking a clear upward trend that shows no sign of slowing down. This phenomenon spans across all continents, with North America experiencing the most pronounced growth, though it's worth noting that the dataset we analyzed is mostly U.S.based, which may partly explain the spike. Europe follows closely, highlighting the global scale of the threat and reinforcing the importance of a focused regional analysis. This escalation is closely linked to the rapid digital transformation triggered by the [COVID-19 pandemic](https://www.eurofound.europa.eu/en/covid-19-and-digitalisation), which compelled organizations, institutions, and individuals to adopt digital technologies at an unprecedented pace, often without adequate cybersecurity safeguards, accelerating digital adoption by three to four years in many sectors. As we shift our focus to comparing trends within Europe, and specifically between Italy and the broader region, this context becomes especially relevant.   
 
@@ -318,6 +327,10 @@ For attacks targeting Italian organizations specifically, we went further: we ma
 </div>
 
 
+
+<br>
+
+
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
@@ -338,9 +351,11 @@ For attacks targeting Italian organizations specifically, we went further: we ma
   </div>
 </div>
 
+<br>
 
 Following this overview, our data identified Italy as the second most targeted country in Europe, with around **900 attacks**, trailing only the United Kingdom, which recorded approximately 1,500. The gap is significant, yet **Italy** clearly remains a **primary target**. Other major European powers like France, Germany, Spain, and Russia also rank among the top, though they fall behind Italy in total incidents. On a global scale, Italy still holds a prominent position, ranking **fourth** overall (after USA, UK and Canada). The United States dominates the landscape with a dramatically higher volume of attacks, underscoring both the scale of the threat and the importance of regional resilience.
 
+<br>
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -353,9 +368,14 @@ Following this overview, our data identified Italy as the second most targeted c
 </div>
 
 
+<br>
+
 When comparing Italy’s cyber-attack trend to the European average, a clear divergence emerges. In certain years, such as **2017** or **2020**, the numbers were nearly aligned, suggesting a **comparable threat level**. But shortly thereafter, Italy's curve began to **rise** steadily, with **sharp peaks starting around 2021**. This contrasts sharply with the broader European trend, which has remained comparatively moderate. This gap highlights the urgent **need for focused attention on Italy**, where cyber threats are escalating at a faster pace, calling for targeted, localized analysis and response. The plot depicting this comparison uses Italian cyber-attack data alongside a population-weighted European average, calculated using 2024 population figures per country to provide a more accurate regional context. 
 
 This brings us to the core of our investigation: **who is being targeted the most in Italy and why**? To better understand this phenomenon, it's essential to first clarify the structure of the Italian corporate landscape. The characteristics of the national business ecosystem play a key role in shaping both the exposure and vulnerability of different actors. The overview below provides a snapshot of this landscape, setting the stage for a deeper analysis of attack patterns and motivations.
+
+
+<br>
 
 
 <img src="{{ '/assets/images/infografica.png' | relative_url }}" alt="Infografica" style="height: 600px;">
@@ -364,6 +384,9 @@ The infographic is based on data from **ISTAT (2022)**, not the most recent, but
 
 
 This foundational overview helps contextualize **which types of organizations are more exposed to cyber threats and why**. Understanding Italy’s business landscape is essential not only for assessing organizational readiness, but also for interpreting where and how cyberattacks unfold. Building on this, we turned our attention to the **geographic distribution** of attacks, examining not just their frequency, but how they align with the economic and structural profiles of each region. 
+
+
+<br>
 
 
 <div class="hm-buttons">
@@ -410,6 +433,9 @@ When examining the distribution of attacks across Italian regions, both in terms
 When attacks are normalized by regional revenue, **Lazio** remains prominent, alongside wealthy industrial regions like Lombardy, Piedmont, and Emilia-Romagna. Interestingly, several Southern and Central regions, such as Campania, Umbria, and Molise, also appear disproportionately targeted. This may reflect the presence of high-revenue enterprises within otherwise smaller business ecosystems, making them attractive targets for **financially motivated threat actors**. Overall, the distribution underscores that cybercriminals tend to prioritize **economic value** and **digital surface area**, rather than focusing solely on raw company numbers or regions perceived as less prepared.
 
 
+<br>
+
+
 ### Zooming in: Cyberattacks across Italy, one incident at a time
 
 
@@ -426,6 +452,8 @@ When analyzing the Italian dataset more deeply, a recurring pattern emerges: the
 Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing sector accounted for **13% of all cyberattacks in Italy, more than twice its global share** ([Muscope report](https://www.muscope.com/en/industry-manufacturing/?utm_source=chatgpt.com)). This makes it a clear target for ransomware groups and threat actors aiming to disrupt production or exfiltrate valuable data. A complementary perspective based on **organization size** reinforces this narrative: SMEs account for **more than 400 attacks**, representing **over half of all recorded incidents**. This aligns with ISTAT data showing that SMEs make up the overwhelming majority of Italian businesses. Public Administration, the second most attacked sector, also ranks high by size category. 
 
 
+
+<br>
 
 
 <div class="hm-buttons">
@@ -455,7 +483,9 @@ Sector-specific data confirms these vulnerabilities: in 2023, the manufacturing 
 </div>
 
 
-While Italy does not rank among the most digitally advanced countries in the EU, its position as one of the most frequently targeted by cyberattacks may, paradoxically, stem from that very imbalance. As one cybersecurity expert we interviewed explained:
+<br>
+
+While Italy does not rank among the most digitally advanced countries in the EU ([report ENISA](https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Cybersecurity%20for%20SMES%20Challenges%20and%20Recommendations.pdf)), its position as one of the most frequently targeted by cyberattacks may, paradoxically, stem from that very imbalance. As one cybersecurity expert we interviewed explained:
 > _If all intrusions were actually detected and publicly reported, Italy would likely top the European charts._
 
 According to this perspective, Italy’s vulnerability lies not only in the number of connected systems, but in how **unprepared** many institutions are to secure them. Three core factors were cited. First, there’s a widespread **lack of cybersecurity expertise at the decision-making level**, both within companies and in the public bodies meant to protect them. Cybersecurity governance is often assigned to professionals with legal or administrative backgrounds, who may lack the technical expertise required to keep pace with fast-evolving digital threats. Second, **security** is still widely **perceived as a cost rather than a strategic investment**, a cultural mindset that ultimately **discourages proactive defense**. Lastly, the Italian cybersecurity market is dominated by few large enterprises with ties to the defense sector, whose priorities are often misaligned with the needs of Italy’s industrial backbone (small and medium enterprises). This leads to a slow and uncoordinated response system, **leaving much of Italy’s digital infrastructure vulnerable to attacks**.
@@ -463,6 +493,10 @@ According to this perspective, Italy’s vulnerability lies not only in the numb
 Together, these findings reflect a broader trend: **cybercriminals prioritize sectors where disruption is most impactful, and defenses are uneven**. This raises a critical question: **are certain threat actors consistently targeting specific industries in Italy and if so, why?** The answer can reveal strategic intent, ranging from financial motives to ideological agendas, and help prevent future risks. 
 
 The following section explores this dynamic in greater detail, examining how **key threat actors operate in Italy** and which industries they pursue most aggressively.
+
+
+<br>
+
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -579,6 +613,8 @@ The following section explores this dynamic in greater detail, examining how **k
 
 
 
+<br>
+
 
 
 The data highlights how different sectors are targeted in different ways. **LockBit 3.0** is the most active and geographically distributed group, with a distinct preference for **Manufacturing**, echoing the earlier finding that this sector is the most targeted. Its predecessor, **LockBit 2**, displayed a broader distribution, with a notable presence in **Retail** and **General Services**, but less strategic focus overall. By contrast, politically motivated actors like **Noname057(16)** and **LulzSecITA** mainly targeted **Public Administration**, largely bypassing manufacturing. This suggests a goal not of profit but of visibility, through public disruption or data leaks, exploiting institutional vulnerabilities.
@@ -596,7 +632,13 @@ A look at timelines further illustrates these dynamics. As of June 2025, only a 
 </div>
 
 
+<br>
+
 Another layer of analysis explored whether these actors are **Italy-specific** or operate across Europe. The answer is nearly unanimous: 14 out of the top 15 actors active in Italy also conduct campaigns throughout Europe. The only exception is **Sandworm**, a Russian state-sponsored group known for critical infrastructure attacks. Its absence in Italy likely reflects a strategic focus on more geopolitically sensitive targets elsewhere in Europe ([MITRE ATT&CK](https://attack.mitre.org/groups/G0034/)). 
+
+
+<br>
+
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -641,6 +683,8 @@ Another layer of analysis explored whether these actors are **Italy-specific** o
   </div>
 </div>
 
+
+<br>
 
 
 
@@ -698,12 +742,15 @@ To conclude our exploration of cyber actor dynamics, we conducted a **clustering
 </div>
 
 
+<br>
+
+
 ### From Breach to Awareness: Is the Threat Truly Understood?
 
 
 This deep dive into sectoral and regional patterns confirms a fundamental truth: **Italy’s most productive and institutional regions are at the center of its cyber threat landscape**. Whether due to economic weight, critical data exposure, or structural weaknesses, these areas face elevated and persistent risks. But here’s the real question: **does the public understand the scale of this threat?** In an age where ransomware can stop hospitals from working, leak court information, or shut down factories, one would expect cyberattacks to dominate headlines and shape national policy conversations. And yet, **visibility doesn't always match severity**. The next section shifts focus from the attackers to the **narrative**, how cyber incidents are portrayed in Italian media, acknowledged by institutions, and ultimately **perceived by society**. 
 
-<br><br><br>
+<br>
 
 <h1 id="breaking-the-net" style="background-color: #ca6701;">Breaking the Net</h1>
 
@@ -715,6 +762,10 @@ Between 2015 and 2025, we identified around 900 cyberattacks targeting Italian c
 The chart below visualizes this gap: each dot represents a cyberattack, but only the darker (orange) ones were picked up by the media. The rest the majority went unreported. While the frequency of attacks rises sharply over time, especially after 2020, media attention remains largely stagnant. 
 This disconnect suggests a broader problem. **Underreporting doesn’t just obscure the scale of the threat  it also undermines public awareness, corporate accountability, and the development of effective cybersecurity policy.**
 
+
+<br>
+
+
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
@@ -725,6 +776,8 @@ This disconnect suggests a broader problem. **Underreporting doesn’t just obsc
   </div>
 </div>
 
+
+<br>
 
 
 ### Niche Networks, National Silence   
@@ -738,6 +791,10 @@ We also looked at the tone of the articles published and found no major differen
 As a result, communication around cyber threats in Italy remains limited and fragmented. The lack of broader media coverage contributes to low public awareness and understanding of cybersecurity risks despite their growing relevance in everyday life and business. 
 
 So, while attacks are increasing in both frequency and severity, the information about them struggles to reach the wider population, weakening Italy's collective ability to respond, prepare, and build a stronger cybersecurity culture.
+
+
+<br>
+
 
 <div style="display: flex; justify-content: center;">
   <div>
@@ -761,6 +818,9 @@ So, while attacks are increasing in both frequency and severity, the information
 </div>
 
 
+<br>
+
+
 ### Which Sectors Make the Headlines? 
 
 After this broader analysis, we turned our attention to the types of industries affected by cyberattacks and how the media responds to them in both visibility and tone. 
@@ -774,6 +834,10 @@ In contrast, industries that receive less attention such as transportation, reta
 
 This contrast underscores an important dynamic: media visibility and tone are not just shaped by how often an industry is targeted, but by how “newsworthy” an attack is perceived to be. Critical infrastructure gets headlines and alarm while other sectors often stay in the shadows, regardless of the real risks involved. 
 
+
+<br>
+
+
 <div style="display: flex; justify-content: center;">
   <div>
     <vegachart
@@ -784,6 +848,8 @@ This contrast underscores an important dynamic: media visibility and tone are no
   </div>
 </div>
 
+
+<br>
 
 
 <div class="hm-buttons">
@@ -812,6 +878,10 @@ This contrast underscores an important dynamic: media visibility and tone are no
 </div>
 
 
+
+<br>
+
+
 ### What the Media Talks About - And What It Doesn’t 
 
 By applying topic modeling (LDA) to the articles covering cyberattacks on Italian companies, a clear pattern begins to emerge. Media narratives appear to focus predominantly on cyber threats and attack techniques, with far less attention given to topics like corporate data protection, technical vulnerabilities, or cybersecurity regulations. This likely reflects a tendency to report on the event itself the how and what of the attack rather than delving into the underlying causes or preventive measures. As a result, the broader context around cybersecurity often remains in the background, leaving key structural issues underexplored. 
@@ -825,6 +895,9 @@ By applying topic modeling (LDA) to the articles covering cyberattacks on Italia
     </vegachart>
   </div>
 </div>
+
+
+<br>
 
 
 ###  Cybersecurity: What We Say, What We Mean
@@ -858,6 +931,9 @@ As our earlier analysis shows, not all industries receive equal media attention 
 </div>
 
 
+<br>
+
+
 The chart above highlights the top 20 most distinctive words used by each type of source, using TF-IDF differential. Mainstream media often center their language on individuals and incidents, with tokens like “hacker,” “attacco,” “utente,” “online,” “password”. These terms frame cybersecurity as sudden, alarming, and personal. The stories are reactive, emotion-driven, and aimed at a broad audience. 
 
 Sector-specific outlets, in contrast, use a vocabulary rooted in governance and institutional frameworks: terms like “gdpr,” “trattamento,” “aziendale,” “titolare,” and “compliance.” These articles speak to professionals, framing digital security as a matter of planning, accountability, and process not panic. 
@@ -875,6 +951,8 @@ This divide becomes even more apparent when we analyze sentiment by named entity
 </div>
  
 
+<br>
+
 
 By analyzing the most frequently mentioned entities in our dataset, we observe a significant shift in sentiment depending on the type of media source. 
 
@@ -884,6 +962,8 @@ In contrast, general news outlets show a more negative sentiment, particularly i
 
 This divergence is the key and reflects two distinct media ecosystems: one that interprets cybersecurity as a technical challenge, and one that dramatizes it as a social or political crisis.. 
  
+
+<br>
 
 ###  When Optimism Stays in the Echo Chamber 
 
@@ -902,6 +982,10 @@ Everywhere else, the tone shifts.
   </div>
 </div>
 
+
+<br>
+
+
 In mainstream journalism, where the audience is broader and less specialized, the sentiment trends negative across the board. Stories around personal privacy, digital fraud, or user tracking are overwhelmingly framed in critical terms, with few signs of hope or solutions. The most negative tones appear when users and their devices are at the center of the narrative. 
 
 The contrast is even sharper when the same topic is handled by different sources. For example, corporate cybersecurity is portrayed by industry media as an evolving opportunity a space of innovation and strategic growth. But in the general press, it’s nearly absent unless tied to crisis, scandal, or systemic failure. 
@@ -914,6 +998,10 @@ The contrast is even sharper when the same topic is handled by different sources
     </vegachart>
 </div>
 
+
+<br>
+
+
 Clustering analysis also reveals a fragmented cyber discourse. Sector-specific publications tend to focus on regulatory compliance and enterprise risk, usually adopting a neutral or critical tone  except in 2024, when optimism emerges around corporate cybersecurity success stories. In contrast, general media emphasizes personal privacy and cybercrime, often with emotional and negative framing, especially during crises like the pandemic. 
 Notably, the only positive sentiment cluster originates from the sector  suggesting that optimism is largely internal and professional. Even shared topics, like corporate cybersecurity, are portrayed very differently: as progress in the sector, and as crisis in the public media narrative. 
  
@@ -921,6 +1009,9 @@ This divergence reveals more than just editorial choices: it points to a split i
 In short, confidence lives in the sector. Concern dominates the public sphere. 
 And that divide might be exactly what’s preventing Italy from building a truly shared cyber resilience culture. 
  
+
+<br>
+
 
 ### A Communication Gap That Shapes Action 
 
@@ -935,6 +1026,10 @@ According to the **Cyber Index PMI 2024**, only **15%** of Italian small and med
 A 2024 cross-cultural study further supports this view: 
 
 While Italians acknowledge cyber threats as real, they tend to adopt a **passive, delegated approach**, trusting institutions or service providers to take care of security. Compared to countries like Germany or the UK, Italy stands in the middle tier: aware, but not proactive.([paper](https://arxiv.org/abs/2405.16215v2)) 
+
+
+<br>
+
 
 ### A Final Call: Words Are Not Just Words 
 
@@ -980,6 +1075,10 @@ Each topic, in turn, was analyzed for sentiment,emotion ( with the model describ
 </div>
 
 
+
+<br>
+
+
 <h1 id="cyber-q-and-a" style="background-color: #ca6701;">Cyber Q&A</h1>
 
 
@@ -994,6 +1093,10 @@ To bridge this divide, we’ve developed an intelligent knowledge graph: a dynam
   <iframe src="{{ site.baseurl }}/assets/graph/top50_articles_mitre_graph.html" width="100%" height="400px" frameborder="0"></iframe> 
 </div>
 
+
+<br>
+
+
 Rooted in the MITRE ATT&CK framework and enriched with peer-reviewed research from PubMed, Crossref, and arXiv, the graph hosts over 4,000 nodes connecting attack techniques, malware families, vulnerabilities, countermeasures, and more. Need to understand how a ransomware campaign exploits a specific vulnerability? Or which mitigations align with spear phishing? The graph doesn't just hold that knowledge, it makes it navigable. 
 
 Even more powerfully, the system integrates a local LLM (Mistral 7B) capable of answering natural language queries using context from the graph itself. Ask a question like “Which mitigations are most effective against credential dumping?” and get a grounded, explainable response. Combined with interactive visualizations and slide generation, it becomes a training companion, not just a data tool. 
@@ -1001,6 +1104,8 @@ Even more powerfully, the system integrates a local LLM (Mistral 7B) capable of 
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/RI0W7NRl4SU?si=exRRIXoy2hr_qgFb&vq=hd1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+<br>
 
 
 ### The Communication Gap Is Real 
@@ -1083,6 +1188,9 @@ These metrics confirm a navigable and highly interconnected ecosystem ideal for 
 </div>
 
 
+<br>
+
+
 ###  From Attacks to Awareness: A Graph That Connects the Dots 
 What begins as a cyberattack often ends in headlines, yet rarely in real understanding. Public narratives tend to dramatize, while companies react with urgency, investing in solutions they may not fully grasp. Somewhere between the breach and the boardroom, technical knowledge gets lost in translation. 
 
@@ -1093,6 +1201,11 @@ Because in cybersecurity, visibility isn’t just about network logs: it’s abo
 
 So the real question becomes: 
 **Are we truly prepared? In the invisible war, who protects whom and who’s investing to keep us safe?**
+
+
+
+<br>
+
 
 <h1 id="conclusions" style="background-color: #ca6701;">Conclusions</h1>
 
@@ -1116,6 +1229,8 @@ But while the research ecosystem expanded, so did the threats. **In 2023, Italy 
   </div>
 </div>
 
+
+<br>
 
 
 <div class="hm-buttons">
@@ -1145,13 +1260,24 @@ But while the research ecosystem expanded, so did the threats. **In 2023, Italy 
 
 
 
+<br>
+
 This overlap raises a critical and still unresolved question:  
+
+
+<br>
+
 
 ### Are these investments paying off in the real world?  
 
 At present, the answer is unclear. It’s possible the benefits of funding are simply delayed, that is that training, infrastructure, and innovation need time to convert into effective defense mechanisms. But another possibility looms: that **the translation of research into operational security is too slow, too fragmented, or even misaligned** with the actual needs of Italian businesses.  
 
 This isn’t just a budgeting issue, it’s a structural one. The numbers tell one story, but they also invite a deeper investigation:  
+
+
+
+<br>
+
 
 ### Does Italy’s cybersecurity model need a rethink? And if so, where should we start?  
 
@@ -1165,7 +1291,11 @@ Their words offer an honest reflection and leave us with a crucial, open-ended q
 Will these investments eventually strengthen Italy’s cybersecurity landscape, or do we need to rethink how research is connected to real-world needs and resilience?” 
 
 
-### A System That Knows — But Can It Act? 
+
+<br>
+
+
+### A System That Knows, But Can It Act? 
 
 This disconnect highlights a deeper issue: cybersecurity isn’t just a technical problem. It’s a systems problem spanning infrastructure, education, policy, communication, labor, and equity. 
 
