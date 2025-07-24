@@ -83,6 +83,20 @@ vega: true
   color:#fff;
   border-color:#d33;
 }
+
+.hm-btn4 {
+  cursor:pointer;
+  padding:.5rem .9rem;
+  border:1px solid #ccc;
+  background:#f5f5f5;
+  border-radius:4px;
+  font-size:.9rem;
+}
+.hm-btn4.active {
+  background:#d33;
+  color:#fff;
+  border-color:#d33;
+}
 .heatmap { display:none; }
 .heatmap.visible { display: flex; justify-content: center;}
 
@@ -91,6 +105,9 @@ vega: true
 
 .chart_ { display:none; }
 .chart_.visible { display: flex; justify-content: center; }
+
+.tf_idf { display:none; }
+.tf_idf.visible { display: flex; justify-content: center;}
 
 div aside {
     background-color: #000000;
@@ -787,28 +804,31 @@ By applying topic modeling (LDA) to the articles covering cyberattacks on Italia
 As our earlier analysis shows, not all industries receive equal media attention when targeted by cyberattacks. Utilities such as energy and water providers attract disproportionate coverage, likely due to their strategic importance. Sectors like transportation, logistics, or food services, on the other hand, receive little to no attention, even when affected. This asymmetry suggests a deeper issue: a communication gap between real-world risk and public visibility. To better understand this gap, we moved from the “who” to the “how” analyzing the language and emotional tone of cybersecurity coverage across generalist and specialist media outlets. What narratives do they construct? And what kind of sentiment do they project? 
 
 
+<div class="hm-buttons">
+  <button type="button" class="hm-btn4 active" data-target="tf_idf1">Distinctive TF-IDF</button>
+  <button type="button" class="hm-btn4" data-target="tf_idf2">Common TF-IDF</button>
+</div>
 
-**TODO**: bottoni
-
-<div style="display: flex; justify-content: center;">
+<div id="tf_idf1" class="tf_idf visible">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/1.NEW_tfidf.json" | relative_url }}"
-      style="width: 100%; height: 100%"
+      style="width: 100%; height: 100%" 
       tooltip="true" >
     </vegachart>
   </div>
 </div>
 
-<div style="display: flex; justify-content: center;">
+<div id="tf_idf2" class="tf_idf">
   <div>
     <vegachart
       schema-url="{{ "/assets/charts/breaking_the_net/2_comparative/1_NEW_tfidf_2.json" | relative_url }}"
-      style="width: 100%; height: 100%"
+      style="width: 100%; height: 100%" 
       tooltip="true" >
     </vegachart>
   </div>
 </div>
+
 
 The chart above highlights the top 20 most distinctive words used by each type of source, using TF-IDF differential. Mainstream media often center their language on individuals and incidents, with tokens like “hacker,” “attacco,” “utente,” “online,” “password”. These terms frame cybersecurity as sudden, alarming, and personal. The stories are reactive, emotion-driven, and aimed at a broad audience. 
 
@@ -1162,6 +1182,21 @@ document.querySelectorAll('.hm-btn3').forEach(btn=>{
     btn.classList.add('active');
 
     document.querySelectorAll('.chart_').forEach(div=>div.classList.remove('visible'));
+    document.getElementById(target).classList.add('visible');
+  });
+});
+</script>
+
+
+<script>
+document.querySelectorAll('.hm-btn4').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const target = btn.dataset.target;
+
+    document.querySelectorAll('.hm-btn4').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+
+    document.querySelectorAll('.tf_idf').forEach(div=>div.classList.remove('visible'));
     document.getElementById(target).classList.add('visible');
   });
 });
